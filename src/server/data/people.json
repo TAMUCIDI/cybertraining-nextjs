@@ -1,0 +1,104 @@
+{
+    "PI_List": [
+        {
+            "name": "Zhe Zhang",
+            "email": "zhezhang@tamu.edu",
+            "role": "PI",
+            "affiliation": "Assistant Professor, Department of Geography, Texas A&M University; Director of Cyberinfrastructure and Spatial Decision Intelligence Research Group"
+        },
+        {
+            "name": "Honggao Liu",
+            "email": "honggao@tamu.edu",
+            "role": "Co-PI",
+            "affiliation": "Executive Director, Texas A&M High Performance Research Computing"
+        },
+        {
+            "name": "Shaowen Wang",
+            "email": "shaowen@illinois.edu",
+            "role": "Co-PI",
+            "affiliation": "Professor, Geography & Geographic Information Science; Associate Dean for Life and Physical Sciences, College of Liberal Arts and Sciences (LAS), University of Illinois Urbana-Champaign"
+        }
+    ],
+    "Member_List": [
+        {
+            "name": "Zhuping Sheng",
+            "email": "zhuping.sheng@morgan.edu",
+            "affiliation": "Professor, Civil Engineering, Morgan State University"
+        },
+        {
+            "name": "Shelley Knuth",
+            "email": "shelley.knuth@colorado.edu",
+            "affiliation": "Assistant Vice Chancellor and Director of Research Computing, University of Colorado Boulder"
+        },
+        {
+            "name": "Lori Peek",
+            "email": "Lori.Peek@colorado.edu",
+            "affiliation": "Professor and Director of the Natural Hazards Center, Institute of Behavioral Science, University of Colorado Boulder"
+        },
+        {
+            "name": "Tim Cockerill",
+            "email": "cockerill@tacc.utexas.edu",
+            "affiliation": "Program Director, Texas Advanced Computing Center; Deputy Project Director, DesignSafe"
+        },
+        {
+            "name": "Joseph Kerski",
+            "email": "jkerski@esri.com",
+            "affiliation": "Education Manager, ESRI"
+        },
+        {
+            "name": "Samantha Arundel",
+            "email": "sarundel@usgs.gov",
+            "affiliation": "Research Geographer & Interim Director, Center of Excellence for Geospatial Information Science, U.S. Geological Survey"
+        },
+        {
+            "name": "Amy Rock",
+            "email": "arock@ucgis.org",
+            "affiliation": "Director, University Consortium for Geographic Information Science"
+        },
+        {
+            "name": "Jorge Brenner",
+            "email": "Jorge.brenner@gcoos.org",
+            "affiliation": "Executive Director, Gulf of Mexico Coastal Ocean Observing System (GCOOS)"
+        },
+        {
+            "name": "Tao Cheng",
+            "email": "tao.cheng@ucl.ac.uk",
+            "affiliation": "Professor and Director of Spacetime Lab for Big Data Analytics, Department of Civil, Environment and Geomatics, University College London"
+        },
+        {
+            "name": "Xiao Li",
+            "email": "xiao.li@ouce.ox.ac.uk",
+            "affiliation": "Senior Research Associate, Transport Studies Unit, University of Oxford"
+        },
+        {
+            "name": "Aron Larsson",
+            "email": "aron.larsson@miun.se",
+            "affiliation": "Professor and Director of the Risk and Crisis Research Centre of Mid Sweden University"
+        },
+        {
+            "name": "Huilin Gao",
+            "email": "hgao@civil.tamu.edu",
+            "affiliation": "Professor, Civil and Environmental Engineering, Texas A&M University"
+        },
+        {
+            "name": "Lingli Zhu",
+            "email": "lingli.zhu@nls.fi",
+            "affiliation": "Research Manager, Remote Sensing and Photogrammetry, National Land Survey of Finland"
+        },
+        {
+            "name": "Henrikki Tenkanen",
+            "email": "henrikki.tenkanen@aalto.fi",
+            "affiliation": "Assistant Professor, Department of Built Environment, Aalto University"
+        },
+        {
+            "name": "Jukka Krisp",
+            "email": "jukka.krisp@geo.uni-augsburg.de",
+            "affiliation": "Professor of Applied Geoinformatics, Augsburg University, Germany"
+        },
+        {
+            "name": "Changjie Cai",
+            "email": "Changjie-Cai@ouhsc.edu",
+            "affiliation": "Assistant Professor, Hudson College of Public Health, The University of Oklahoma Health Sciences Center"
+        }
+    ]
+}
