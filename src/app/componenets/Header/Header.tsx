@@ -22,7 +22,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className={`fixed z-40 navbar ${isScrolled ? 'bg-base-100': 'bg-transparent'} text-base-content transition-all duration-300`}>
+    <div className={`fixed z-40 navbar ${isScrolled ? 'bg-base-100' : 'bg-transparent'} text-base-content transition-all duration-300`}>
       <div className="navbar-start">
         <Link href={`/`} className="btn btn-ghost text-xl">
           CyberTraining

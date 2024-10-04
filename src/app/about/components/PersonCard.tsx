@@ -1,31 +1,35 @@
 import React from 'react';
 
-interface PICardProps {
+interface PersonCardProps {
     name: string;
     email: string;
-    role: string;
+    role?: string;
     affiliation: string;
+    img?: string;
 }
 
-export default function PICard({
+export default function PersonCard({
     name,
     email,
     role,
-    affiliation
-}: PICardProps) {
+    affiliation,
+    img
+}: PersonCardProps) {
     return (
-        <div className="card bg-base-100 text-base-content w-96 shadow-xl">
+        <div className="card bg-base-100 text-base-content w-96 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
             <figure>
                 <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes" />
+                src={img || "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"}
+                alt="Profile" />
             </figure>
             <div className="card-body">
                 <h2 className="card-title">
                     {name}
-                    <div className="badge badge-info">
-                        {role}
-                    </div>
+                    {role && (
+                        <div className="badge badge-info">
+                            {role}
+                        </div>
+                    )}
                 </h2>
                 <p>{email}</p>
                 <p>{affiliation}</p>

@@ -4,101 +4,120 @@
             "name": "Zhe Zhang",
             "email": "zhezhang@tamu.edu",
             "role": "PI",
-            "affiliation": "Assistant Professor, Department of Geography, Texas A&M University; Director of Cyberinfrastructure and Spatial Decision Intelligence Research Group"
+            "affiliation": "Assistant Professor, Department of Geography, Texas A&M University; Director of Cyberinfrastructure and Spatial Decision Intelligence Research Group",
+            "img": "https://static.wixstatic.com/media/987dfb_ba9e0216acf1458ca810bfff3671816a~mv2.png/v1/crop/x_206,y_100,w_357,h_388/fill/w_499,h_543,al_c,lg_1,q_85,enc_auto/Screen%20Shot%202023-12-25%20at%2011_58_25%20AM.png"
         },
         {
             "name": "Honggao Liu",
             "email": "honggao@tamu.edu",
             "role": "Co-PI",
-            "affiliation": "Executive Director, Texas A&M High Performance Research Computing"
+            "affiliation": "Executive Director, Texas A&M High Performance Research Computing",
+            "img": "https://static.wixstatic.com/media/987dfb_b1ae4bf3b2bf4f5b960c3c6d4a37ee4e~mv2.png/v1/crop/x_0,y_0,w_704,h_766/fill/w_610,h_664,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Screen%20Shot%202023-12-25%20at%2011_47_05%20AM.png"
         },
         {
             "name": "Shaowen Wang",
             "email": "shaowen@illinois.edu",
             "role": "Co-PI",
-            "affiliation": "Professor, Geography & Geographic Information Science; Associate Dean for Life and Physical Sciences, College of Liberal Arts and Sciences (LAS), University of Illinois Urbana-Champaign"
+            "affiliation": "Professor, Geography & Geographic Information Science; Associate Dean for Life and Physical Sciences, College of Liberal Arts and Sciences (LAS), University of Illinois Urbana-Champaign",
+            "img": "https://static.wixstatic.com/media/987dfb_06ee13e8f1a142e48418d4e27cffc0a8~mv2.png/v1/fill/w_596,h_649,al_c,q_90,enc_auto/Screen%20Shot%202023-12-25%20at%2011_47_26%20AM.png"
         }
     ],
     "Member_List": [
         {
             "name": "Zhuping Sheng",
             "email": "zhuping.sheng@morgan.edu",
-            "affiliation": "Professor, Civil Engineering, Morgan State University"
+            "affiliation": "Professor, Civil Engineering, Morgan State University",
+            "img": "https://static.wixstatic.com/media/987dfb_171083f5a87b4d508b8a85826cac0526~mv2.png/v1/fill/w_564,h_564,al_c,lg_1,q_85,enc_auto/Screen%20Shot%202023-12-25%20at%2012_27_46%20PM.png"
         },
         {
             "name": "Shelley Knuth",
             "email": "shelley.knuth@colorado.edu",
-            "affiliation": "Assistant Vice Chancellor and Director of Research Computing, University of Colorado Boulder"
+            "affiliation": "Assistant Vice Chancellor and Director of Research Computing, University of Colorado Boulder",
+            "img": "https://static.wixstatic.com/media/987dfb_135fb22349aa425c804c6a0518845613~mv2.png/v1/crop/x_0,y_0,w_566,h_566/fill/w_608,h_608,al_c,lg_1,q_90,enc_auto/Screen%20Shot%202023-12-25%20at%2012_30_02%20PM.png"
         },
         {
             "name": "Lori Peek",
             "email": "Lori.Peek@colorado.edu",
-            "affiliation": "Professor and Director of the Natural Hazards Center, Institute of Behavioral Science, University of Colorado Boulder"
+            "affiliation": "Professor and Director of the Natural Hazards Center, Institute of Behavioral Science, University of Colorado Boulder",
+            "img": "https://static.wixstatic.com/media/987dfb_5622221a8fb8412987f38de801fbf17d~mv2.png/v1/crop/x_0,y_0,w_620,h_619/fill/w_608,h_608,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Screen%20Shot%202023-12-25%20at%2012_33_03%20PM.png"
         },
         {
             "name": "Tim Cockerill",
             "email": "cockerill@tacc.utexas.edu",
-            "affiliation": "Program Director, Texas Advanced Computing Center; Deputy Project Director, DesignSafe"
+            "affiliation": "Program Director, Texas Advanced Computing Center; Deputy Project Director, DesignSafe",
+            "img": "https://static.wixstatic.com/media/987dfb_39f8ad4e94884a2b8c3a5c2db1815058~mv2.png/v1/crop/x_0,y_0,w_438,h_438/fill/w_526,h_526,al_c,lg_1,q_85,enc_auto/Screen%20Shot%202023-12-25%20at%2012_36_09%20PM.png"
         },
         {
             "name": "Joseph Kerski",
             "email": "jkerski@esri.com",
-            "affiliation": "Education Manager, ESRI"
+            "affiliation": "Education Manager, ESRI",
+            "img": "https://static.wixstatic.com/media/987dfb_0cc4db7f40744222be85cb557467004e~mv2.jpeg/v1/crop/x_0,y_0,w_194,h_194/fill/w_272,h_272,al_c,lg_1,q_80,enc_auto/jose.jpeg"
         },
         {
             "name": "Samantha Arundel",
             "email": "sarundel@usgs.gov",
-            "affiliation": "Research Geographer & Interim Director, Center of Excellence for Geospatial Information Science, U.S. Geological Survey"
+            "affiliation": "Research Geographer & Interim Director, Center of Excellence for Geospatial Information Science, U.S. Geological Survey",
+            "img": "https://static.wixstatic.com/media/987dfb_aac207291f28420c8951fc7481b4761b~mv2.png/v1/fill/w_566,h_566,al_c,lg_1,q_85,enc_auto/Screen%20Shot%202023-12-25%20at%2012_42_57%20PM.png"
         },
         {
             "name": "Amy Rock",
             "email": "arock@ucgis.org",
-            "affiliation": "Director, University Consortium for Geographic Information Science"
+            "affiliation": "Director, University Consortium for Geographic Information Science",
+            "img": "https://static.wixstatic.com/media/987dfb_a852dd3d21a44f3faa3bfd42697c1355~mv2.png/v1/fill/w_608,h_608,al_c,lg_1,q_90,enc_auto/Screen%20Shot%202023-12-25%20at%2012_46_50%20PM.png"
         },
         {
             "name": "Jorge Brenner",
             "email": "Jorge.brenner@gcoos.org",
-            "affiliation": "Executive Director, Gulf of Mexico Coastal Ocean Observing System (GCOOS)"
+            "affiliation": "Executive Director, Gulf of Mexico Coastal Ocean Observing System (GCOOS)",
+            "img": "https://static.wixstatic.com/media/987dfb_d2324f01d7f94141b9b6c49d3cc0ed2f~mv2.png/v1/crop/x_0,y_0,w_822,h_822/fill/w_608,h_608,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Screen%20Shot%202023-12-25%20at%2012_50_55%20PM.png"
         },
         {
             "name": "Tao Cheng",
             "email": "tao.cheng@ucl.ac.uk",
-            "affiliation": "Professor and Director of Spacetime Lab for Big Data Analytics, Department of Civil, Environment and Geomatics, University College London"
+            "affiliation": "Professor and Director of Spacetime Lab for Big Data Analytics, Department of Civil, Environment and Geomatics, University College London",
+            "img": "https://static.wixstatic.com/media/987dfb_255c749c3f5741b5b039c8bc6d988d8f~mv2.jpeg/v1/crop/x_0,y_29,w_183,h_183/fill/w_256,h_256,al_c,lg_1,q_80,enc_auto/download.jpeg"
         },
         {
             "name": "Xiao Li",
             "email": "xiao.li@ouce.ox.ac.uk",
-            "affiliation": "Senior Research Associate, Transport Studies Unit, University of Oxford"
+            "affiliation": "Senior Research Associate, Transport Studies Unit, University of Oxford",
+            "img": "https://static.wixstatic.com/media/987dfb_9a2550c3c66e4e53a7387fd7555ce742~mv2.png/v1/crop/x_0,y_28,w_350,h_350/fill/w_490,h_490,al_c,lg_1,q_85,enc_auto/Screen%20Shot%202023-12-25%20at%2012_58_34%20PM.png"
         },
         {
             "name": "Aron Larsson",
             "email": "aron.larsson@miun.se",
-            "affiliation": "Professor and Director of the Risk and Crisis Research Centre of Mid Sweden University"
+            "affiliation": "Professor and Director of the Risk and Crisis Research Centre of Mid Sweden University",
+            "img": "https://static.wixstatic.com/media/987dfb_bb9feaccc698430f8a0d77f80848024a~mv2.png/v1/crop/x_2,y_0,w_412,h_412/fill/w_494,h_494,al_c,lg_1,q_85,enc_auto/Screen%20Shot%202023-12-25%20at%201_03_11%20PM.png"
         },
         {
             "name": "Huilin Gao",
             "email": "hgao@civil.tamu.edu",
-            "affiliation": "Professor, Civil and Environmental Engineering, Texas A&M University"
+            "affiliation": "Professor, Civil and Environmental Engineering, Texas A&M University",
+            "img": "https://static.wixstatic.com/media/987dfb_ed30e647f1d844d6b1a3087c035265b5~mv2.png/v1/crop/x_0,y_0,w_404,h_404/fill/w_485,h_485,al_c,lg_1,q_85,enc_auto/Screen%20Shot%202023-12-25%20at%201_13_09%20PM.png"
         },
         {
             "name": "Lingli Zhu",
             "email": "lingli.zhu@nls.fi",
-            "affiliation": "Research Manager, Remote Sensing and Photogrammetry, National Land Survey of Finland"
+            "affiliation": "Research Manager, Remote Sensing and Photogrammetry, National Land Survey of Finland",
+            "img": "https://static.wixstatic.com/media/987dfb_9b8d1cbe73904b02ada5a2205cb4341a~mv2.png/v1/fill/w_479,h_479,al_c,lg_1,q_85,enc_auto/Screen%20Shot%202023-12-25%20at%201_20_26%20PM.png"
         },
         {
             "name": "Henrikki Tenkanen",
             "email": "henrikki.tenkanen@aalto.fi",
-            "affiliation": "Assistant Professor, Department of Built Environment, Aalto University"
+            "affiliation": "Assistant Professor, Department of Built Environment, Aalto University",
+            "img": "https://static.wixstatic.com/media/987dfb_7785d3f30554404da38f435eace3bb49~mv2.jpeg/v1/crop/x_35,y_0,w_158,h_158/fill/w_221,h_221,al_c,lg_1,q_80,enc_auto/Unknown1.jpeg"
         },
         {
             "name": "Jukka Krisp",
             "email": "jukka.krisp@geo.uni-augsburg.de",
-            "affiliation": "Professor of Applied Geoinformatics, Augsburg University, Germany"
+            "affiliation": "Professor of Applied Geoinformatics, Augsburg University, Germany",
+            "img": "https://static.wixstatic.com/media/987dfb_8b85f0b061414e0cabdcc9acefebfb56~mv2.jpeg/v1/fill/w_315,h_315,al_c,lg_1,q_80,enc_auto/Jukka.jpeg"
         },
         {
             "name": "Changjie Cai",
             "email": "Changjie-Cai@ouhsc.edu",
-            "affiliation": "Assistant Professor, Hudson College of Public Health, The University of Oklahoma Health Sciences Center"
+            "affiliation": "Assistant Professor, Hudson College of Public Health, The University of Oklahoma Health Sciences Center",
+            "img": "https://static.wixstatic.com/media/987dfb_d89377d91a974c0c85792c8399f41dab~mv2.png/v1/crop/x_0,y_10,w_732,h_732/fill/w_608,h_608,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/Screen%20Shot%202023-12-25%20at%201_29_40%20PM.png"
         }
     ]
 }

@@ -2,7 +2,7 @@ import { Suspense } from "react";
 
 import Header from "../componenets/Header/Header";
 import Footer from "../componenets/Footer/Footer";
-import { NavigationEvents } from "../componenets/Layouts/NavigationEvents";
+import { NavigationEvents } from "./componenets/NavigationEvents";
 
 //import "../global.css"
 import React from "react";
