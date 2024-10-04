@@ -9,7 +9,7 @@ import path from 'path';
 
 export default async function About() {
   // 读取JSON文件
-  const filePath = path.join(process.cwd(), 'src/server/data/people.json');
+  const filePath = path.join(process.cwd(), 'src/server/content/people.json');
   const fileContents = fs.readFileSync(filePath, 'utf-8');
   const data = JSON.parse(fileContents);
   return (
