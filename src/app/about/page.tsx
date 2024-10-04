@@ -1,6 +1,6 @@
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 
-import PersonCard from "./components/PersonCard";
+import PersonCard, { PersonCardProps } from "./components/PersonCard";
 import OrgCarousel from "./components/OrgCarousel";
 
 import React from "react";
@@ -42,7 +42,7 @@ export default async function About() {
           </div>
           {/* PI Card List */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {data.PI_List.map((person: any, index: number) => (
+            {data.PI_List.map((person: PersonCardProps, index: number) => (
               <PersonCard
                 key={index}
                 name={person.name}
@@ -63,7 +63,7 @@ export default async function About() {
           </div>
           {/* Member Card List */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {data.Member_List.map((person: any, index: number) => (
+            {data.Member_List.map((person: PersonCardProps, index: number) => (
               <PersonCard
                 key={index}
                 name={person.name}

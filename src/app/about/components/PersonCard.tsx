@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface PersonCardProps {
+export interface PersonCardProps {
     name: string;
     email: string;
     role?: string;
