@@ -15,10 +15,10 @@ export default function WebinarDetail({params:{id}}:{params:{id:number}}) {
     return (
         <DefaultLayout>
             <div className="bg-base-200 flex flex-col justify-center items-center pt-5 pb-5 pl-10 pr-10">
-                <article className="prose">
+                <article className="prose max-w-3xl">
                     <h1>{webinarDetail.title}</h1>
-                    <span>{webinarDetail.time}</span>
-                    <span>{webinarDetail.speaker}</span>
+                    <h3>{webinarDetail.time}</h3>
+                    <h3>{webinarDetail.speaker}</h3>
                     <p>
                         {webinarDetail.description}
                     </p>

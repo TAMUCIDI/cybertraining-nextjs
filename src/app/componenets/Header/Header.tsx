@@ -37,7 +37,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href={`/modules`}>
+            <Link href={`/notebooks`}>
               Modules
             </Link>
           </li>
