@@ -3,6 +3,14 @@
         {
             "id": 1,
             "title": "Geospatial Analytics Module"
+        },
+        {
+            "id": 2,
+            "title": "Computational Module"
+        },
+        {
+            "id": 3,
+            "title": "Disaster Data Module"
         }
     ],
     "notebook_list": [
@@ -12,6 +20,41 @@
             "category": 1,
             "author": "Diya Li",
             "file_path": "/content/notebooks/Social_Sensing.html"
+        },
+        {
+            "id": 2,
+            "title": "Introduction to ACES and JupyterLab",
+            "category": 2,
+            "author": "Zhenhua He",
+            "file_path": "/content/notebooks/ACES_TechLab_NH_Wkshop.pdf"
+        },
+        {
+            "id": 3,
+            "title": "Intermediate Python-DataFrame Building",
+            "category": 2,
+            "author":"Zhenhua He",
+            "file_path": "/content/notebooks/1-DataFrame_Building.html"
+        },
+        {
+            "id": 4,
+            "title": "Intermediate Python-DataFrame Operations",
+            "category": 2,
+            "author": "Zhenhua He",
+            "file_path": "/content/notebooks/2-DataFrame_Operations.html"
+        },
+        {
+            "id": 5,
+            "title": "Geovisualization",
+            "author": "Zhenlei Song",
+            "category": 3,
+            "file_path": "/content/notebooks/Visualiztion_Section.html"
+        },
+        {
+            "id": 6,
+            "title": "Emergency Evacuation Simulation with CyberGIS-Compute",
+            "author": "Rebecca Vandewalle",
+            "category": 1,
+            "file_path": "/content/notebooks/CyberTraining.html"
         }
     ]
 }

@@ -12,16 +12,18 @@ export default function NotebookDetail({params:{id}}:{params:{id:number}}) {
 
     return (
         <DefaultLayout>
-            <div className="bg-base-200 flex flex-col justify-center items-center">
-                <div className="w-full max-w-4xl">
+            <div className="bg-base-200 flex flex-col justify-center items-center pt-10 pb-10">
+                <div className="w-full max-w-4xl pt-5 pb-5">
 
                 
                 {notebookDetail && (
-                    <iframe 
+                    <div className="border-4 border-neutral">
+                    <iframe
                         src={notebookDetail.file_path} 
                         style={{ maxWidth: '4xl', width: '100%', height: '600px' }} 
                         title="Notebook Content"
                     />
+                    </div>
                 )}
                 </div>
             </div>
