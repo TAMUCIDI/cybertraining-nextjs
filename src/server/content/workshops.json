@@ -1,0 +1,18 @@
+{
+    "workshop_list": [
+        {
+            "id": 1,
+            "title": "Title 1",
+            "time": "2024-01-01",
+            "location": "Honolulu, Hawaii",
+            "mdx_path": "/content/workshops/workshop1.mdx"
+        },
+        {
+            "id": 2,
+            "title": "Title 2",
+            "time": "2024-10-05",
+            "location": "Broomfield, Colorado",
+            "mdx_path": "/content/workshops/workshop2.mdx"
+        }
+    ]
+}
