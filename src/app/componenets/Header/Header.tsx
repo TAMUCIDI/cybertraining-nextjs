@@ -60,7 +60,7 @@ export default function Header() {
         </ul>
       </div>
       <div className="navbar-end">
-        <ThemeSwitcher/>
+        {/*<ThemeSwitcher/>*/}
       </div>
     </div>
   );

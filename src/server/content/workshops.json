@@ -2,17 +2,21 @@
     "workshop_list": [
         {
             "id": 1,
-            "title": "Title 1",
-            "time": "2024-01-01",
+            "title": " 2024  American Association of Geographers (AAG) Annual Meeting",
+            "time": "2024-04-16 to 2024-04-17",
             "location": "Honolulu, Hawaii",
-            "mdx_path": "/content/workshops/workshop1.mdx"
+            "mdx_path": "/content/workshops/workshop1.mdx",
+            "description": "The team organized a CyberTraining session at the AAG annual meeting. This training session is part of the workshop (#2330330) funded by the NSF Office of Advanced Cyberinfrastructure. Time: April 16th 8:30 am - 4:30 pm & April 17th 8:30 am - 1:30 pm. Location: Hawaii Convention Center. This workshop is supported by the National Science Foundation Office of Advanced Cyberinfrastructure. The workshop provided a platform to scientists and engineers, including Geoscience, Computer Science, and Software Engineering, to present the challenges that they have faced in research and education and discuss the best and most efficient techniques for the development of secure, reliable, and ethical geospatial software systems. The workshop included a CyberTraining session. The CyberTraining session was designed to introduce participants to the fundamentals of geospatial data science using NSF funded High-Performance Computing (HPC) system, ACES, hosted at Texas A&M University which is on the NSF ACCESS ecosystem. We explored various tools and parallel computing techniques to extract, process, and analyze social sensing data.",
+            "photo": "https://static.wixstatic.com/media/987dfb_3c9ede2dacf245e08bfdb92be142e087~mv2.jpg/v1/fill/w_585,h_438,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Picture1.jpg"
         },
         {
             "id": 2,
-            "title": "Title 2",
-            "time": "2024-10-05",
+            "title": "The 49th Annual Natural Hazards Research and Application Workshop",
+            "time": "2024-07-14",
             "location": "Broomfield, Colorado",
-            "mdx_path": "/content/workshops/workshop2.mdx"
+            "mdx_path": "/content/workshops/workshop2.mdx",
+            "description": "The CyberTraining workshop was part of the Natural Hazards Center conference on July 14th, 2024. This workshop was designed to support students and professionals who wish to broaden their computational knowledge and data skills. Participants in this training session will gain cyberinfrastructure and geospatial analytic capabilities for observing and monitoring disaster events. In the workshop, the expert-led training modules was focus on: (1) Fundamental concepts and skills of Cyberinfrastructure (CI) and High-Performance Computing systems (e.g., National Science Foundation ACCESS) to enhance CI use in disaster management research. (2) Scientific programming in Python using Jupyter Lab. (3) Disaster data types and processing techniques. (4) Essential concepts of Geospatial Artificial Intelligence (GeoAI) and how to apply spatial analysis and GeoAI to disaster management",
+            "photo": "https://static.wixstatic.com/media/987dfb_c6e31c6fe73348e4a56a3430b79b68ba~mv2.jpg/v1/fill/w_607,h_454,al_c,lg_1,q_80,enc_auto/Picture2.jpg"
         }
     ]
 }

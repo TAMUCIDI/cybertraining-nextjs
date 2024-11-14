@@ -21,7 +21,8 @@ export default async function Workshops() {
                             id={workshop.id}
                             title={workshop.title}
                             time={workshop.time}
-                            description={workshop.description}      
+                            location={workshop.location}
+                            photo={workshop.photo}
                         />
                     ))}
                 </div>
