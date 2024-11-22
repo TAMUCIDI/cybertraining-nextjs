@@ -20,7 +20,7 @@ export default function WebinarCard({
             <Link href={`/webinars/${id}`}>
                 <figure>
                     <img
-                    src={img || "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"}
+                    src={img || "/images/WebinarCardDefaultImg.jpg"}//img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"}
                     alt="Profile" />
                 </figure>
                 <div className="card-body">

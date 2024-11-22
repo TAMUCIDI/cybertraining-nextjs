@@ -17,7 +17,7 @@ export default function WorkshopCard({
             <Link href={`workshops/${id}`}>
                 <figure>
                     <img
-                        src={photo || "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"}
+                        src={photo || "/images/WorkshopCardDefaultImg.jpg"}
                         alt="Profile"/>
                 </figure>
                 <div className="card-body">

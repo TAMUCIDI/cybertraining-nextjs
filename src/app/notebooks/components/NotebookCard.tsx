@@ -18,8 +18,7 @@ export default function NotebookCard({
             <Link href={`/notebooks/${id}`}>
                 <figure>
                     <img
-                    src={img || "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"}
-                    alt="Profile" />
+                    src={img || "/images/NotebookCardDefaultImg.jpg"} />
                 </figure>
                 <div className="card-body">
                     <span className="card-title text-md truncate">

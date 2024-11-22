@@ -4,7 +4,7 @@ import React from "react";
 import fs from 'fs';
 import path from 'path';
 
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
 export default function WorkshopDetail({params:{id}}:{params:{id:number}}) {
     const filePath = path.join(process.cwd(), 'src/server/content/workshops.json');

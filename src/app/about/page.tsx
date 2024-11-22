@@ -76,10 +76,11 @@ export default async function About() {
         </div>
         
         {/* Org Image Carousel */}
+        {/* TODO: Make sure the logo permission rules for all schools. Before that, comment this part out.
         <div className="bg-base-200 flex justify-center items-center pt-5 pb-5 pl-10 pr-10">
           <OrgCarousel/>
         </div>
-        
+        */}
       </div>
     </DefaultLayout>
   );
