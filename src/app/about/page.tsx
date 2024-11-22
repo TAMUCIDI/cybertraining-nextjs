@@ -1,7 +1,7 @@
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 
 import PersonCard, { PersonCardProps } from "./components/PersonCard";
-import OrgCarousel from "./components/OrgCarousel";
+// import OrgCarousel from "./components/OrgCarousel";
 
 import React from "react";
 import fs from 'fs';

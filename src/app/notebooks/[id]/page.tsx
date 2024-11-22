@@ -8,7 +8,7 @@ export default function NotebookDetail({params:{id}}:{params:{id:number}}) {
     const filePath = path.join(process.cwd(), 'src/server/content/notebooks.json');
     const fileContents = fs.readFileSync(filePath, 'utf-8');
     const data = JSON.parse(fileContents);
-    const notebookDetail = data.notebook_list.find((notebook) => notebook.id === Number(id));
+    const notebookDetail = data.notebook_list.find((notebook: {id: number}) => notebook.id === Number(id));
 
     return (
         <DefaultLayout>

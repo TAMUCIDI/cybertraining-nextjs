@@ -9,7 +9,7 @@ export default function WebinarDetail({params:{id}}:{params:{id:number}}) {
     const filePath = path.join(process.cwd(), 'src/server/content/webinars.json');
     const fileContents = fs.readFileSync(filePath, 'utf-8')
     const data = JSON.parse(fileContents)
-    const webinarDetail = data.webinar_list.find((webinar) => webinar.id===Number(id));
+    const webinarDetail = data.webinar_list.find((webinar: {id: number}) => webinar.id===Number(id));
 
 
     return (

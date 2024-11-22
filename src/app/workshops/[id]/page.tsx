@@ -10,7 +10,7 @@ export default function WorkshopDetail({params:{id}}:{params:{id:number}}) {
     const filePath = path.join(process.cwd(), 'src/server/content/workshops.json');
     const fileContents = fs.readFileSync(filePath, 'utf-8');
     const data = JSON.parse(fileContents);
-    const workshopDetail = data.workshop_list.find((workshop) => workshop.id === Number(id));
+    const workshopDetail = data.workshop_list.find((workshop: { id: number }) => workshop.id === Number(id));
 
     return (
         <DefaultLayout>

@@ -24,7 +24,7 @@ export default async function Notebooks() {
                             id={notebook.id}
                             title={notebook.title}
                             author={notebook.author}
-                            category={CategoryContents.find(category => category.id === notebook.category)?.title}
+                            category={CategoryContents.find((category: {id:number}) => category.id === notebook.category)?.title}
                         />
                     ))}
                 </div>
