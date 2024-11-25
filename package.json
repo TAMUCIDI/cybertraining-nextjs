@@ -37,5 +37,8 @@
     "typescript": "^5",
     "wrangler": "^3.90.0"
   },
-  "packageManager": "pnpm@8.9.2+sha1.5f2fa48d614263457cf5d7fb7be8b878da318d87"
+  "packageManager": "pnpm@9.13.2",
+  "engines": {
+    "node": ">=18.18.0"
+  }
 }
