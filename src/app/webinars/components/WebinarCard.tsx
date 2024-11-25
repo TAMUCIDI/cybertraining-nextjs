@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 // TODO: add thumbnail for all webinars
 export interface WebinarCardProps {
-    id: number;
+    id: string;
     title: string;
     img?: string;
     time: string;

@@ -1,25 +1,23 @@
+export const runtime = "edge";
+import { createClient } from "@/utils/supabase/server";
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 
 import React from "react";
-import fs from 'fs';
-import path from 'path';
-// TODO: change layout of this page.
-export default function NotebookDetail({params:{id}}:{params:{id:number}}) {
-    const filePath = path.join(process.cwd(), 'src/server/content/notebooks.json');
-    const fileContents = fs.readFileSync(filePath, 'utf-8');
-    const data = JSON.parse(fileContents);
-    const notebookDetail = data.notebook_list.find((notebook: {id: number}) => notebook.id === Number(id));
 
+// TODO: change layout of this page.
+export default async function NotebookDetail({ params }:{ params: { id: string }}) {
+    const supabase = await createClient();
+    const { id } = await params;
+    const { data: notebookDetail } = await supabase.from("notebooks").select('id,title,category,author,file_url').eq('id',id)
     return (
         <DefaultLayout>
             <div className="bg-base-200 flex flex-col justify-center items-center pt-10 pb-10">
                 <div className="w-full max-w-4xl pt-5 pb-5">
 
-                
                 {notebookDetail && (
                     <div className="border-4 border-neutral">
                     <iframe
-                        src={notebookDetail.file_path} 
+                        src={notebookDetail[0].file_url} 
                         style={{ maxWidth: '4xl', width: '100%', height: '600px' }} 
                         title="Notebook Content"
                     />

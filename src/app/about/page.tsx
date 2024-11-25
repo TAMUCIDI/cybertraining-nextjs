@@ -1,17 +1,17 @@
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 
-import PersonCard, { PersonCardProps } from "./components/PersonCard";
+import { createClient } from '@/utils/supabase/server';
+
+import PersonCard from "./components/PersonCard";
 // import OrgCarousel from "./components/OrgCarousel";
 
 import React from "react";
-import fs from 'fs';
-import path from 'path';
 
 export default async function About() {
-  // 读取JSON文件
-  const filePath = path.join(process.cwd(), 'src/server/content/people.json');
-  const fileContents = fs.readFileSync(filePath, 'utf-8');
-  const data = JSON.parse(fileContents);
+  const supabase = await createClient();
+  const { data: PI_List } = await supabase.from("people").select('name,email,role,affiliation,img_url').in('role', ['PI','Co-PI'])
+  const { data: Member_List } = await supabase.from("people").select('name,email,affiliation,img_url').in('role', ['Member'])
+
   return (
     <DefaultLayout>
       <div>
@@ -42,14 +42,14 @@ export default async function About() {
           </div>
           {/* PI Card List */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {data.PI_List.map((person: PersonCardProps, index: number) => (
+            {PI_List?.map((person, index: number) => (
               <PersonCard
                 key={index}
                 name={person.name}
                 email={person.email}
                 role={person.role}
                 affiliation={person.affiliation}
-                img={person.img}
+                img={person.img_url}
               />
             ))}
           </div>
@@ -63,13 +63,13 @@ export default async function About() {
           </div>
           {/* Member Card List */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {data.Member_List.map((person: PersonCardProps, index: number) => (
+            {Member_List?.map((person, index: number) => (
               <PersonCard
                 key={index}
                 name={person.name}
                 email={person.email}
                 affiliation={person.affiliation}
-                img={person.img}
+                img={person.img_url}
               />
             ))}
           </div>

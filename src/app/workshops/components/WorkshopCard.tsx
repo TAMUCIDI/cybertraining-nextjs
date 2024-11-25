@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 export interface WorkshopCardProps {
-    id: number;
+    id: string;
     title: string;
     time: string;
     location: string;
