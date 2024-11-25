@@ -1,3 +1,4 @@
+export const runtime = "edge";
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 
 import { createClient } from "@/utils/supabase/server";
