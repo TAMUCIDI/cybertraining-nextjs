@@ -1,13 +1,16 @@
 export const runtime = "edge";
 import { createClient } from "@/utils/supabase/server";
 import DefaultLayout from "@/app/layouts/DefaultLayout";
-
 import React from "react";
+type Params = Promise<{ id: string }>
 
 // TODO: change layout of this page.
-export default async function NotebookDetail({ params }:{ params: { id: string }}) {
+export default async function NotebookDetail(props: {
+    params: Params
+}) {
     const supabase = await createClient();
-    const { id } = await params;
+    const params = await props.params
+    const id = params.id
     const { data: notebookDetail } = await supabase.from("notebooks").select('id,title,category,author,file_url').eq('id',id)
     return (
         <DefaultLayout>

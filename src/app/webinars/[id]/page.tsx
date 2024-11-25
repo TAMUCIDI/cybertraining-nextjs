@@ -4,9 +4,14 @@ import { createClient } from "@/utils/supabase/server";
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 import { YouTubeEmbed } from "@next/third-parties/google";
 
-export default async function WebinarDetail({ params }:{ params: { id: string }}) {
+type Params = Promise<{ id: string }>
+
+export default async function WebinarDetail(props: {
+    params: Params
+}) {
     const supabase = await createClient();
-    const {id} = await params;
+    const params = await props.params
+    const id = params.id
     const { data: webinarDetails } = await supabase.from("webinars").select('title,date,speaker,description,youtubeId').eq('id',id)
     const webinarDetail = webinarDetails && webinarDetails.length > 0 ? webinarDetails[0] : null;
     return (
