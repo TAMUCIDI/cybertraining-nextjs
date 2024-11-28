@@ -1,28 +1,36 @@
+export const runtime = "edge";
+
+import { createClient } from "@/utils/supabase/server";
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 import { YouTubeEmbed } from "@next/third-parties/google";
 
-import React from "react";
-import fs from 'fs';
-import path from 'path';
+type Params = Promise<{ id: string }>
 
-export default function WebinarDetail({params:{id}}:{params:{id:number}}) {
-    const filePath = path.join(process.cwd(), 'src/server/content/webinars.json');
-    const fileContents = fs.readFileSync(filePath, 'utf-8')
-    const data = JSON.parse(fileContents)
-    const webinarDetail = data.webinar_list.find((webinar) => webinar.id===Number(id));
-
-
+export default async function WebinarDetail(props: {
+    params: Params
+}) {
+    const supabase = await createClient();
+    const params = await props.params
+    const id = params.id
+    const { data: webinarDetails } = await supabase.from("webinars").select('title,date,speaker,description,youtubeId').eq('id',id)
+    const webinarDetail = webinarDetails && webinarDetails.length > 0 ? webinarDetails[0] : null;
     return (
         <DefaultLayout>
             <div className="bg-base-200 flex flex-col justify-center items-center pt-5 pb-5 pl-10 pr-10">
                 <article className="prose max-w-3xl">
-                    <h1>{webinarDetail.title}</h1>
-                    <h3>{webinarDetail.time}</h3>
-                    <h3>{webinarDetail.speaker}</h3>
-                    <p>
-                        {webinarDetail.description}
-                    </p>
-                    <YouTubeEmbed videoid={webinarDetail.youtubeId} height={400} params="controls=0"/>
+                    {webinarDetail ? (
+                        <>
+                            <h1>{webinarDetail.title}</h1>
+                            <h3>{webinarDetail.date}</h3>
+                            <h3>{webinarDetail.speaker}</h3>
+                            <p>
+                                {webinarDetail.description}
+                            </p>
+                            <YouTubeEmbed videoid={webinarDetail.youtubeId} height={400} params="controls=0"/>
+                        </>
+                    ) : (
+                        <p>No webinar detail found...</p>
+                    )}
                 </article>
             </div>
         </DefaultLayout>

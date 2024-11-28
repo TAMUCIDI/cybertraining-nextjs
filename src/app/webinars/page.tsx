@@ -1,26 +1,23 @@
+export const runtime = "edge";
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 
-import WebinarCard, { WebinarCardProps } from "./components/WebinarCard";
-
-import React from "react";
-import fs from 'fs';
-import path from 'path';
+import { createClient } from "@/utils/supabase/server";
+import WebinarCard from "./components/WebinarCard";
 
 export default async function Webinars() {
-    const filePath = path.join(process.cwd(), 'src/server/content/webinars.json');
-    const fileContents = fs.readFileSync(filePath, 'utf-8')
-    const data = JSON.parse(fileContents)
-
+    const supabase = await createClient();
+    const { data: webinarList } = await supabase.from('webinars').select('id,title,date,speaker,description') || { data: [] };
+    
     return (
         <DefaultLayout>
             <div className="bg-base-200 flex flex-col justify-center items-center pt-5 pb-5 pl-10 pr-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {data.webinar_list.map((webinar: WebinarCardProps, index: number) => (
+                    {webinarList?.map((webinar, index: number) => (
                         <WebinarCard
                             key={index}
-                            id={webinar.id}
+                            id={String(webinar.id)}
                             title={webinar.title}
-                            time={webinar.time}
+                            time={webinar.date}
                             speaker={webinar.speaker}
                             description={webinar.description}
                         />

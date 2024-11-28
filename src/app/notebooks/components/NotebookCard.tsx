@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 // TODO: change category id to a list.
 export interface NotebookCardProps {
-    id: number;
+    id: string;
     title: string;
     img?: string;
     category?: number;
