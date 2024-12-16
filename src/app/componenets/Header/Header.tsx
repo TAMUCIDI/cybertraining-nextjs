@@ -30,7 +30,7 @@ export default function Header() {
   }, [isHome])
 
   return (
-    <div className={`fixed z-40 navbar ${isScrolled ? 'bg-base-100' : 'bg-transparent'} ${isHome? 'text-base-200' : 'text-base-content'} transition-all duration-300`}>
+    <div className={`fixed z-40 navbar ${isScrolled ? 'bg-base-100' : 'bg-transparent'} ${isScrolled ? 'text-accent-content' : isHome ? 'text-base-200' : 'text-accent-content'} transition-all duration-300`}>
       <div className="navbar-start">
         <Link href={`/`} className="btn btn-ghost text-xl">
           CyberTraining
