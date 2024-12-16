@@ -9,6 +9,7 @@ import Link from 'next/link';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isHome, setIsHome] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,8 +22,15 @@ export default function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    if (isHome !== (currentPath === '/')) {
+      setIsHome(currentPath === '/');
+    }
+  }, [isHome])
+
   return (
-    <div className={`fixed z-40 navbar ${isScrolled ? 'bg-base-100' : 'bg-transparent'} text-base-content transition-all duration-300`}>
+    <div className={`fixed z-40 navbar ${isScrolled ? 'bg-base-100' : 'bg-transparent'} ${isHome? 'text-base-200' : 'text-base-content'} transition-all duration-300`}>
       <div className="navbar-start">
         <Link href={`/`} className="btn btn-ghost text-xl">
           CyberTraining

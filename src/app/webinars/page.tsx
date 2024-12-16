@@ -6,7 +6,7 @@ import WebinarCard from "./components/WebinarCard";
 
 export default async function Webinars() {
     const supabase = await createClient();
-    const { data: webinarList } = await supabase.from('webinars').select('id,title,date,speaker,description') || { data: [] };
+    const { data: webinarList } = await supabase.from('webinars').select('id,title,date,speaker,description,thumbnail_r2_url') || { data: [] };
     
     return (
         <DefaultLayout>
@@ -20,6 +20,7 @@ export default async function Webinars() {
                             time={webinar.date}
                             speaker={webinar.speaker}
                             description={webinar.description}
+                            img={webinar.thumbnail_r2_url}
                         />
                     ))}
                 </div>
