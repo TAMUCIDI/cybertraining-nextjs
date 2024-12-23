@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function TopHero() {
   return (
@@ -11,6 +12,14 @@ export default function TopHero() {
         <div className="max-w-5xl">
           <h1 className="mb-5 text-4xl font-bold">CyberTraining for Disaster Management Network</h1>
           <h2 className="mb-5 text-3xl font-bold">(CTDM CyberTraining)</h2>
+          <p className="mb-5 text-xl font-semibold">
+            Funded by NSF award number: 
+            <Link className=" text-sky-500 underline " href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2321069&HistoricalAwards=false">
+              2321069
+            </Link>
+          </p>
+          
+      
           {/* 
           <p className="mb-5">
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
