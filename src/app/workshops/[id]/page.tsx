@@ -7,6 +7,11 @@ import DefaultLayout from "@/app/layouts/DefaultLayout";
 
 type Params = Promise<{ id: string }>
 
+type ScheduleItem = {
+    time: string;
+    items: string[];
+};
+
 export default async function WorkshopDetail(props: {
     params: Params
 }) {
@@ -40,14 +45,14 @@ export default async function WorkshopDetail(props: {
                             </tr>
                         </thead>
                         <tbody>
-                        {scheduleData.schedule.map((item, index) => (
+                        {scheduleData.schedule.map((item: ScheduleItem, index: number) => (
                             <tr key={index}>
                                 <td className="px-6 py-4 text-sm text-gray-900">
                                     {item.time}
                                 </td>
                                 <td className="px-6 py-4 text-sm text-gray-900">
                                     <ul>
-                                    {item.items.map((subItem, subIndex) => (
+                                    {item.items.map((subItem:string, subIndex:number) => (
                                         <li key={subIndex}>{subItem}</li>
                                     ))}
                                     </ul>
