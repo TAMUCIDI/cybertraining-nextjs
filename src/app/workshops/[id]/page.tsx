@@ -3,6 +3,8 @@ export const runtime = "edge";
 import { createClient } from "@/utils/supabase/server";
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 
+//import scheduleData from "../../../../public/content/tmp.json"
+
 type Params = Promise<{ id: string }>
 
 export default async function WorkshopDetail(props: {
@@ -12,12 +14,14 @@ export default async function WorkshopDetail(props: {
     const params = await props.params
     const id = params.id
     
-    const { data: workshopDetails, error } = await supabase.from('workshops').select('title,date,description,photo_url').eq('id', id);
+    const { data: workshopDetails, error } = await supabase.from('workshops').select('title,date,description,photo_url,schedule_json').eq('id', id);
     if (error || !workshopDetails) {
         // 处理错误或 workshopDetails 为 null 的情况
         return <div>Cannot find workshop detail...</div>;
     }
     const workshopDetail = workshopDetails[0]
+    //const scheduleData = JSON.parse(workshopDetail.schedule_json);
+    const scheduleData = workshopDetail.schedule_json;
     return (
         <DefaultLayout>
             <div className="bg-base-200 flex flex-col justify-center items-center pt-5 pb-5 pl-10 pr-10">
@@ -27,6 +31,32 @@ export default async function WorkshopDetail(props: {
                     <p>
                         {workshopDetail.description}
                     </p>
+                    <h2>Activity Schedule</h2>
+                    <table className="table-fixed">
+                        <thead>
+                            <tr>
+                                <th className="w-1/4 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Time</th>
+                                <th className="w-3/4 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Program Activities</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {scheduleData.schedule.map((item, index) => (
+                            <tr key={index}>
+                                <td className="px-6 py-4 text-sm text-gray-900">
+                                    {item.time}
+                                </td>
+                                <td className="px-6 py-4 text-sm text-gray-900">
+                                    <ul>
+                                    {item.items.map((subItem, subIndex) => (
+                                        <li key={subIndex}>{subItem}</li>
+                                    ))}
+                                    </ul>
+                                
+                                </td>
+                            </tr>
+                        ))}
+                        </tbody>
+                    </table>
                     <figure>
                         <img
                             src={workshopDetail.photo_url}
