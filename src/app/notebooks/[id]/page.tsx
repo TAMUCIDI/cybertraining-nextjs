@@ -15,13 +15,13 @@ export default async function NotebookDetail(props: {
     return (
         <DefaultLayout>
             <div className="bg-base-200 flex flex-col justify-center items-center pt-10 pb-10">
-                <div className="w-full max-w-4xl pt-5 pb-5">
+                <div className="w-full max-w-6xl pt-5 pb-5">
 
                 {notebookDetail && (
                     <div className="border-4 border-neutral">
                     <iframe
                         src={notebookDetail[0].file_url} 
-                        style={{ maxWidth: '4xl', width: '100%', height: '600px' }} 
+                        style={{ maxWidth: '6xl', width: '100%', height: '800px' }} 
                         title="Notebook Content"
                     />
                     </div>
