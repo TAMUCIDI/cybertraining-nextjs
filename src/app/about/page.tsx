@@ -17,10 +17,10 @@ export default async function About() {
   return (
     <DefaultLayout>
       <div>
-        <div className="hero bg-base-200 min-h-screen">
+        <div className="hero bg-base-200">
           <div className="hero-content text-center">
-            <div className="max-w-3xl">
-              <h1 className="pb-5 text-5xl font-bold text-base-content">Vision</h1>
+            <div className="max-w-5xl">
+              <h1 className="pb-5 text-5xl font-bold text-base-content text-left">Vision</h1>
               <p className="py-2 text-base-content text-left">
                 Disasters are defined as prominent global issues which simultaneously pose a threat to multiple countries or regions around the globe. In these public emergencies, the disaster management communities have played a vital role in saving the economy and helping people to respond and recover from the disasters. Disaster management contains mitigation, preparedness, response, and recovery phases, and each phase is gradually empowered by growing geospatial big data awareness and surging computing capabilities to produce spatial vulnerability and situational picture for supporting timely decisions. 
               </p>

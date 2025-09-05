@@ -9,7 +9,7 @@ import React from "react";
 
 export default async function Notebooks() {
     const supabase = await createClient();
-    const { data: notebookList } = await supabase.from("notebooks").select('id,title,category,author,file_url')
+    const { data: notebookList } = await supabase.from("notebooks").select('id,title,category,author,file_url,thumbnail_r2_url')
 
     return (
         <DefaultLayout>
@@ -22,6 +22,7 @@ export default async function Notebooks() {
                             title={notebook.title}
                             author={notebook.author}
                             category={notebook.category}
+                            img={notebook.thumbnail_r2_url}
                         />
                     ))}
                 </div>

@@ -40,7 +40,7 @@ export function NavigationEvents() {
     const pathname = usePathname();
     const pageTitle = getPageTitle(pathname)
     return (
-        <div className="hero bg-base-200 min-h-[50vh]">
+        <div className="hero bg-base-200 min-h-[30vh]">
             <div className="hero-content text-center">
                 <div className="max-w-xl">
                     <h1 className="text-5xl font-bold text-base-content">
