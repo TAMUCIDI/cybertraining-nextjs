@@ -1,15 +1,16 @@
 "use client"
 
-import { signIn } from "next-auth/react"
-
+import { useRouter } from "next/navigation"
 import { buttonVariants } from "../ui/button"
 import { LogIn } from "lucide-react"
 
 export function SignInButton() {
+  const router = useRouter()
+
   return (
     <button 
-      onClick={() => signIn("cilogon")}
-      className= {buttonVariants()}
+      onClick={() => router.push("/login")}
+      className={buttonVariants()}
     >
       <LogIn className="h-4 w-4" />
       Sign in

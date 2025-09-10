@@ -23,7 +23,7 @@ export default auth(req => {
     )
 
     if (isProtectedRoute && !isLoggedIn) {
-        const redirectUrl = new URL('/api/auth/signin', nextUrl)
+        const redirectUrl = new URL('/login', nextUrl)
         // original url
         redirectUrl.searchParams.set('callbackUrl', nextUrl.pathname)
         return NextResponse.redirect(redirectUrl)
