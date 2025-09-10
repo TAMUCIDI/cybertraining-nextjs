@@ -38,3 +38,6 @@ next-env.d.ts
 # cloudflare deployment
 .wrangler/*
 wrangler.toml
+/.vscode
+
+.vscode
