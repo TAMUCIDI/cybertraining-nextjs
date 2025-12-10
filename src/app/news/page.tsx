@@ -1,30 +1,32 @@
 import DefaultLayout from "../layouts/DefaultLayout";
 
 import React from "react";
-import Link from "next/link";
 
 export default function News() {
     return (
         <DefaultLayout>
             <div className="bg-base-200 flex flex-col justify-center items-center pt-5 pb-5 pl-10 pr-10">
                 <article className="prose max-w-3xl">
-                    <h1>Call for Partnership</h1>
+                    <h1>You're Invited! Join Us at the 2025 AGU Town Hall</h1>
+                    <h2>CyberTraining: Broadening Adoption of Cyberinfrastructure and Geospatial Science for Disaster Management</h2>
                     <p>
-                        The project will provide a $2000 seed grant for new U.S. collaborators. The selected collaborators will: 
+                        We are excited to announce our upcoming AGU Town Hall focused on advancing cyberinfrastructure and geospatial data science research to build a more resilient disaster management workforce. This Town Hall will highlight our NSF-funded CyberTraining projects and bring together researchers, educators, and practitioners dedicated to capacity building, cyberinfrastructure innovation, and GeoAI for disaster management.
                     </p>
-                    <ul>
-                        <li>
-                        Develop a two-hour lesson using Jupyter Notebook based on his/her previous project during a six-month time period. 
-                        </li>
-                        <li>
-                        The project is required to use geospatial data and models to solve real-world disaster management applications.  
-                        </li>
-                        <li>
-                        The project must use nationally recognized cyberinfrastructure resources to process and analyze big geospatial disaster data.
-                        </li>
-                    </ul>
+                    <h3>📅 Date & Time:</h3>
                     <p>
-                        If you want to join us, please fill out the <Link href="https://forms.gle/84rYB11kdjQEb6G27">Google Form</Link>
+                        Tuesday, 16 December 2025 | 13:00 – 14:00 CST
+                    </p>
+                    <h3>📍 Location:</h3>
+                    <p>
+                        New Orleans Ernest N. Morial Convention Center (NOLA CC)<br />
+                        Room: 267–268<br />
+                        Final Session #: TH23A
+                    </p>
+                    <p>
+                        Our project is supported by the National Science Foundation – Training-based Workforce Development for Advanced Cyberinfrastructure Program (Awards #2321069 and #2519476).
+                    </p>
+                    <p>
+                        We look forward to seeing you in New Orleans!
                     </p>
                 </article>
             </div>
