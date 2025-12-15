@@ -38,4 +38,3 @@ next-env.d.ts
 # cloudflare deployment
 .wrangler/*
 wrangler.toml
-package-lock.json
