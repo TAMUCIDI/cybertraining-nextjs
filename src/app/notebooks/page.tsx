@@ -1,15 +1,16 @@
-export const runtime = "edge";
 import DefaultLayout from "../layouts/DefaultLayout";
 
-import { createClient } from "@/utils/supabase/server";
+import { getNotebooks } from "@/utils/db/postgres";
 
 import NotebookCard from "./components/NotebookCard";
 
 import React from "react";
 
+// Force dynamic rendering - no database at build time
+export const dynamic = 'force-dynamic';
+
 export default async function Notebooks() {
-    const supabase = await createClient();
-    const { data: notebookList } = await supabase.from("notebooks").select('id,title,category,author,file_url,thumbnail_r2_url')
+    const notebookList = await getNotebooks();
 
     return (
         <DefaultLayout>

@@ -1,13 +1,14 @@
-export const runtime = "edge";
 import DefaultLayout from '@/app/layouts/DefaultLayout';
 
-import { createClient } from '@/utils/supabase/server';
+import { getWorkshops } from '@/utils/db/postgres';
 import WorkshopCard from './components/WorkshopCard';
+
+// Force dynamic rendering - no database at build time
+export const dynamic = 'force-dynamic';
 
 export default async function Workshops() {
     
-    const supabase = await createClient();
-    const { data: workshopList } = await supabase.from("workshops").select('id,title,date,location,photo_url')
+    const workshopList = await getWorkshops();
 
     const validWorkshopList = workshopList || [];
 

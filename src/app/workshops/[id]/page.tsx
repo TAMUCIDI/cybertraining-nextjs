@@ -1,9 +1,8 @@
-export const runtime = "edge";
-
-import { createClient } from "@/utils/supabase/server";
+import { getWorkshopById } from "@/utils/db/postgres";
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 
-//import scheduleData from "../../../../public/content/tmp.json"
+// Force dynamic rendering - no database at build time
+export const dynamic = 'force-dynamic';
 
 type Params = Promise<{ id: string }>
 
@@ -15,17 +14,13 @@ type ScheduleItem = {
 export default async function WorkshopDetail(props: {
     params: Params
 }) {
-    const supabase = await createClient();
     const params = await props.params
     const id = params.id
     
-    const { data: workshopDetails, error } = await supabase.from('workshops').select('title,date,description,photo_url,schedule_json').eq('id', id);
-    if (error || !workshopDetails) {
-        // 处理错误或 workshopDetails 为 null 的情况
+    const workshopDetail = await getWorkshopById(id);
+    if (!workshopDetail) {
         return <div>Cannot find workshop detail...</div>;
     }
-    const workshopDetail = workshopDetails[0]
-    //const scheduleData = JSON.parse(workshopDetail.schedule_json);
     const scheduleData = workshopDetail.schedule_json;
     return (
         <DefaultLayout>

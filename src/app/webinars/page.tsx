@@ -1,12 +1,13 @@
-export const runtime = "edge";
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 
-import { createClient } from "@/utils/supabase/server";
+import { getWebinars } from "@/utils/db/postgres";
 import WebinarCard from "./components/WebinarCard";
 
+// Force dynamic rendering - no database at build time
+export const dynamic = 'force-dynamic';
+
 export default async function Webinars() {
-    const supabase = await createClient();
-    const { data: webinarList } = await supabase.from('webinars').select('id,title,date,speaker,description,thumbnail_r2_url') || { data: [] };
+    const webinarList = await getWebinars();
     
     return (
         <DefaultLayout>

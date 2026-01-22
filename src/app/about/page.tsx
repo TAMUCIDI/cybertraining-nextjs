@@ -1,8 +1,4 @@
-export const runtime = "edge";
-
 import DefaultLayout from "@/app/layouts/DefaultLayout";
-
-import { createClient } from '@/utils/supabase/server';
 
 import PersonCard from "./components/PersonCard";
 // import OrgCarousel from "./components/OrgCarousel";
@@ -10,10 +6,12 @@ import PersonCard from "./components/PersonCard";
 import React from "react";
 import Image from "next/image";
 
+// Import people data from JSON file
+import peopleData from '@/server/content/people.json';
+
 export default async function About() {
-  const supabase = await createClient();
-  const { data: PI_List } = await supabase.from("people").select('name,email,role,affiliation,img_url').in('role', ['PI','Co-PI'])
-  const { data: Member_List } = await supabase.from("people").select('name,email,affiliation,img_url').in('role', ['Member'])
+  const PI_List = peopleData.PI_List;
+  const Member_List = peopleData.Member_List;
 
   return (
     <DefaultLayout>
@@ -60,7 +58,7 @@ export default async function About() {
                 email={person.email}
                 role={person.role}
                 affiliation={person.affiliation}
-                img={person.img_url}
+                img={person.img}
               />
             ))}
           </div>
@@ -80,7 +78,7 @@ export default async function About() {
                 name={person.name}
                 email={person.email}
                 affiliation={person.affiliation}
-                img={person.img_url}
+                img={person.img}
               />
             ))}
           </div>

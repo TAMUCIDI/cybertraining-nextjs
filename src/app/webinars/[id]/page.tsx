@@ -1,19 +1,18 @@
-export const runtime = "edge";
-
-import { createClient } from "@/utils/supabase/server";
+import { getWebinarById } from "@/utils/db/postgres";
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 import { YouTubeEmbed } from "@next/third-parties/google";
+
+// Force dynamic rendering - no database at build time
+export const dynamic = 'force-dynamic';
 
 type Params = Promise<{ id: string }>
 
 export default async function WebinarDetail(props: {
     params: Params
 }) {
-    const supabase = await createClient();
     const params = await props.params
     const id = params.id
-    const { data: webinarDetails } = await supabase.from("webinars").select('title,date,speaker,description,youtubeId').eq('id',id)
-    const webinarDetail = webinarDetails && webinarDetails.length > 0 ? webinarDetails[0] : null;
+    const webinarDetail = await getWebinarById(id);
     return (
         <DefaultLayout>
             <div className="bg-base-200 flex flex-col justify-center items-center pt-5 pb-5 pl-10 pr-10">
@@ -26,7 +25,7 @@ export default async function WebinarDetail(props: {
                             <p>
                                 {webinarDetail.description}
                             </p>
-                            <YouTubeEmbed videoid={webinarDetail.youtubeId} height={400} params="controls=0"/>
+                            <YouTubeEmbed videoid={webinarDetail["youtubeId"]} height={400} params="controls=0"/>
                         </>
                     ) : (
                         <p>No webinar detail found...</p>
