@@ -1,6 +1,6 @@
 import React from 'react';
-
 import Link from 'next/link';
+import Image from 'next/image';
 
 // TODO: add thumbnail for all webinars
 export interface WebinarCardProps {
@@ -19,9 +19,13 @@ export default function WebinarCard({
         <div className="card bg-base-100 text-base-content w-96 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
             <Link href={`/webinars/${id}`}>
                 <figure>
-                    <img
-                    src={img || "/images/WebinarCardDefaultImg.jpg"}//img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"}
-                    alt="Profile" />
+                    <Image
+                        src={img || "/images/WebinarCardDefaultImg.jpg"}
+                        alt="Webinar"
+                        width={384}
+                        height={256}
+                        className="object-cover w-full h-64"
+                    />
                 </figure>
                 <div className="card-body">
                     <span className="card-title text-md truncate">

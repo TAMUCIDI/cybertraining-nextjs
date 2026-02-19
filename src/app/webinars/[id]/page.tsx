@@ -20,7 +20,7 @@ export default async function WebinarDetail(props: {
                     {webinarDetail ? (
                         <>
                             <h1>{webinarDetail.title}</h1>
-                            <h3>{webinarDetail.date}</h3>
+                            <h3>{webinarDetail.date ? new Date(webinarDetail.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : ''}</h3>
                             <h3>{webinarDetail.speaker}</h3>
                             <p>
                                 {webinarDetail.description}

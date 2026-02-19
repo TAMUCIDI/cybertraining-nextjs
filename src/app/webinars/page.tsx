@@ -18,7 +18,7 @@ export default async function Webinars() {
                             key={index}
                             id={String(webinar.id)}
                             title={webinar.title}
-                            time={webinar.date}
+                            time={webinar.date ? new Date(webinar.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : ''}
                             speaker={webinar.speaker}
                             description={webinar.description}
                             img={webinar.thumbnail_r2_url}

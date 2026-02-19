@@ -2,9 +2,9 @@ import createMDX from '@next/mdx'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configure for K3s deployment at /cybertraining subpath
-  basePath: '/cybertraining',
-  assetPrefix: '/cybertraining',
+  // Configure for K3s deployment at /netcdfaster/cybertraining subpath
+  basePath: '/netcdfaster/cybertraining',
+  assetPrefix: '/netcdfaster/cybertraining',
   
   // Enable standalone output for Docker (creates minimal production build)
   output: 'standalone',

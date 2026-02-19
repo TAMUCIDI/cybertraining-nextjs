@@ -21,7 +21,7 @@ export default async function Workshops() {
                             key={index}
                             id={String(workshop.id)}
                             title={workshop.title}
-                            time={workshop.date}
+                            time={workshop.date ? new Date(workshop.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : ''}
                             location={workshop.location}
                             photo={workshop.photo_url}
                         />

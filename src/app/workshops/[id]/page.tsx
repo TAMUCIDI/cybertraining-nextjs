@@ -1,5 +1,6 @@
 import { getWorkshopById } from "@/utils/db/postgres";
 import DefaultLayout from "@/app/layouts/DefaultLayout";
+import Image from "next/image";
 
 // Force dynamic rendering - no database at build time
 export const dynamic = 'force-dynamic';
@@ -27,7 +28,7 @@ export default async function WorkshopDetail(props: {
             <div className="bg-base-200 flex flex-col justify-center items-center pt-5 pb-5 pl-10 pr-10">
                 <article className="prose max-w-4xl">
                     <h1>{workshopDetail.title}</h1>
-                    <h3>{workshopDetail.date}</h3>
+                    <h3>{workshopDetail.date ? new Date(workshopDetail.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : ''}</h3>
                     <p>
                         {workshopDetail.description}
                     </p>
@@ -57,10 +58,12 @@ export default async function WorkshopDetail(props: {
                         ))}
                         </tbody>
                     </table>
-                    <figure>
-                        <img
-                            src={workshopDetail.photo_url}
-                            alt="Profile"
+                    <figure className="relative w-full h-96">
+                        <Image
+                            src={workshopDetail.photo_url || "/images/WorkshopCardDefaultImg.jpg"}
+                            alt="Workshop"
+                            fill
+                            className="object-contain"
                         />
                     </figure>
                 </article>

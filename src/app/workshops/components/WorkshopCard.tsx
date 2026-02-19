@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export interface WorkshopCardProps {
     id: string;
@@ -16,9 +17,13 @@ export default function WorkshopCard({
         <div className="card bg-base-100 text-base-content w-96 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
             <Link href={`workshops/${id}`}>
                 <figure>
-                    <img
+                    <Image
                         src={photo || "/images/WorkshopCardDefaultImg.jpg"}
-                        alt="Profile"/>
+                        alt="Workshop"
+                        width={384}
+                        height={256}
+                        className="object-cover w-full h-64"
+                    />
                 </figure>
                 <div className="card-body">
                     <span className="card-title text-md truncate">
