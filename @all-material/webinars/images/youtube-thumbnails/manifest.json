@@ -1,0 +1,29 @@
+{
+  "downloaded": 4,
+  "items": [
+    {
+      "webinarId": 1,
+      "youtubeId": "JDxtzeeSJYY",
+      "sourceUrl": "https://img.youtube.com/vi/JDxtzeeSJYY/hqdefault.jpg",
+      "localPath": "@all-material/webinars/images/youtube-thumbnails/webinar-1-JDxtzeeSJYY-hqdefault.jpg"
+    },
+    {
+      "webinarId": 2,
+      "youtubeId": "4YymiH0PPLo",
+      "sourceUrl": "https://img.youtube.com/vi/4YymiH0PPLo/hqdefault.jpg",
+      "localPath": "@all-material/webinars/images/youtube-thumbnails/webinar-2-4YymiH0PPLo-hqdefault.jpg"
+    },
+    {
+      "webinarId": 3,
+      "youtubeId": "XDoV5YONDys",
+      "sourceUrl": "https://img.youtube.com/vi/XDoV5YONDys/hqdefault.jpg",
+      "localPath": "@all-material/webinars/images/youtube-thumbnails/webinar-3-XDoV5YONDys-hqdefault.jpg"
+    },
+    {
+      "webinarId": 4,
+      "youtubeId": "5weSVwH4-5k",
+      "sourceUrl": "https://img.youtube.com/vi/5weSVwH4-5k/hqdefault.jpg",
+      "localPath": "@all-material/webinars/images/youtube-thumbnails/webinar-4-5weSVwH4-5k-hqdefault.jpg"
+    }
+  ]
+}

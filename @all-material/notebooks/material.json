@@ -1,0 +1,147 @@
+{
+  "route": "/notebooks",
+  "source": "dev.ctdm.org scraped live list + detail pages",
+  "extractedAt": "2026-03-30T06:58:20.343Z",
+  "notebooks": [
+    {
+      "id": "d81b196d-e48a-47cb-97cd-d54808c01893",
+      "title": "Spatial Interpolation",
+      "category": "Geospatial Analytics Module",
+      "author": "CyberGIS Center",
+      "thumbnail": {
+        "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/Spatial_Interpolation_nb.png",
+        "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-d81b196d-e48a-47cb-97cd-d54808c01893-d98eda4f9d.png"
+      },
+      "file": {
+        "remoteUrl": "https://pub-56c07c347aed488f9c068dbc3ad5d450.r2.dev/Spatial_interpolation.html",
+        "localPath": "@all-material/notebooks/files/live/notebook-d81b196d-e48a-47cb-97cd-d54808c01893-fdac9b6a2e.html"
+      }
+    },
+    {
+      "id": "cff60a9a-93ff-4e70-b83f-76fd2547943c",
+      "title": "Intermediate Python-DataFrame Operations",
+      "category": "Computational Module",
+      "author": "Zhenhua He",
+      "thumbnail": {
+        "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/IntermediatePython_ZHH_nb.png",
+        "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-cff60a9a-93ff-4e70-b83f-76fd2547943c-7c8cba0f48.png"
+      },
+      "file": {
+        "remoteUrl": "https://pub-56c07c347aed488f9c068dbc3ad5d450.r2.dev/2-DataFrame_Operations.html",
+        "localPath": "@all-material/notebooks/files/live/notebook-cff60a9a-93ff-4e70-b83f-76fd2547943c-ae6641024e.html"
+      }
+    },
+    {
+      "id": "3d986d12-8d3b-4449-b2b8-d050685a9eff",
+      "title": "Introduction to ACES and JupyterLab",
+      "category": "Computational Module",
+      "author": "Zhenhua He",
+      "thumbnail": {
+        "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/ACES_JPtlab_ZHH_nb.png",
+        "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-3d986d12-8d3b-4449-b2b8-d050685a9eff-73073a893b.png"
+      },
+      "file": {
+        "remoteUrl": "https://pub-56c07c347aed488f9c068dbc3ad5d450.r2.dev/ACES_TechLab_NH_Wkshop.pdf",
+        "localPath": "@all-material/notebooks/files/live/notebook-3d986d12-8d3b-4449-b2b8-d050685a9eff-9efb1202d0.pdf"
+      }
+    },
+    {
+      "id": "8afd0181-5372-4f19-b39e-c3503a6a4d43",
+      "title": "Integrating CyberGIS and Urban Sensing for Reproducible Streaming Analytics",
+      "category": "Geospatial Analytics Module",
+      "author": "Fangzheng Lyu",
+      "thumbnail": {
+        "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/IntegratingCGIS_FZL_nb.png",
+        "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-8afd0181-5372-4f19-b39e-c3503a6a4d43-f4b33a1428.png"
+      },
+      "file": {
+        "remoteUrl": "https://pub-56c07c347aed488f9c068dbc3ad5d450.r2.dev/Urban_Informatics.html",
+        "localPath": "@all-material/notebooks/files/live/notebook-8afd0181-5372-4f19-b39e-c3503a6a4d43-54f84487bc.html"
+      }
+    },
+    {
+      "id": "d7915e94-5efa-4fd8-ae53-55fcd3f05ddc",
+      "title": "Example Visualizations using CyberGIS-Vis",
+      "category": "Geospatial Analytics Module",
+      "author": "Su Han",
+      "thumbnail": {
+        "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/CyberGISVis_SH_nb.png",
+        "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-d7915e94-5efa-4fd8-ae53-55fcd3f05ddc-7d996f0588.png"
+      },
+      "file": {
+        "remoteUrl": "https://pub-56c07c347aed488f9c068dbc3ad5d450.r2.dev/Adaptive_Chropleth_Mapper.html",
+        "localPath": "@all-material/notebooks/files/live/notebook-d7915e94-5efa-4fd8-ae53-55fcd3f05ddc-3f9962708d.html"
+      }
+    },
+    {
+      "id": "657f616b-46f0-4388-8cef-1997d6e27349",
+      "title": "Hour of CI Lessons",
+      "category": "Geospatial Analytics Module",
+      "author": "Eric Shook",
+      "thumbnail": {
+        "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/HourofCI_ES_nb.png",
+        "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-657f616b-46f0-4388-8cef-1997d6e27349-135cde104a.png"
+      },
+      "file": {
+        "remoteUrl": "https://pub-56c07c347aed488f9c068dbc3ad5d450.r2.dev/EricShook_HourofCI.html",
+        "localPath": "@all-material/notebooks/files/live/notebook-657f616b-46f0-4388-8cef-1997d6e27349-9321791226.html"
+      }
+    },
+    {
+      "id": "182b8b7a-438d-4da9-b08e-8cc7c0775f64",
+      "title": "CyberTraining Workshop 2024: Emergency Evacuation Simulation with CyberGIS-Compute",
+      "category": "Geospatial Analytics Module",
+      "author": "Rebecca Vandewalle",
+      "thumbnail": {
+        "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/EmerEvacSim_RebVan_nb.png",
+        "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-182b8b7a-438d-4da9-b08e-8cc7c0775f64-3ff717ab5f.png"
+      },
+      "file": {
+        "remoteUrl": "https://pub-56c07c347aed488f9c068dbc3ad5d450.r2.dev/RebVand_CyberTraining.html",
+        "localPath": "@all-material/notebooks/files/live/notebook-182b8b7a-438d-4da9-b08e-8cc7c0775f64-5c6c3b5cb4.html"
+      }
+    },
+    {
+      "id": "a9d32df3-ab48-48cd-89ef-93d963a42e78",
+      "title": "Hydrological Streamline Detection with CyberGIS-Jupyter Using Deep Learning",
+      "category": "Computational Module",
+      "author": "Nattapon Jaroenchai",
+      "thumbnail": {
+        "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/Unet_NatJar_nb.png",
+        "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-a9d32df3-ab48-48cd-89ef-93d963a42e78-25c225afa7.png"
+      },
+      "file": {
+        "remoteUrl": "https://pub-56c07c347aed488f9c068dbc3ad5d450.r2.dev/NatJaro_HydroStream.html",
+        "localPath": "@all-material/notebooks/files/live/notebook-a9d32df3-ab48-48cd-89ef-93d963a42e78-650ef64d9d.html"
+      }
+    },
+    {
+      "id": "f594740d-b2f2-40c5-bdfc-397b77e2458d",
+      "title": "Geovisualization",
+      "category": "Disaster Data Module",
+      "author": "Zhenlei Song",
+      "thumbnail": {
+        "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/GeoVis_ZLS_nb.png",
+        "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-f594740d-b2f2-40c5-bdfc-397b77e2458d-72914b8621.png"
+      },
+      "file": {
+        "remoteUrl": "https://pub-56c07c347aed488f9c068dbc3ad5d450.r2.dev/Visualization_Section.html",
+        "localPath": "@all-material/notebooks/files/live/notebook-f594740d-b2f2-40c5-bdfc-397b77e2458d-d428da9ac7.html"
+      }
+    },
+    {
+      "id": "61f9d36d-c3c4-4740-af52-392fbe56e8fe",
+      "title": "Intermediate Python-DataFrame Building",
+      "category": "Computational Module",
+      "author": "Zhenhua He",
+      "thumbnail": {
+        "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/IntermediatePython_ZHH_nb2.png",
+        "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-61f9d36d-c3c4-4740-af52-392fbe56e8fe-11e8f3e23a.png"
+      },
+      "file": {
+        "remoteUrl": "https://pub-56c07c347aed488f9c068dbc3ad5d450.r2.dev/1-DataFrame_Building.html",
+        "localPath": "@all-material/notebooks/files/live/notebook-61f9d36d-c3c4-4740-af52-392fbe56e8fe-9b78d2a717.html"
+      }
+    }
+  ]
+}

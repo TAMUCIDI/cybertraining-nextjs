@@ -1,0 +1,55 @@
+{
+  "count": 10,
+  "items": [
+    {
+      "id": "d81b196d-e48a-47cb-97cd-d54808c01893",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/Spatial_Interpolation_nb.png",
+      "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-d81b196d-e48a-47cb-97cd-d54808c01893-d98eda4f9d.png"
+    },
+    {
+      "id": "cff60a9a-93ff-4e70-b83f-76fd2547943c",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/IntermediatePython_ZHH_nb.png",
+      "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-cff60a9a-93ff-4e70-b83f-76fd2547943c-7c8cba0f48.png"
+    },
+    {
+      "id": "3d986d12-8d3b-4449-b2b8-d050685a9eff",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/ACES_JPtlab_ZHH_nb.png",
+      "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-3d986d12-8d3b-4449-b2b8-d050685a9eff-73073a893b.png"
+    },
+    {
+      "id": "8afd0181-5372-4f19-b39e-c3503a6a4d43",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/IntegratingCGIS_FZL_nb.png",
+      "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-8afd0181-5372-4f19-b39e-c3503a6a4d43-f4b33a1428.png"
+    },
+    {
+      "id": "d7915e94-5efa-4fd8-ae53-55fcd3f05ddc",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/CyberGISVis_SH_nb.png",
+      "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-d7915e94-5efa-4fd8-ae53-55fcd3f05ddc-7d996f0588.png"
+    },
+    {
+      "id": "657f616b-46f0-4388-8cef-1997d6e27349",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/HourofCI_ES_nb.png",
+      "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-657f616b-46f0-4388-8cef-1997d6e27349-135cde104a.png"
+    },
+    {
+      "id": "182b8b7a-438d-4da9-b08e-8cc7c0775f64",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/EmerEvacSim_RebVan_nb.png",
+      "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-182b8b7a-438d-4da9-b08e-8cc7c0775f64-3ff717ab5f.png"
+    },
+    {
+      "id": "a9d32df3-ab48-48cd-89ef-93d963a42e78",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/Unet_NatJar_nb.png",
+      "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-a9d32df3-ab48-48cd-89ef-93d963a42e78-25c225afa7.png"
+    },
+    {
+      "id": "f594740d-b2f2-40c5-bdfc-397b77e2458d",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/GeoVis_ZLS_nb.png",
+      "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-f594740d-b2f2-40c5-bdfc-397b77e2458d-72914b8621.png"
+    },
+    {
+      "id": "61f9d36d-c3c4-4740-af52-392fbe56e8fe",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/IntermediatePython_ZHH_nb2.png",
+      "localPath": "@all-material/notebooks/images/thumbnails/live/notebook-61f9d36d-c3c4-4740-af52-392fbe56e8fe-11e8f3e23a.png"
+    }
+  ]
+}

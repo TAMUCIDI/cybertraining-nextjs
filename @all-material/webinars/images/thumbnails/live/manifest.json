@@ -1,0 +1,45 @@
+{
+  "downloaded": 8,
+  "items": [
+    {
+      "id": "45a41296-256a-488a-be95-10a92800fc7e",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/LoriPeek_wbn.png",
+      "localPath": "@all-material/webinars/images/thumbnails/live/webinar-45a41296-256a-488a-be95-10a92800fc7e-88ac6881.png"
+    },
+    {
+      "id": "d4b19ecf-e8d4-491e-9141-506acfd01832",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/MickGCD_wbn.png",
+      "localPath": "@all-material/webinars/images/thumbnails/live/webinar-d4b19ecf-e8d4-491e-9141-506acfd01832-5c92ad66.png"
+    },
+    {
+      "id": "e01979de-89a3-499f-b2f2-931c592f6ea7",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/HLG_wbn.png",
+      "localPath": "@all-material/webinars/images/thumbnails/live/webinar-e01979de-89a3-499f-b2f2-931c592f6ea7-465b65b4.png"
+    },
+    {
+      "id": "33a4505a-4406-49c8-bb1f-ffd19cc8115b",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/TimCockerill_wbn.png",
+      "localPath": "@all-material/webinars/images/thumbnails/live/webinar-33a4505a-4406-49c8-bb1f-ffd19cc8115b-ce2ae40e.png"
+    },
+    {
+      "id": "aaaf314b-43bf-4cea-b684-a51ab51330a1",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/XiaoLi_webinar.png",
+      "localPath": "@all-material/webinars/images/thumbnails/live/webinar-aaaf314b-43bf-4cea-b684-a51ab51330a1-c26b703e.png"
+    },
+    {
+      "id": "0ca86c90-b738-4e1f-94cd-06bf10109457",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/TaoCheng_Webinar.png",
+      "localPath": "@all-material/webinars/images/thumbnails/live/webinar-0ca86c90-b738-4e1f-94cd-06bf10109457-8a1d0f78.png"
+    },
+    {
+      "id": "4beade33-11df-466c-943d-a4431b614da5",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/Zhenhua_He_Webinar.png",
+      "localPath": "@all-material/webinars/images/thumbnails/live/webinar-4beade33-11df-466c-943d-a4431b614da5-ef93dfef.png"
+    },
+    {
+      "id": "dc14450f-22d8-46e8-ac5a-97770aa30946",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/nb_thmbnails/zhupingShengWebinar.png",
+      "localPath": "@all-material/webinars/images/thumbnails/live/webinar-dc14450f-22d8-46e8-ac5a-97770aa30946-707c3835.png"
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+{
+  "route": "/workshops",
+  "index": {
+    "cards": {
+      "component": "src/app/workshops/components/WorkshopCard.tsx",
+      "defaultPhoto": {
+        "src": "/images/WorkshopCardDefaultImg.jpg",
+        "alt": "Workshop"
+      }
+    },
+    "workshop_list_source": "dev.ctdm.org (scraped live HTML)",
+    "workshop_list": [
+      {
+        "id": "dd40fb7f-bcf3-4216-8beb-49c469569d71",
+        "title": "2024 American Association of Geographers (AAG) Annual Meeting",
+        "date": "2024-04-17",
+        "location": "Honolulu, Hawaii",
+        "description": "The team organized a CyberTraining session at the AAG annual meeting. This training session is part of the workshop (#2330330) funded by the NSF Office of Advanced Cyberinfrastructure. Time: April 16th 8:30 am - 4:30 pm & April 17th 8:30 am - 1:30 pm. Location: Hawaii Convention Center. This workshop is supported by the National Science Foundation Office of Advanced Cyberinfrastructure. The workshop provided a platform to scientists and engineers, including Geoscience, Computer Science, and Software Engineering, to present the challenges that they have faced in research and education and discuss the best and most efficient techniques for the development of secure, reliable, and ethical geospatial software systems. The workshop included a CyberTraining session. The CyberTraining session was designed to introduce participants to the fundamentals of geospatial data science using NSF funded High-Performance Computing (HPC) system, ACES, hosted at Texas A&M University which is on the NSF ACCESS ecosystem. We explored various tools and parallel computing techniques to extract, process, and analyze social sensing data.",
+        "photo": {
+          "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/workshop1.webp",
+          "localPath": "@all-material/workshops/images/photos/live/workshop-dd40fb7f-bcf3-4216-8beb-49c469569d71-5ad9f455.webp"
+        }
+      },
+      {
+        "id": "ef15208d-691d-48b8-8a84-2094325d9442",
+        "title": "The 49th Annual Natural Hazards Research and Application Workshop",
+        "date": "2024-07-14",
+        "location": "Broomfield, Colorado",
+        "description": "The CyberTraining workshop was part of the Natural Hazards Center conference on July 14th, 2024. This workshop was designed to support students and professionals who wish to broaden their computational knowledge and data skills. Participants in this training session will gain cyberinfrastructure and geospatial analytic capabilities for observing and monitoring disaster events. In the workshop, the expert-led training modules was focus on: (1) Fundamental concepts and skills of Cyberinfrastructure (CI) and High-Performance Computing systems (e.g., National Science Foundation ACCESS) to enhance CI use in disaster management research. (2) Scientific programming in Python using Jupyter Lab. (3) Disaster data types and processing techniques. (4) Essential concepts of Geospatial Artificial Intelligence (GeoAI) and how to apply spatial analysis and GeoAI to disaster management",
+        "photo": {
+          "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/workshop2.webp",
+          "localPath": "@all-material/workshops/images/photos/live/workshop-ef15208d-691d-48b8-8a84-2094325d9442-f5575421.webp"
+        }
+      },
+      {
+        "id": "128bccd3-8cdf-4a88-b900-5b782f04f0cd",
+        "title": "2025 UCGIS Symposium",
+        "date": "2025-06-27",
+        "location": "Laramie, Wyoming",
+        "description": "Disasters become prominent global issues that simultaneously pose a threat to multiple countries or regions around the globe. The dynamics of a multi-scale networked society are inextricably entangled with geographical and built environments, where human-environmental interactions shape community resilience under different disaster events. Disaster management is gradually empowered by increasing geospatial big data awareness and growing computing capabilities to produce spatial vulnerability and situational understanding for supporting timely decisions. This CyberTraining workshop shed light on high-performance geocomputational educational concepts important in understanding human-environment interactions in disaster management. The workshop features training modules, ranging from fundamental to advanced levels, covering key concepts in Cyberinfrastructure (CI) and high-performance computing (HPC) to lower barriers to CI adoption in disaster management research. Participants will gain hands-on experience in advanced geospatial data analysis and visualization techniques, enabling them to better understand disaster patterns across diverse spatiotemporal scales. This project was funded by the National Science Foundation (NSF) CyberTraining program (Award #2321069). Through this project, we established the International CyberTraining for Disaster Management (CTDM) network, bringing together academic institutions, governmental agencies, hazard research centers, industry, and educational organizations to leverage interdisciplinary expertise in developing training materials for the next-generation workforce in geospatial and disaster science. This CyberTraining project will broaden access to CI for disaster research communities and help enhance workforce development among diverse disciplines such as disaster science, GIScience, engineering, and social science. The project will help disaster research communities strengthen their CI-enabled disaster management and geospatial computing skills, thus improving decision- making capabilities for enhancing community resilience. For more details about this project, please visit our project website: https://dev.ctdm.org/",
+        "photo": {
+          "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/UCGISWorkshop.jpg",
+          "localPath": "@all-material/workshops/images/photos/live/workshop-128bccd3-8cdf-4a88-b900-5b782f04f0cd-a31a15d2.jpg"
+        }
+      },
+      {
+        "id": "b772e9af-ebaa-4e8d-8a90-4dd44cfb4330",
+        "title": "CyberTraining Summer School 2025",
+        "date": "2025-08-11",
+        "location": "College Station, TX",
+        "description": "Over the past two years, our CyberTraining project has organized five workshops, hosted monthly online lectures, supported more than one hundred scholars through high performance computing hands-on training and travel funding, and directly engaged thousands of participants. Thanks to these efforts, the National Science Foundation has awarded us another four years of funding to continue advancing CyberTraining — this time with a special focus on innovating GeoAI in disaster research.",
+        "photo": {
+          "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/25SummerSchool.jpeg",
+          "localPath": "@all-material/workshops/images/photos/live/workshop-b772e9af-ebaa-4e8d-8a90-4dd44cfb4330-96acb947.jpeg"
+        }
+      }
+    ]
+  },
+  "details_subendpoint": {
+    "routePattern": "/workshops/[id]",
+    "component": "src/app/workshops/[id]/page.tsx",
+    "schedule_json_exportStatus": "complete from dev.ctdm.org workshop detail HTML",
+    "detailsById": {
+      "dd40fb7f-bcf3-4216-8beb-49c469569d71": {
+        "title": "2024 American Association of Geographers (AAG) Annual Meeting",
+        "date": "2024-04-17",
+        "description": "The team organized a CyberTraining session at the AAG annual meeting. This training session is part of the workshop (#2330330) funded by the NSF Office of Advanced Cyberinfrastructure. Time: April 16th 8:30 am - 4:30 pm & April 17th 8:30 am - 1:30 pm. Location: Hawaii Convention Center. This workshop is supported by the National Science Foundation Office of Advanced Cyberinfrastructure. The workshop provided a platform to scientists and engineers, including Geoscience, Computer Science, and Software Engineering, to present the challenges that they have faced in research and education and discuss the best and most efficient techniques for the development of secure, reliable, and ethical geospatial software systems. The workshop included a CyberTraining session. The CyberTraining session was designed to introduce participants to the fundamentals of geospatial data science using NSF funded High-Performance Computing (HPC) system, ACES, hosted at Texas A&M University which is on the NSF ACCESS ecosystem. We explored various tools and parallel computing techniques to extract, process, and analyze social sensing data.",
+        "photo_url": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/workshop1.webp",
+        "photo_localPath": "@all-material/workshops/images/photos/live/workshop-dd40fb7f-bcf3-4216-8beb-49c469569d71-5ad9f455.webp",
+        "schedule_json": [
+          {
+            "time": "04/16 8:30 - 9:00",
+            "items": [
+              "Open the workshop"
+            ]
+          },
+          {
+            "time": "Session 1: 04/16 9:00-10:00",
+            "items": [
+              "Keynote presentation:",
+              "Dr. Joseph Kerski (Education Manager, ESRI), Geospatial Software Usability: from Industry's Perspective to Users' Practice",
+              "Coffee Break"
+            ]
+          },
+          {
+            "time": "Session 2: 04/16 10:15 - 11:15",
+            "items": [
+              "Software dependability panel discussion",
+              "Chair:",
+              "Dr. Eric Wong (Professor of Computer Science, University of Texas at Dallas)",
+              "Panelists:",
+              "Dr. Richard Kuhn (Computer Scientist of National Institute of Standards and Technology; Fellow of the Institute of Electrical and Electronics Engineers (IEEE))",
+              "Dr. Bill Tonti (Director of Future Directions, IEEE)",
+              "Dr. Junhua Ding (Professor of Information Science, University of North Texas)"
+            ]
+          },
+          {
+            "time": "Session 3: 04/16 11:15 - 12:00",
+            "items": [
+              "Student paper presentation:",
+              "Zizhao Chen, Department of Computer Science, University of Texas at Dallas)"
+            ]
+          },
+          {
+            "time": "12:00 - 1:00 pm",
+            "items": [
+              "Lunch (provided by AAG for registered participants)"
+            ]
+          },
+          {
+            "time": "Session 4: 04/16 13:00 - 14:00",
+            "items": [
+              "High-performance geospatial software development panel session",
+              "Chair:",
+              "Dr. Zhe Zhang (Assistant Professor of Geography, Texas A&M University)",
+              "Panelists:",
+              "Dr. Shaowen Wang (Professor of Geography and Geographic Information Science, Associate Dean for Life and Physical Sciences, College of Liberal Arts and Sciences, University of Illinois Urbana-Champaign",
+              "Dr. Honggao Liu (Director of Texas A&M High-Performance Research Computing)",
+              "Dr. Alan Sussman (Professor of Computer Science, University of Maryland)",
+              "Dr. Sushil Prasad (Professor of Computer Science, University of Texas at San Antonio)",
+              "Dr. Michael Bishop (Professor of Geography, Texas A&M University)",
+              "Dr. Ernie Liu (Research Scientist, US Geological Survey)"
+            ]
+          },
+          {
+            "time": "Session 5: 04/16 14:00 - 15:45",
+            "items": [
+              "CyberTraining session: NSF ACCESS and Geoethics",
+              "Dr. Zhe Zhang; Mr. Diya Li and Mr. Zhenlei Song, Graduate Research Assistant, Department of Geography, Texas A&M University",
+              "Coffee Break"
+            ]
+          },
+          {
+            "time": "Session 6: 04/16 16:00 - 16:30",
+            "items": [
+              "Discussion and close of the day"
+            ]
+          },
+          {
+            "time": "04/17 8:30-9:00",
+            "items": [
+              "Open the workshop"
+            ]
+          },
+          {
+            "time": "Session 7: 04/17 9:00-10:00",
+            "items": [
+              "Keynote Presentation: Evolving the GIS user experience",
+              "Dr. Michael Goodchild (Professor Emeritus, Department of Geography, University of California, Santa Barbara)"
+            ]
+          },
+          {
+            "time": "Session 8: 04/17 10:00-10:45",
+            "items": [
+              "Student paper presentation:",
+              "Diya Li, Department of Geography, Texas A&M University",
+              "Coffee Break"
+            ]
+          },
+          {
+            "time": "Session 9: 04/17 11:15 - 12:00",
+            "items": [
+              "Student paper presentation:",
+              "Zhenlei Song, Department of Geography, Texas A&M University",
+              "Coffee Break"
+            ]
+          },
+          {
+            "time": "Session 10: 04/17 12:30 -13:30",
+            "items": [
+              "Geoethics panel session:",
+              "Chair:",
+              "Dr. Michael Goodchild",
+              "Panelists:",
+              "Dr. Shaowen Wang",
+              "Dr. Zhe Zhang",
+              "Dr. Joseph Kerski",
+              "Dr. Samantha Arundel (Acting Director, Center of Excellence for Geospatial Information Science, US Geological Survey)",
+              "Dr. Tao Cheng (Professor of Geoinformatics, University College London)"
+            ]
+          },
+          {
+            "time": "04/17 13:30",
+            "items": [
+              "Close of the day"
+            ]
+          }
+        ]
+      },
+      "ef15208d-691d-48b8-8a84-2094325d9442": {
+        "title": "The 49th Annual Natural Hazards Research and Application Workshop",
+        "date": "2024-07-14",
+        "description": "The CyberTraining workshop was part of the Natural Hazards Center conference on July 14th, 2024. This workshop was designed to support students and professionals who wish to broaden their computational knowledge and data skills. Participants in this training session will gain cyberinfrastructure and geospatial analytic capabilities for observing and monitoring disaster events. In the workshop, the expert-led training modules was focus on: (1) Fundamental concepts and skills of Cyberinfrastructure (CI) and High-Performance Computing systems (e.g., National Science Foundation ACCESS) to enhance CI use in disaster management research. (2) Scientific programming in Python using Jupyter Lab. (3) Disaster data types and processing techniques. (4) Essential concepts of Geospatial Artificial Intelligence (GeoAI) and how to apply spatial analysis and GeoAI to disaster management",
+        "photo_url": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/workshop2.webp",
+        "photo_localPath": "@all-material/workshops/images/photos/live/workshop-ef15208d-691d-48b8-8a84-2094325d9442-f5575421.webp",
+        "schedule_json": [
+          {
+            "time": "8:00 - 8:30",
+            "items": [
+              "Welcome Coffee & Opening the Workshop",
+              "Dr. Zhe Zhang: Assistant Professor, Department of Geography, Texas A&M University",
+              "Dr. Sharmistha Bagchi-Sen: Program Director, National Science Foundation, Office of Advanced Cyberinfrastructure"
+            ]
+          },
+          {
+            "time": "8:30 - 9:50",
+            "items": [
+              "Intermediate Python Programming on High-Performance Computing Cluster",
+              "Dr. Honggao Liu, Executive Director of High Performance Research Computing at Texas A&M University",
+              "Dr. Zhenhua He, Associate Research Scientist of High Performance Research Computing at Texas A&M University"
+            ]
+          },
+          {
+            "time": "9:50 - 10:00",
+            "items": [
+              "Break"
+            ]
+          },
+          {
+            "time": "10:00 - 11:30",
+            "items": [
+              "Social Sensing and Geovisualization using High-Performance Computing",
+              "Dr. Zhe Zhang: Assistant Professor, Department of Geography, Texas A&M University",
+              "Mr. Zhenlei Song, Graduate Research Assistant, Department of Geography, Texas A&M University"
+            ]
+          },
+          {
+            "time": "11:30 - 12:10",
+            "items": [
+              "Lunch"
+            ]
+          },
+          {
+            "time": "12:10 - 1:30",
+            "items": [
+              "Emergency Evacuation Simulation with CyberGIS-Compute",
+              "Dr. Shaowen Wang, Professor of the Department of Geography and Geographic Information Science, Associate Dean for Life and Physical Sciences, College of Liberal Arts and Sciences, University of Illinois Urbana Champaign",
+              "Ms. Becky Vandewalle, Graduate Research Assistant, Department of Geography and Geographic Information Science, University of Illinois Urbana Champaign"
+            ]
+          },
+          {
+            "time": "1:30 - 1:45",
+            "items": [
+              "close of the workshop and panel discussion (All team)"
+            ]
+          }
+        ]
+      },
+      "128bccd3-8cdf-4a88-b900-5b782f04f0cd": {
+        "title": "2025 UCGIS Symposium",
+        "date": "2025-06-27",
+        "description": "Disasters become prominent global issues that simultaneously pose a threat to multiple countries or regions around the globe. The dynamics of a multi-scale networked society are inextricably entangled with geographical and built environments, where human-environmental interactions shape community resilience under different disaster events. Disaster management is gradually empowered by increasing geospatial big data awareness and growing computing capabilities to produce spatial vulnerability and situational understanding for supporting timely decisions. This CyberTraining workshop shed light on high-performance geocomputational educational concepts important in understanding human-environment interactions in disaster management. The workshop features training modules, ranging from fundamental to advanced levels, covering key concepts in Cyberinfrastructure (CI) and high-performance computing (HPC) to lower barriers to CI adoption in disaster management research. Participants will gain hands-on experience in advanced geospatial data analysis and visualization techniques, enabling them to better understand disaster patterns across diverse spatiotemporal scales. This project was funded by the National Science Foundation (NSF) CyberTraining program (Award #2321069). Through this project, we established the International CyberTraining for Disaster Management (CTDM) network, bringing together academic institutions, governmental agencies, hazard research centers, industry, and educational organizations to leverage interdisciplinary expertise in developing training materials for the next-generation workforce in geospatial and disaster science. This CyberTraining project will broaden access to CI for disaster research communities and help enhance workforce development among diverse disciplines such as disaster science, GIScience, engineering, and social science. The project will help disaster research communities strengthen their CI-enabled disaster management and geospatial computing skills, thus improving decision- making capabilities for enhancing community resilience. For more details about this project, please visit our project website: https://dev.ctdm.org/",
+        "photo_url": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/UCGISWorkshop.jpg",
+        "photo_localPath": "@all-material/workshops/images/photos/live/workshop-128bccd3-8cdf-4a88-b900-5b782f04f0cd-a31a15d2.jpg",
+        "schedule_json": [
+          {
+            "time": "8:00-9:00 am",
+            "items": [
+              "Welcome Coffee & Opening the Workshop",
+              "Dr. Zhe Zhang: Assistant Professor, Department of Geography, Texas A&M University",
+              "Dr. Jeff Hamerlinck: Associate Director, School of Computing, Director of Wyoming Geographic Information Science Center, University of Wyoming, President of University Consortium for Geographic Information Science"
+            ]
+          },
+          {
+            "time": "9:00-10:20 am",
+            "items": [
+              "Exploring the I-GUIDE Platform",
+              "Dr. Shaowen Wang, Professor of the Department of Geography & Geographic Information Science, Associate Dean for Life and Physical Sciences, College of Liberal Arts and Sciences, University of Illinois Urbana Champaign"
+            ]
+          },
+          {
+            "time": "10:20 -10:30 am",
+            "items": [
+              "Break"
+            ]
+          },
+          {
+            "time": "10:30-11:30 am",
+            "items": [
+              "Panel Discussion: Leveraging Geospatial Cyberinfrastructure and GeoAI in Disaster Management (Zhe Zhang Chair)",
+              "Dr. Shaowen Wang: Professor of the Department of Geography and Geographic Information Science, Associate Dean for Life and Physical Sciences, College of Liberal Arts and Sciences, University of Illinois Urbana Champaign",
+              "Dr. Honggao Liu: Executive Director, Texas A&M University High-Performance Research Computing",
+              "Dr. Zhenhua He: Associate Research Scientist, Texas A&M University High-Performance Research Computing",
+              "Dr. Jeff Hamerlinck: Associate Director, School of Computing, Director of Wyoming Geographic Information Science Center, University of Wyoming, President of University Consortium for Geographic Information Science"
+            ]
+          },
+          {
+            "time": "11:30 am-12:10 pm",
+            "items": [
+              "Lunch and Group Photo"
+            ]
+          },
+          {
+            "time": "12:10-1:30 pm",
+            "items": [
+              "Hands-on Introduction to Data Manipulation, Visualization and Machine Learning for Classifying Earth Landscape on ACES",
+              "Dr. Honggao Liu: Executive Director, Texas A&M University High-Performance Research Computing",
+              "Dr. Zhenhua He: Associate Research Scientist, Texas A&M University High-Performance Research Computing"
+            ]
+          },
+          {
+            "time": "1:30-1:40 pm",
+            "items": [
+              "Break"
+            ]
+          },
+          {
+            "time": "1:40- 3:00 pm",
+            "items": [
+              "Social Sensing: Leveraging GeoAI and ACES High-Performance Computing",
+              "Dr. Zhe Zhang: Assistant Professor, Department of Geography, Texas A&M University"
+            ]
+          },
+          {
+            "time": "3:00-3:20 pm",
+            "items": [
+              "Close of the workshop"
+            ]
+          }
+        ]
+      },
+      "b772e9af-ebaa-4e8d-8a90-4dd44cfb4330": {
+        "title": "CyberTraining Summer School 2025",
+        "date": "2025-08-11",
+        "description": "Over the past two years, our CyberTraining project has organized five workshops, hosted monthly online lectures, supported more than one hundred scholars through high performance computing hands-on training and travel funding, and directly engaged thousands of participants. Thanks to these efforts, the National Science Foundation has awarded us another four years of funding to continue advancing CyberTraining — this time with a special focus on innovating GeoAI in disaster research.",
+        "photo_url": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/25SummerSchool.jpeg",
+        "photo_localPath": "@all-material/workshops/images/photos/live/workshop-b772e9af-ebaa-4e8d-8a90-4dd44cfb4330-96acb947.jpeg",
+        "schedule_json": [
+          {
+            "time": "August 11, 2025, 8:20-9:00 am",
+            "items": [
+              "Welcome Coffee & Opening the Summer School",
+              "Dr. Zhe Zhang, Assistant Professor, Department of Geography, Texas A&M University",
+              "Dr. Simon North, Executive Associate Dean, John W. Bevan Professor of Chemistry, Texas A&M University"
+            ]
+          },
+          {
+            "time": "August 11, 2025, 9:00-9:30 am",
+            "items": [
+              "Introduction to NSF Programs",
+              "Dr. Sharmistha Bagchi-Sen, Program Manager, National Science Foundation"
+            ]
+          },
+          {
+            "time": "August 11, 2025, 9:30-10:50 am",
+            "items": [
+              "Introduction to Data Manipulation, Visualization and Machine Learning for Classifying Earth Landscape on ACES",
+              "Dr. Honggao Liu: Executive Director, Texas A&M University High-Performance Research Computing"
+            ]
+          },
+          {
+            "time": "August 11, 2025, 10:50-11:00 am",
+            "items": [
+              "Break"
+            ]
+          },
+          {
+            "time": "August 11, 2025, 11:00 am - 12:20 pm",
+            "items": [
+              "Exploring the I-GUIDE Platform",
+              "Dr. Shaowen Wang, Professor of the Department of Geography & Geographic Information Science, Associate Dean for Life and Physical Sciences, College of Liberal Arts and Sciences, University of Illinois Urbana Champaign"
+            ]
+          },
+          {
+            "time": "August 11, 2025, 12:20-1:00 pm",
+            "items": [
+              "Lunch and Group Photo"
+            ]
+          },
+          {
+            "time": "August 11, 2025, 1:00-2:00 pm",
+            "items": [
+              "Keynote Presentation: Emergency Management is a Geospatial Problem",
+              "Dr. Mike Goodchild, Professor Emeritus, University of California Santa Barbara"
+            ]
+          },
+          {
+            "time": "August 11, 2025, 2:00-3:20 pm",
+            "items": [
+              "Toward Next-Generation Spatial Decision Support: Leveraging GeoAI and Cyberinfrastructure for Coastal Resilience",
+              "Social Sensing: Leveraging GeoAI and ACES High-Performance Computing",
+              "Dr. Zhe Zhang, Assistant Professor, Department of Geography, Texas A&M University"
+            ]
+          },
+          {
+            "time": "August 11, 2025, 3:20-3:30 pm",
+            "items": [
+              "Break"
+            ]
+          },
+          {
+            "time": "August 11, 2025, 3:30-4:20 pm",
+            "items": [
+              "CAREER Panel Discussion and Close of Day 1",
+              "Dinner"
+            ]
+          },
+          {
+            "time": "August 12, 2025, 8:20-9:00 am",
+            "items": [
+              "Welcome Coffee and Breakfast"
+            ]
+          },
+          {
+            "time": "August 12, 2025, 9:00-10:00 am",
+            "items": [
+              "Group Work and Discussion"
+            ]
+          },
+          {
+            "time": "August 12, 2025, 10:00-11:00 am",
+            "items": [
+              "From Systems to People: Humanizing Digital Twin",
+              "Dr. Xinyue Ye, Distinguished Professor of GeoAI at University of Alabama"
+            ]
+          },
+          {
+            "time": "August 12, 2025, 11:00 am - 12:00 pm",
+            "items": [
+              "Group Work and Discussion"
+            ]
+          },
+          {
+            "time": "August 12, 2025, 12:00-1:00 pm",
+            "items": [
+              "Lunch"
+            ]
+          },
+          {
+            "time": "August 12, 2025, 1:00-2:00 pm",
+            "items": [
+              "GIS Applications in Traffic Safety Research",
+              "Dr. Bahar Dadashova, Research Scientist, Texas A&M Transportation Institute"
+            ]
+          },
+          {
+            "time": "August 12, 2025, 2:00-3:00 pm",
+            "items": [
+              "Group Work and Discussion"
+            ]
+          },
+          {
+            "time": "August 12, 2025, 3:00-4:00 pm",
+            "items": [
+              "Group Work and Discussion"
+            ]
+          },
+          {
+            "time": "August 12, 2025, 4:00-4:30 pm",
+            "items": [
+              "Project Update Presentation and Close of Day 2",
+              "Dinner"
+            ]
+          },
+          {
+            "time": "August 13, 2025, 8:20-9:00 am",
+            "items": [
+              "Welcome Coffee and Breakfast"
+            ]
+          },
+          {
+            "time": "August 13, 2025, 9:00-10:00 am",
+            "items": [
+              "Modeling and Forecasting Hurricane Floods over Coastal Urban Watersheds",
+              "Dr. Huilin Gao, Professor of Civil and Environmental Engineering, Texas A&M University"
+            ]
+          },
+          {
+            "time": "August 13, 2025, 10:00 am - 12:00 pm",
+            "items": [
+              "Group Work and Discussion"
+            ]
+          },
+          {
+            "time": "August 13, 2025, 12:00-1:00 pm",
+            "items": [
+              "Lunch"
+            ]
+          },
+          {
+            "time": "August 13, 2025, 1:00-2:00 pm",
+            "items": [
+              "Agentic AI in ArcGIS",
+              "Dr. Diya Li, Software Development Engineer, Esri"
+            ]
+          },
+          {
+            "time": "August 13, 2025, 2:00-3:00 pm",
+            "items": [
+              "Group Work and Discussion"
+            ]
+          },
+          {
+            "time": "August 13, 2025, 3:00-4:00 pm",
+            "items": [
+              "Group Work and Discussion"
+            ]
+          },
+          {
+            "time": "August 13, 2025, 4:00-4:30 pm",
+            "items": [
+              "Project Update Presentation and Close of Day 3",
+              "Dinner"
+            ]
+          },
+          {
+            "time": "August 14, 2025, 8:20-9:00 am",
+            "items": [
+              "Welcome Coffee and Breakfast"
+            ]
+          },
+          {
+            "time": "August 14, 2025, 9:00-10:00 am",
+            "items": [
+              "Human Centered GeoAI for Disaster in the era of Generative AI",
+              "Dr. Yuhao Kang, Assistant Professor, Department of Geography and the Environment, University of Texas at Austin"
+            ]
+          },
+          {
+            "time": "August 14, 2025, 10:00 am - 12:00 pm",
+            "items": [
+              "Group Work and Discussion"
+            ]
+          },
+          {
+            "time": "August 14, 2025, 12:00-1:00 pm",
+            "items": [
+              "Lunch"
+            ]
+          },
+          {
+            "time": "August 14, 2025, 1:00-2:00 pm",
+            "items": [
+              "Quantifying Human Mobility Patterns during Disruptive Events with Big Geospatial Data",
+              "Dr. Yuqin Jiang, Assistant Professor, Department of Geography and Environment, University of Hawaii at Manoa"
+            ]
+          },
+          {
+            "time": "August 14, 2025, 2:00-3:00 pm",
+            "items": [
+              "Group Work and Discussion"
+            ]
+          },
+          {
+            "time": "August 14, 2025, 3:00-4:00 pm",
+            "items": [
+              "Group Work and Discussion"
+            ]
+          },
+          {
+            "time": "August 14, 2025, 4:00-4:30 pm",
+            "items": [
+              "Project Update Presentation and Close of Day 4",
+              "Dinner"
+            ]
+          },
+          {
+            "time": "August 15, 2025, 8:20-9:00 am",
+            "items": [
+              "Welcome Coffee and Breakfast"
+            ]
+          },
+          {
+            "time": "August 15, 2025, 9:00-11:30 am",
+            "items": [
+              "Group Presentations"
+            ]
+          },
+          {
+            "time": "August 15, 2025, 11:30 am - 12:30 pm",
+            "items": [
+              "Lunch and Close of the Summer School"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "assets": {
+    "localImageFilesReferencedByCode": [
+      "public/images/WorkshopCardDefaultImg.jpg"
+    ],
+    "downloadedLivePhotos": {
+      "source": "dev.ctdm.org /workshops index card images",
+      "localDir": "@all-material/workshops/images/photos/live",
+      "manifest": "@all-material/workshops/images/photos/live/manifest.json"
+    }
+  }
+}
+

@@ -1,0 +1,47 @@
+{
+  "route": "/news",
+  "page": {
+    "article": {
+      "title": "You're Invited! Join Us at the 2025 AGU Town Hall",
+      "subtitle": "CyberTraining: Broadening Adoption of Cyberinfrastructure and Geospatial Science for Disaster Management",
+      "sections": [
+        {
+          "type": "paragraph",
+          "text": "We are excited to announce our upcoming AGU Town Hall focused on advancing cyberinfrastructure and geospatial data science research to build a more resilient disaster management workforce. This Town Hall will highlight our NSF-funded CyberTraining projects and bring together researchers, educators, and practitioners dedicated to capacity building, cyberinfrastructure innovation, and GeoAI for disaster management."
+        },
+        {
+          "type": "heading",
+          "text": "📅 Date & Time:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tuesday, 16 December 2025 | 13:00 – 14:00 CST"
+        },
+        {
+          "type": "heading",
+          "text": "📍 Location:"
+        },
+        {
+          "type": "paragraph",
+          "textLines": [
+            "New Orleans Ernest N. Morial Convention Center (NOLA CC)",
+            "Room: 267–268",
+            "Final Session #: TH23A"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Our project is supported by the National Science Foundation – Training-based Workforce Development for Advanced Cyberinfrastructure Program (Awards #2321069 and #2519476)."
+        },
+        {
+          "type": "paragraph",
+          "text": "We look forward to seeing you in New Orleans!"
+        }
+      ]
+    }
+  },
+  "assets": {
+    "images": []
+  }
+}
+

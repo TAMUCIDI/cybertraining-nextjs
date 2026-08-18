@@ -1,0 +1,45 @@
+{
+  "manifestVersion": 1,
+  "imagesReferencedByTheseEndpoints": [
+    {
+      "srcFromCode": "/images/ctdm_about.png",
+      "localRepoPath": "public/images/ctdm_about.png",
+      "referencedBy": [
+        "src/app/about/page.tsx"
+      ]
+    },
+    {
+      "srcFromCode": "/images/WebinarCardDefaultImg.jpg",
+      "localRepoPath": "public/images/WebinarCardDefaultImg.jpg",
+      "referencedBy": [
+        "src/app/webinars/components/WebinarCard.tsx"
+      ]
+    },
+    {
+      "srcFromCode": "/images/WorkshopCardDefaultImg.jpg",
+      "localRepoPath": "public/images/WorkshopCardDefaultImg.jpg",
+      "referencedBy": [
+        "src/app/workshops/components/WorkshopCard.tsx",
+        "src/app/workshops/[id]/page.tsx (fallback)"
+      ]
+    },
+    {
+      "srcFromCode": "public/images/TAMU_Logo.png",
+      "localRepoPath": "public/images/TAMU_Logo.png",
+      "referencedBy": [
+        "src/app/about/components/OrgCarousel.tsx (currently commented out in about page)"
+      ]
+    },
+    {
+      "srcFromCode": "public/images/UIUC_Logo.png",
+      "localRepoPath": "public/images/UIUC_Logo.png",
+      "referencedBy": [
+        "src/app/about/components/OrgCarousel.tsx (currently commented out in about page)"
+      ]
+    }
+  ],
+  "notes": [
+    "Remote images referenced by people/webinar/workshop data are stored as URLs in the per-route material JSON files (e.g. `img`, `photo`, `thumbnail_r2_url`)."
+  ]
+}
+

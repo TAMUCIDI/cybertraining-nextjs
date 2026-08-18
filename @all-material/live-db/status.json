@@ -1,0 +1,22 @@
+{
+  "attemptedAt": "2026-03-30T06:09:30.000Z",
+  "attempts": [
+    {
+      "target": "src/utils/db/postgres.ts (native Postgres)",
+      "connectionParams": {
+        "hostDefaultedTo": "localhost",
+        "portDefaultedTo": 5432,
+        "databaseDefaultedTo": "cybertraining",
+        "usernameDefaultedTo": "postgres",
+        "passwordProvided": "empty_or_unknown"
+      },
+      "result": "failed",
+      "error": "password authentication failed for user \"postgres\""
+    }
+  ],
+  "neededToCompleteTrueExport": [
+    "Set `POSTGRES_HOST`, `POSTGRES_PORT`, `POSTGRES_DB`, `POSTGRES_USER`, and `POSTGRES_PASSWORD` in your shell or in an env file loaded by Next.js/runtime."
+  ],
+  "currentFallback": "Seed snapshots were copied from src/server/content/webinars.json and src/server/content/workshops.json into @all-material/live-db/*-seed.json."
+}
+

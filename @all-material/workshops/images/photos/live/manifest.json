@@ -1,0 +1,25 @@
+{
+  "downloaded": 4,
+  "items": [
+    {
+      "id": "dd40fb7f-bcf3-4216-8beb-49c469569d71",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/workshop1.webp",
+      "localPath": "@all-material/workshops/images/photos/live/workshop-dd40fb7f-bcf3-4216-8beb-49c469569d71-5ad9f455.webp"
+    },
+    {
+      "id": "ef15208d-691d-48b8-8a84-2094325d9442",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/workshop2.webp",
+      "localPath": "@all-material/workshops/images/photos/live/workshop-ef15208d-691d-48b8-8a84-2094325d9442-f5575421.webp"
+    },
+    {
+      "id": "128bccd3-8cdf-4a88-b900-5b782f04f0cd",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/UCGISWorkshop.jpg",
+      "localPath": "@all-material/workshops/images/photos/live/workshop-128bccd3-8cdf-4a88-b900-5b782f04f0cd-a31a15d2.jpg"
+    },
+    {
+      "id": "b772e9af-ebaa-4e8d-8a90-4dd44cfb4330",
+      "remoteUrl": "https://pub-b3352b111e3a40faa530a61f15708ed2.r2.dev/25SummerSchool.jpeg",
+      "localPath": "@all-material/workshops/images/photos/live/workshop-b772e9af-ebaa-4e8d-8a90-4dd44cfb4330-96acb947.jpeg"
+    }
+  ]
+}
