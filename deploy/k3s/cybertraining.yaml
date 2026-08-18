@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: nextjs
-          image: zhjyu11/cybertraining:cyber-dart-20260818-755d32d@sha256:cf62cd6a6995b23cd0c6a3665a056d426a59c2ed151a45eee50d9df0cbb0d796
+          image: zhjyu11/cybertraining:cyber-dart-20260818-9ca0904@sha256:28c5550e929a503eb55c58ee7326d9c9c253350b83081db26ff3d2dddc9680d0
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
@@ -60,7 +60,7 @@ spec:
               memory: 512Mi
           livenessProbe:
             httpGet:
-              path: /
+              path: /cyber-dart
               port: 3000
             initialDelaySeconds: 30
             periodSeconds: 30
@@ -68,7 +68,7 @@ spec:
             failureThreshold: 3
           readinessProbe:
             httpGet:
-              path: /
+              path: /cyber-dart
               port: 3000
             initialDelaySeconds: 10
             periodSeconds: 10
@@ -103,7 +103,7 @@ spec:
     - host: cyber-dart.geos.tamu.edu
       http:
         paths:
-          - path: /
+          - path: /cyber-dart
             pathType: Prefix
             backend:
               service:

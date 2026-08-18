@@ -1,7 +1,7 @@
 # CyberTraining K3s deployment
 
 `cybertraining.yaml` updates the existing CyberTraining application at
-`https://cyber-dart.geos.tamu.edu/`.
+`https://cyber-dart.geos.tamu.edu/cyber-dart`.
 
 The manifest intentionally manages only the Next.js Deployment, ClusterIP
 Service, and Traefik Ingress. It relies on the existing `postgres-service` and
@@ -19,6 +19,6 @@ kubectl -n cybertraining-test get pod,service,ingress,endpointslice -o wide
 Test Traefik directly before testing the public reverse proxy:
 
 ```bash
-curl -H 'Host: cyber-dart.geos.tamu.edu' http://10.55.180.150:32589/
-curl https://cyber-dart.geos.tamu.edu/
+curl -H 'Host: cyber-dart.geos.tamu.edu' http://10.55.180.150:32589/cyber-dart
+curl https://cyber-dart.geos.tamu.edu/cyber-dart
 ```
