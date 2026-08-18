@@ -2,10 +2,8 @@ import createMDX from '@next/mdx'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configure for K3s deployment at /netcdfaster/cybertraining subpath
-  basePath: '/netcdfaster/cybertraining',
-  assetPrefix: '/netcdfaster/cybertraining',
-  
+  // Serve from the root of the dedicated cyber-dart hostname.
+
   // Enable standalone output for Docker (creates minimal production build)
   output: 'standalone',
   
