@@ -2,7 +2,9 @@ import createMDX from '@next/mdx'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Serve from the root of the dedicated cyber-dart hostname.
+  // Match the path-based route exposed by Traefik and the department proxy.
+  basePath: '/cyber-dart',
+  assetPrefix: '/cyber-dart',
 
   // Enable standalone output for Docker (creates minimal production build)
   output: 'standalone',
