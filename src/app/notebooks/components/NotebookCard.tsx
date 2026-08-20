@@ -8,7 +8,7 @@ export interface NotebookCardProps {
     title: string;
     img?: string;
     category?: string;
-    author: string;
+    author?: string;
     priority?: boolean;
 }
 
@@ -37,9 +37,11 @@ export default function NotebookCard({
                             {category}
                         </div>
                     )}
-                    <p className="mt-4 text-sm leading-6 text-slate-600">
-                        {author}
-                    </p>
+                    {author && (
+                        <p className="mt-4 text-sm leading-6 text-slate-600">
+                            {author}
+                        </p>
+                    )}
                     <span className="mt-auto pt-5 text-sm font-semibold text-red-900">
                         Open module <span aria-hidden="true">→</span>
                     </span>

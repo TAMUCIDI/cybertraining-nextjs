@@ -334,7 +334,7 @@ export type LocalNotebook = {
   id: string;
   title: string;
   category: string;
-  author: string;
+  author?: string;
   fileUrl: string;
   thumbnailUrl: string;
 };
@@ -347,6 +347,33 @@ export const localNotebooks: LocalNotebook[] = [
     author: "Zhe Zhang, Honggao Liu, and Shaowen Wang",
     fileUrl: "/content/notebooks/cybertraining-nairr-tutorial-2026.pdf",
     thumbnailUrl: "/images/modules/cybertraining-nairr-tutorial-2026-cover.png",
+  },
+  {
+    id: "port-infrastructure-resilience-coastal-hazards",
+    title: "Port Infrastructure Resilience under Coastal Hazards",
+    category: "Coastal hazards and port resilience",
+    fileUrl:
+      "/content/notebooks/port-infrastructure-resilience-coastal-hazards.html",
+    thumbnailUrl:
+      "/images/modules/port-infrastructure-resilience-coastal-hazards-cover.png",
+  },
+  {
+    id: "maritime-traffic-disruption-hurricane-harvey",
+    title: "GeoAI for Maritime Traffic Disruption During Hurricane Harvey (2017)",
+    category: "GeoAI and maritime disaster analysis",
+    author: "Jinyu Zhou and Zhe Zhang",
+    fileUrl:
+      "/content/notebooks/maritime-traffic-disruption-hurricane-harvey.html",
+    thumbnailUrl:
+      "/images/modules/maritime-traffic-disruption-hurricane-harvey-cover.png",
+  },
+  {
+    id: "fish-habitat-suitability-modeling",
+    title: "GeoAI for Fish Habitat Suitability Modeling",
+    category: "GeoAI and fisheries management",
+    author: "Jinyu Zhou and Zhe Zhang",
+    fileUrl: "/content/notebooks/fish-habitat-suitability-modeling.html",
+    thumbnailUrl: "/images/modules/fish-habitat-suitability-modeling-cover.png",
   },
 ];
 
