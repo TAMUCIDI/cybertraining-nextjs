@@ -1,35 +1,73 @@
 import DefaultLayout from "../layouts/DefaultLayout";
 
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function News() {
     return (
         <DefaultLayout>
-            <div className="bg-base-200 flex flex-col justify-center items-center pt-5 pb-5 pl-10 pr-10">
-                <article className="prose max-w-3xl">
-                    <h1>You're Invited! Join Us at the 2025 AGU Town Hall</h1>
-                    <h2>CyberTraining: Broadening Adoption of Cyberinfrastructure and Geospatial Science for Disaster Management</h2>
-                    <p>
-                        We are excited to announce our upcoming AGU Town Hall focused on advancing cyberinfrastructure and geospatial data science research to build a more resilient disaster management workforce. This Town Hall will highlight our NSF-funded CyberTraining projects and bring together researchers, educators, and practitioners dedicated to capacity building, cyberinfrastructure innovation, and GeoAI for disaster management.
-                    </p>
-                    <h3>📅 Date & Time:</h3>
-                    <p>
-                        Tuesday, 16 December 2025 | 13:00 – 14:00 CST
-                    </p>
-                    <h3>📍 Location:</h3>
-                    <p>
-                        New Orleans Ernest N. Morial Convention Center (NOLA CC)<br />
-                        Room: 267–268<br />
-                        Final Session #: TH23A
-                    </p>
-                    <p>
-                        Our project is supported by the National Science Foundation – Training-based Workforce Development for Advanced Cyberinfrastructure Program (Awards #2321069 and #2519476).
-                    </p>
-                    <p>
-                        We look forward to seeing you in New Orleans!
-                    </p>
+            <main className="min-h-screen bg-white pb-24 pt-20 text-slate-900">
+                <article className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-10">
+                    <div className="max-w-3xl">
+                        <span className="inline-flex rounded-full bg-amber-300 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-amber-950">
+                            Upcoming event
+                        </span>
+                        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.22em] text-red-900">
+                            Latest news
+                        </p>
+                        <h1 className="mt-3 text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
+                            CaGIS 2026 CyberTraining Workshop
+                        </h1>
+                        <p className="mt-6 text-lg leading-8 text-slate-600">
+                            Join an all-day training program on cyberinfrastructure, high-performance computing, Python, disaster and coastal data, and geospatial analysis for disaster and coastal sustainability management.
+                        </p>
+
+                        <dl className="mt-8 grid gap-5 border-l-4 border-red-900 pl-5 sm:grid-cols-2">
+                            <div>
+                                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Date</dt>
+                                <dd className="mt-1 font-semibold text-slate-900">September 11, 2026 · All day</dd>
+                            </div>
+                            <div>
+                                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Location</dt>
+                                <dd className="mt-1 font-semibold text-slate-900">Busch Student Center, Saint Louis University, St. Louis</dd>
+                            </div>
+                        </dl>
+
+                        <p className="mt-7 text-slate-600">
+                            Organized by Zhe Zhang, Shaowen Wang, Honggao Liu, and Zhenhua He.
+                        </p>
+
+                        <div className="mt-9 flex flex-wrap gap-3">
+                            <a
+                                href="https://cartogis.org/conferences/cagis2026/workshops/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn border-0 bg-red-900 px-6 text-white shadow-sm hover:bg-red-800"
+                            >
+                                Workshop information and registration
+                            </a>
+                            <Link
+                                href="/workshops/cagis-2026-cybertraining-workshop"
+                                className="btn border-slate-300 bg-white px-6 text-slate-800 hover:border-red-900 hover:bg-red-50"
+                            >
+                                View workshop details
+                            </Link>
+                        </div>
+                    </div>
+
+                    <figure className="relative min-h-80 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.10)] sm:min-h-[480px]">
+                        <Image
+                            src="/images/workshops/cagis-2026.jpg"
+                            alt="CaGIS 2026 Conference in St. Louis"
+                            fill
+                            priority
+                            sizes="(max-width: 1024px) 100vw, 45vw"
+                            className="object-contain p-8"
+                        />
+                    </figure>
                 </article>
-            </div>
+            </main>
         </DefaultLayout>
     );
 }

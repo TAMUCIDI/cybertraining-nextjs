@@ -1,39 +1,65 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function TopHero() {
   return (
-    <div
-      className="hero min-h-screen"
-      style={{
-        backgroundImage: "url(https://static.wixstatic.com/media/11062b_bafdf9951a894d499fbe8329200d07de~mv2.jpeg/v1/fill/w_3815,h_803,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/11062b_bafdf9951a894d499fbe8329200d07de~mv2.jpeg)",
-      }}>
-      <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content text-base-100 text-center">
-        <div className="max-w-5xl">
-          <h1 className="mb-5 text-4xl font-bold">CyberTraining for Disaster Management Network</h1>
-          <h2 className="mb-5 text-3xl font-bold">(CTDM CyberTraining)</h2>
-          <p className="mb-5 text-xl font-semibold">
-            Funded by NSF award number: 
-            <Link className=" text-sky-500 underline " href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2321069&HistoricalAwards=false">
-              2321069
-            </Link>
-            , 
-            &nbsp;
-            <Link className=" text-sky-500 underline " href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2519476&HistoricalAwards=false">
-              2519476
-            </Link>
-          </p>
-          
-      
-          {/* 
-          <p className="mb-5">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-            quasi. In deleniti eaque aut repudiandae et a id nisi.
-          </p>
-          <button className="btn btn-primary">Get Started</button>
-          */}
+    <main className="bg-white text-slate-900">
+      <section className="relative isolate flex min-h-screen items-center overflow-hidden bg-slate-950 text-white">
+        <Image
+          src="/images/HeroBackground.webp"
+          alt="Aerial view of a flooded community"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <video
+          aria-hidden="true"
+          autoPlay
+          disablePictureInPicture
+          loop
+          muted
+          playsInline
+          poster="/images/HeroBackground.webp"
+          preload="auto"
+          className="absolute inset-0 h-full w-full object-cover motion-reduce:hidden"
+        >
+          <source src="/videos/landing-flood.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-950/35" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/55 via-transparent to-slate-950/15" />
+
+        <div className="relative mx-auto w-full max-w-7xl px-6 py-32 lg:px-10">
+          <div className="max-w-5xl">
+            <h1 className="text-5xl font-bold leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl">
+              CyberTraining for Disaster Management Network
+            </h1>
+            <h2 className="mt-5 text-2xl font-semibold text-slate-200 sm:text-3xl">
+              (CTDM CyberTraining)
+            </h2>
+            <p className="mt-8 text-lg font-semibold text-slate-200 sm:text-xl">
+              Funded by NSF award number:{" "}
+              <Link
+                className="text-amber-300 underline decoration-amber-300/50 underline-offset-4 hover:decoration-amber-300"
+                href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2321069&HistoricalAwards=false"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                2321069
+              </Link>
+              {", "}
+              <Link
+                className="text-amber-300 underline decoration-amber-300/50 underline-offset-4 hover:decoration-amber-300"
+                href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2519476&HistoricalAwards=false"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                2519476
+              </Link>
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }

@@ -16,23 +16,30 @@ export default async function WebinarDetail(props: {
     const webinarDetail = webinarDetails && webinarDetails.length > 0 ? webinarDetails[0] : null;
     return (
         <DefaultLayout>
-            <div className="bg-base-200 flex flex-col justify-center items-center pt-5 pb-5 pl-10 pr-10">
-                <article className="prose max-w-3xl">
+            <main className="min-h-screen bg-white pb-24 pt-20 text-slate-900">
+                <article className="mx-auto max-w-5xl px-6 lg:px-10">
                     {webinarDetail ? (
                         <>
-                            <h1>{webinarDetail.title}</h1>
-                            <h3>{webinarDetail.date}</h3>
-                            <h3>{webinarDetail.speaker}</h3>
-                            <p>
+                            <header className="border-b border-slate-200 pb-9">
+                                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-red-900">Recorded webinar</p>
+                                <h1 className="mt-3 text-4xl font-bold leading-tight tracking-tight sm:text-5xl">{webinarDetail.title}</h1>
+                                <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-slate-600">
+                                    <span>{webinarDetail.date}</span>
+                                    <span>{webinarDetail.speaker}</span>
+                                </div>
+                            </header>
+                            <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-600">
                                 {webinarDetail.description}
                             </p>
-                            <YouTubeEmbed videoid={webinarDetail.youtubeId} height={400} params="controls=0"/>
+                            <div className="mt-9 overflow-hidden rounded-2xl border border-slate-200 bg-slate-950 shadow-[0_18px_50px_rgba(15,23,42,0.10)]">
+                                <YouTubeEmbed videoid={webinarDetail.youtubeId} height={560} params="controls=1"/>
+                            </div>
                         </>
                     ) : (
-                        <p>No webinar detail found...</p>
+                        <p className="text-lg text-slate-600">No webinar detail found.</p>
                     )}
                 </article>
-            </div>
+            </main>
         </DefaultLayout>
     );
 }

@@ -4,12 +4,14 @@ import * as React from 'react';
 import { useEffect, useState } from 'react';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 // import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isHome, setIsHome] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,15 +24,8 @@ export default function Header() {
     };
   }, []);
 
-  useEffect(() => {
-    const currentPath = window.location.pathname;
-    if (isHome !== (currentPath === '/')) {
-      setIsHome(currentPath === '/');
-    }
-  }, [isHome])
-
   return (
-    <div className={`fixed z-40 navbar ${isScrolled ? 'bg-base-100' : 'bg-transparent'} ${isScrolled ? 'text-accent-content' : isHome ? 'text-base-200' : 'text-accent-content'} transition-all duration-300`}>
+    <div className={`fixed z-40 navbar border-b transition-all duration-300 ${isHome && !isScrolled ? 'border-transparent bg-transparent text-base-200' : 'border-slate-200/80 bg-white/95 text-slate-900 backdrop-blur-md'} ${isScrolled ? 'shadow-sm' : ''}`}>
       <div className="navbar-start">
         <Link href={`/`} className="btn btn-ghost text-xl">
           CyberTraining
@@ -73,4 +68,3 @@ export default function Header() {
     </div>
   );
 }
-
