@@ -266,8 +266,9 @@ export const localWorkshops: LocalWorkshop[] = [
     location: "David Rubenstein Treehouse, Harvard University",
     description:
       "This upcoming workshop will introduce National AI Computing Research Resources in connection with the 2026 Harvard University Center for Geographic Analysis Conference. Travel-grant details and the application are available through the linked form.",
-    photoUrl: "/images/workshops/agu-town-hall-2025.jpeg",
-    photoAlt: "CyberTraining participants at a previous conference event",
+    photoUrl: "/images/workshops/harvard-cga-logo.svg",
+    photoAlt: "Harvard University Center for Geographic Analysis logo",
+    imageFit: "contain",
     schedule: [],
     registration: {
       label: "Travel Grant Details and Application",
@@ -282,8 +283,9 @@ export const localWorkshops: LocalWorkshop[] = [
     location: "University of Hawaiʻi",
     description:
       "A two-day CyberTraining workshop is planned at the University of Hawaiʻi. Additional program, venue, and registration information will be posted when available.",
-    photoUrl: "/images/workshops/morgan-state-2026-session.jpeg",
-    photoAlt: "Participants at a previous CyberTraining workshop",
+    photoUrl: "/images/workshops/university-of-hawaii-manoa-logo.png",
+    photoAlt: "University of Hawaiʻi at Mānoa logo",
+    imageFit: "contain",
     schedule: [],
   },
 ];
