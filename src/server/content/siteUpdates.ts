@@ -171,9 +171,8 @@ export const localWorkshops: LocalWorkshop[] = [
     location: "University of Maryland, College Park, Maryland",
     description:
       "Part of the UCGIS 2026 Symposium, AI Everywhere!, this workshop combined I-GUIDE, NSF ACCESS, NAIRR, and GeoAI perspectives for research and education. The program included platform training, invited lightning talks, and a hands-on session on coastal resilience and sustainability.",
-    photoUrl: "/images/workshops/ucgis-2026-program-cover.png",
-    photoAlt: "Cover of the UCGIS 2026 workshop program",
-    imageFit: "contain",
+    photoUrl: "/images/workshops/ucgis-2026-group.jpg",
+    photoAlt: "Participants at the UCGIS 2026 CyberTraining workshop",
     schedule: [
       {
         time: "8:30 - 9:30 am",
@@ -228,6 +227,75 @@ export const localWorkshops: LocalWorkshop[] = [
       {
         label: "View Full Workshop Program",
         url: "/content/workshops/ucgis-2026-program.pdf",
+      },
+    ],
+  },
+  {
+    id: "nvidia-deep-learning-training-2026",
+    title: "NVIDIA Deep Learning Institute Training Workshop",
+    startDate: "2026-08-20",
+    location:
+      "O&M Building, Room 112, Texas A&M University, College Station, Texas",
+    description:
+      "This all-day workshop combined NVIDIA Deep Learning Institute training with presentations on Texas A&M AI supercomputing, GEOINT and AI, and intelligent national mapping infrastructure. Participants who attended all sessions and completed the training were eligible to receive NVIDIA's official deep learning certification.",
+    photoUrl:
+      "/images/workshops/nvidia-deep-learning-training-2026.jpg",
+    photoAlt:
+      "Participants at the 2026 NVIDIA Deep Learning Institute training workshop",
+    schedule: [
+      {
+        time: "8:00 - 8:20 am",
+        items: [
+          "Welcome Breakfast",
+          "Dr. Zhe Zhang, Associate Professor, Department of Geography, Texas A&M University",
+        ],
+      },
+      {
+        time: "8:20 - 8:35 am",
+        items: [
+          "Presentation: Texas A&M AI Supercomputing",
+          "Dr. Honggao Liu, Executive Director, Texas A&M High Performance Research Computing",
+        ],
+      },
+      {
+        time: "8:35 - 8:50 am",
+        items: [
+          "Presentation: GEOINT and AI",
+          "Dr. Elizabeth Sherman, Professor of Practice, Department of Geography, Texas A&M University",
+        ],
+      },
+      {
+        time: "8:50 - 9:00 am",
+        items: ["Break"],
+      },
+      {
+        time: "9:00 am - 12:00 pm",
+        items: [
+          "NVIDIA Deep Learning Institute Training",
+          "Dr. Zhenhua He, Interim Director for Emerging Technologies and Research, Texas A&M High Performance Research Computing",
+        ],
+      },
+      {
+        time: "12:00 - 12:30 pm",
+        items: ["Lunch"],
+      },
+      {
+        time: "12:30 - 12:45 pm",
+        items: [
+          "Presentation: From GeoAI Models to Intelligent National Mapping Infrastructure",
+          "Dr. Samantha Arundel, Research Director, Center of Excellence for Geospatial Information Science, U.S. Geological Survey",
+        ],
+      },
+      {
+        time: "12:45 - 6:00 pm",
+        items: [
+          "NVIDIA Deep Learning Institute Training",
+          "Dr. Zhenhua He, Interim Director for Emerging Technologies and Research, Texas A&M High Performance Research Computing",
+        ],
+      },
+      {
+        time: "6:00 pm",
+        items: ["Close of the Workshop"],
       },
     ],
   },
