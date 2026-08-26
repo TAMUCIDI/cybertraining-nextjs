@@ -451,7 +451,7 @@ export function getLocalNotebook(id: string) {
   return localNotebooks.find((notebook) => notebook.id === id);
 }
 
-export type LocalAdvisoryMember = {
+export type LocalTeamMember = {
   name: string;
   affiliation: string;
   displayRole?: string;
@@ -459,7 +459,7 @@ export type LocalAdvisoryMember = {
   profileUrl: string;
 };
 
-export const localAdvisoryMembers: LocalAdvisoryMember[] = [
+export const localProjectLeadershipMembers: LocalTeamMember[] = [
   {
     name: "Michael Goodchild",
     displayRole: "Co-I and Evaluator",
@@ -469,6 +469,9 @@ export const localAdvisoryMembers: LocalAdvisoryMember[] = [
     profileUrl:
       "https://www.thebritishacademy.ac.uk/fellows/profiles/michael-goodchild-FBA/",
   },
+];
+
+export const localAdvisoryMembers: LocalTeamMember[] = [
   {
     name: "Liqiu Meng",
     affiliation: "Professor of Cartography, Technical University of Munich",
@@ -503,5 +506,12 @@ export const localAdvisoryMembers: LocalAdvisoryMember[] = [
       "Assistant Professor, Department of Geography and Environment, University of Hawaiʻi at Mānoa",
     img: "/images/team/yuqin-jiang.jpg",
     profileUrl: "https://geography.manoa.hawaii.edu/yuqin-jiang/",
+  },
+  {
+    name: "Stephen Baker",
+    affiliation:
+      "Urban Doctoral Fellows Coordinator, Mansueto Institute for Urban Innovation; Senior Research & Evaluation Scientist, Outlier Research and Evaluation at UChicago STEM",
+    img: "/images/team/stephen-baker.jpg",
+    profileUrl: "https://miurban.uchicago.edu/bio_stephen-baker/",
   },
 ];

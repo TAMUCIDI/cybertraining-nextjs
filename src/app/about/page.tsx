@@ -3,7 +3,10 @@ export const runtime = "edge";
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 
 import { createClient } from '@/utils/supabase/server';
-import { localAdvisoryMembers } from '@/server/content/siteUpdates';
+import {
+  localAdvisoryMembers,
+  localProjectLeadershipMembers,
+} from '@/server/content/siteUpdates';
 
 import PersonCard from "./components/PersonCard";
 // import OrgCarousel from "./components/OrgCarousel";
@@ -16,16 +19,44 @@ export default async function About() {
   const { data: PI_List } = await supabase.from("people").select('name,email,role,affiliation,img_url').in('role', ['PI','Co-PI'])
   const { data: Member_List } = await supabase.from("people").select('name,email,affiliation,img_url').in('role', ['Member'])
 
-  const existingMemberNames = new Set((Member_List || []).map((person) => person.name));
-  const advisoryMembers = [
-    ...(Member_List || []).map((person) => ({
+  const existingLeadershipNames = new Set((PI_List || []).map((person) => person.name));
+  const localLeadershipNames = new Set(localProjectLeadershipMembers.map((person) => person.name));
+  const existingMemberNames = new Set(
+    (Member_List || [])
+      .filter((person) => !localLeadershipNames.has(person.name))
+      .map((person) => person.name),
+  );
+  const leadershipMembers = [
+    ...(PI_List || []).map((person) => ({
       name: person.name,
       email: person.email,
       affiliation: person.affiliation,
       img: person.img_url,
-      displayRole: undefined,
+      displayRole: person.role,
       profileUrl: undefined,
     })),
+    ...localProjectLeadershipMembers
+      .filter((person) => !existingLeadershipNames.has(person.name))
+      .map((person) => ({
+        name: person.name,
+        email: undefined,
+        affiliation: person.affiliation,
+        img: person.img,
+        displayRole: person.displayRole,
+        profileUrl: person.profileUrl,
+      })),
+  ];
+  const advisoryMembers = [
+    ...(Member_List || [])
+      .filter((person) => !localLeadershipNames.has(person.name))
+      .map((person) => ({
+        name: person.name,
+        email: person.email,
+        affiliation: person.affiliation,
+        img: person.img_url,
+        displayRole: undefined,
+        profileUrl: undefined,
+      })),
     ...localAdvisoryMembers
       .filter((person) => !existingMemberNames.has(person.name))
       .map((person) => ({
@@ -83,14 +114,15 @@ export default async function About() {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {PI_List?.map((person, index: number) => (
+            {leadershipMembers.map((person) => (
               <PersonCard
-                key={index}
+                key={person.name}
                 name={person.name}
                 email={person.email}
-                role={person.role}
+                role={person.displayRole}
                 affiliation={person.affiliation}
-                img={person.img_url}
+                img={person.img}
+                profileUrl={person.profileUrl}
               />
             ))}
           </div>
