@@ -83,8 +83,8 @@ export const localWorkshops: LocalWorkshop[] = [
     location: "Morgan State University, Baltimore, Maryland",
     description:
       "This two-day workshop introduced participants to GeoAI and cyberinfrastructure for maritime and fisheries management, NSF ACES, Jetstream2, and NVIDIA deep learning resources. The program also convened a panel on Blue Economy education and brought together collaborators from Morgan State University, Texas A&M University, and the University of Hawaiʻi.",
-    photoUrl: "/images/workshops/morgan-state-2026-cover.jpeg",
-    photoAlt: "Morgan State University workshop participants",
+    photoUrl: "/images/workshops/morgan-state-2026-classroom-cover.jpg",
+    photoAlt: "Participants attending the Morgan State University CyberTraining workshop",
     schedule: [
       {
         time: "March 2, 8:30 - 9:00 am",
