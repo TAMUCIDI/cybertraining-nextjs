@@ -330,7 +330,7 @@ export const localWorkshops: LocalWorkshop[] = [
         items: ["Break"],
       },
       {
-        time: "10:10 - 11:00 am",
+        time: "10:10 am - 11:00 am",
         items: [
           "Introduction to the I-GUIDE Platform",
           "Dr. Shaowen Wang - Professor, Department of Geography & Geographic Information Science and Siebel School of Computing and Data Science; Associate Dean for Natural and Mathematical Sciences, College of Liberal Arts & Sciences, University of Illinois Urbana-Champaign",
@@ -348,9 +348,9 @@ export const localWorkshops: LocalWorkshop[] = [
         items: ["Lunch"],
       },
       {
-        time: "12:30 - 1:30 pm",
+        time: "12:30 pm - 1:30 pm",
         items: [
-          "Research Presentations (30 minutes each)",
+          "Research Presentations (30 min each)",
           "Dr. Budhu Bhaduri - Chief Data Officer, Oak Ridge National Laboratory",
           "Dr. Samantha Arundel - Research Director, Center of Excellence for Geospatial Information Science, U.S. Geological Survey",
         ],
@@ -377,8 +377,9 @@ export const localWorkshops: LocalWorkshop[] = [
       {
         time: "3:50 - 4:50 pm",
         items: [
-          "Panel Session",
+          "Discussion",
           "Chair: Dr. Zhe Zhang, Associate Professor, Department of Geography, Texas A&M University",
+          "Panelists:",
           "Dr. Yue Lin - Assistant Professor, Department of Geography & Geographic Information Science, University of Illinois Urbana-Champaign",
           "Dr. Peng Luo - Assistant Professor, School of Earth, Environment, and Sustainability, University of Iowa",
           "Dr. Caglar Koylu - Associate Professor, School of Earth, Environment, and Sustainability, University of Iowa",
