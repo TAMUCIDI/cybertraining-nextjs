@@ -316,6 +316,7 @@ export const localWorkshops: LocalWorkshop[] = [
         items: [
           "Breakfast and Welcome",
           "Dr. Zhe Zhang - Associate Professor, Department of Geography, Texas A&M University",
+          "Kari Craun - Executive Director, Cartography and Geographic Information Society; Northwest Missouri State University",
         ],
       },
       {
@@ -350,7 +351,7 @@ export const localWorkshops: LocalWorkshop[] = [
       {
         time: "12:30 pm - 1:30 pm",
         items: [
-          "Research Presentations (30 min each)",
+          "Research Talks (30 min each)",
           "Dr. Budhu Bhaduri - Chief Data Officer, Oak Ridge National Laboratory",
           "Dr. Samantha Arundel - Research Director, Center of Excellence for Geospatial Information Science, U.S. Geological Survey",
         ],
@@ -379,7 +380,6 @@ export const localWorkshops: LocalWorkshop[] = [
         items: [
           "Discussion",
           "Chair: Dr. Zhe Zhang, Associate Professor, Department of Geography, Texas A&M University",
-          "Panelists:",
           "Dr. Yue Lin - Assistant Professor, Department of Geography & Geographic Information Science, University of Illinois Urbana-Champaign",
           "Dr. Peng Luo - Assistant Professor, School of Earth, Environment, and Sustainability, University of Iowa",
           "Dr. Caglar Koylu - Associate Professor, School of Earth, Environment, and Sustainability, University of Iowa",
