@@ -312,14 +312,86 @@ export const localWorkshops: LocalWorkshop[] = [
     imageFit: "contain",
     schedule: [
       {
-        time: "All day",
+        time: "8:30 - 9:20 am",
         items: [
-          "Fundamentals of cyberinfrastructure and high-performance computing, including NSF ACCESS and NAIRR resources",
-          "Scientific programming in Python using JupyterLab",
-          "Disaster and coastal science data processing and visualization techniques",
-          "Geospatial analysis for disaster and coastal sustainability management",
-          "Organizers: Zhe Zhang, Shaowen Wang, Honggao Liu, and Zhenhua He",
+          "Breakfast and Welcome",
+          "Dr. Zhe Zhang - Associate Professor, Department of Geography, Texas A&M University",
         ],
+      },
+      {
+        time: "9:20 - 10:00 am",
+        items: [
+          "Keynote Presentation: Disaster Management as a Geospatial Problem",
+          "Dr. Michael Goodchild - Professor Emeritus, University of California, Santa Barbara",
+        ],
+      },
+      {
+        time: "10:00 - 10:10 am",
+        items: ["Break"],
+      },
+      {
+        time: "10:10 - 11:00 am",
+        items: [
+          "Introduction to the I-GUIDE Platform",
+          "Dr. Shaowen Wang - Professor, Department of Geography & Geographic Information Science and Siebel School of Computing and Data Science; Associate Dean for Natural and Mathematical Sciences, College of Liberal Arts & Sciences, University of Illinois Urbana-Champaign",
+        ],
+      },
+      {
+        time: "11:00 - 11:50 am",
+        items: [
+          "Texas A&M AI Supercomputing",
+          "Dr. Honggao Liu - Executive Director of High-Performance Research Computing at Texas A&M University",
+        ],
+      },
+      {
+        time: "11:50 am - 12:30 pm",
+        items: ["Lunch"],
+      },
+      {
+        time: "12:30 - 1:30 pm",
+        items: [
+          "Research Presentations (30 minutes each)",
+          "Dr. Budhu Bhaduri - Chief Data Officer, Oak Ridge National Laboratory",
+          "Dr. Samantha Arundel - Research Director, Center of Excellence for Geospatial Information Science, U.S. Geological Survey",
+        ],
+      },
+      {
+        time: "1:30 - 1:40 pm",
+        items: ["Break"],
+      },
+      {
+        time: "1:40 - 3:40 pm",
+        items: [
+          "CyberGeoAI for Disaster Management using NSF ACES and NAIRR",
+          "Dr. Zhe Zhang - Associate Professor, Department of Geography, Texas A&M University",
+          "Dr. Zhenhua He - Interim Director for Emerging Technologies and Research at Texas A&M High-Performance Research Computing",
+          "Ms. Shoibolina Kaushik - Graduate Research Assistant, Department of Geography, Texas A&M University",
+          "Mr. Yuan Niu - Graduate Research Assistant, Department of Geography, Texas A&M University",
+          "Mr. Yuhang Xie - Graduate Research Assistant, Department of Geography, Texas A&M University",
+        ],
+      },
+      {
+        time: "3:40 - 3:50 pm",
+        items: ["Break"],
+      },
+      {
+        time: "3:50 - 4:50 pm",
+        items: [
+          "Panel Session",
+          "Chair: Dr. Zhe Zhang, Associate Professor, Department of Geography, Texas A&M University",
+          "Dr. Yue Lin - Assistant Professor, Department of Geography & Geographic Information Science, University of Illinois Urbana-Champaign",
+          "Dr. Peng Luo - Assistant Professor, School of Earth, Environment, and Sustainability, University of Iowa",
+          "Dr. Caglar Koylu - Associate Professor, School of Earth, Environment, and Sustainability, University of Iowa",
+          "Dr. Stephen Baker - Senior Research & Evaluation Scientist, Mansueto Institute for Urban Innovation",
+        ],
+      },
+      {
+        time: "4:50 pm",
+        items: ["Close the Workshop"],
+      },
+      {
+        time: "5:00 pm",
+        items: ["Dinner"],
       },
     ],
     registration: {
