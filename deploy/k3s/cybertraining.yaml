@@ -1,0 +1,104 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cybertraining-test-app
+  namespace: cybertraining-test
+  labels:
+    app: cybertraining-test-app
+    environment: test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cybertraining-test-app
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: cybertraining-test-app
+        environment: test
+    spec:
+      containers:
+        - name: nextjs
+          image: zhjyu11/cybertraining:cyber-dart-20260818-9ca0904@sha256:28c5550e929a503eb55c58ee7326d9c9c253350b83081db26ff3d2dddc9680d0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 3000
+              protocol: TCP
+          env:
+            - name: NODE_ENV
+              value: production
+            - name: NEXT_PUBLIC_SUPABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: cybertraining-supabase
+                  key: NEXT_PUBLIC_SUPABASE_URL
+            - name: NEXT_PUBLIC_SUPABASE_ANON_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: cybertraining-supabase
+                  key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+          livenessProbe:
+            httpGet:
+              path: /cyber-dart
+              port: 3000
+            initialDelaySeconds: 30
+            periodSeconds: 30
+            timeoutSeconds: 5
+            failureThreshold: 3
+          readinessProbe:
+            httpGet:
+              path: /cyber-dart
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 3
+            failureThreshold: 3
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cybertraining-test-service
+  namespace: cybertraining-test
+spec:
+  type: ClusterIP
+  selector:
+    app: cybertraining-test-app
+  ports:
+    - name: http
+      port: 80
+      targetPort: 3000
+      protocol: TCP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cybertraining-test-ingress
+  namespace: cybertraining-test
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: web,websecure
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: cyber-dart.geos.tamu.edu
+      http:
+        paths:
+          - path: /cyber-dart
+            pathType: Prefix
+            backend:
+              service:
+                name: cybertraining-test-service
+                port:
+                  number: 80

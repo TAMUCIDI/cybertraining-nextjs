@@ -1,11 +1,15 @@
 import createMDX from '@next/mdx'
-import { setupDevPlatform } from '@cloudflare/next-on-pages/next-dev';
  
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/cyber-dart',
+  assetPrefix: '/cyber-dart',
+  output: 'standalone',
+  poweredByHeader: false,
   // Configure `pageExtensions` to include markdown and MDX files
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -25,9 +29,5 @@ const withMDX = createMDX({
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
 })
  
-if (process.env.NODE_ENV === 'development') {
-  await setupDevPlatform();
-}
-
 // Merge MDX config with Next.js config
 export default withMDX(nextConfig)
