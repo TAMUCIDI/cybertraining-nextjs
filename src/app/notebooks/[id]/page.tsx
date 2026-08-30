@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 import DefaultLayout from "@/app/layouts/DefaultLayout";
 import { getLocalNotebook } from "@/server/content/siteUpdates";
+import { withBasePath } from "@/utils/basePath";
 import { createClient } from "@/utils/supabase/server";
 
 type Params = Promise<{ id: string }>;
@@ -70,14 +71,14 @@ export default async function NotebookDetail({ params }: { params: Params }) {
 
                     <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.10)]">
                         <iframe
-                            src={notebook.fileUrl}
+                            src={withBasePath(notebook.fileUrl)}
                             className="h-[78vh] min-h-[720px] w-full"
                             title={`${notebook.title} content`}
                         />
                     </div>
                     <div className="mt-5 flex justify-end">
                         <a
-                            href={notebook.fileUrl}
+                            href={withBasePath(notebook.fileUrl)}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn border-0 bg-red-900 text-white shadow-sm hover:bg-red-800"

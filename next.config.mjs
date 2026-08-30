@@ -1,9 +1,14 @@
 import createMDX from '@next/mdx'
+
+const basePath = '/cyber-dart'
  
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/cyber-dart',
-  assetPrefix: '/cyber-dart',
+  basePath,
+  assetPrefix: basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   output: 'standalone',
   poweredByHeader: false,
   // Configure `pageExtensions` to include markdown and MDX files

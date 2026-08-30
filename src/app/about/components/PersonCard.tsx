@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 
+import { withBasePath } from '@/utils/basePath';
+
 export interface PersonCardProps {
     name: string;
     email?: string;
@@ -30,7 +32,7 @@ export default function PersonCard({
             <figure className="relative flex h-72 items-center justify-center overflow-hidden bg-slate-100">
                 {img ? (
                     <Image
-                        src={img}
+                        src={withBasePath(img)}
                         alt={`${name} portrait`}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { withBasePath } from "@/utils/basePath";
+
 export default function TopHero() {
   return (
     <main className="bg-white text-slate-900">
       <section className="relative isolate flex min-h-screen items-center overflow-hidden bg-slate-950 text-white">
         <Image
-          src="/images/HeroBackground.webp"
+          src={withBasePath("/images/HeroBackground.webp")}
           alt="Aerial view of a flooded community"
           fill
           priority
@@ -20,11 +22,11 @@ export default function TopHero() {
           loop
           muted
           playsInline
-          poster="/images/HeroBackground.webp"
+          poster={withBasePath("/images/HeroBackground.webp")}
           preload="auto"
           className="absolute inset-0 h-full w-full object-cover motion-reduce:hidden"
         >
-          <source src="/videos/landing-flood.mp4" type="video/mp4" />
+          <source src={withBasePath("/videos/landing-flood.mp4")} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-950/35" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/55 via-transparent to-slate-950/15" />

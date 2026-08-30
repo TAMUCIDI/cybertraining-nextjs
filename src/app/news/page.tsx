@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import { withBasePath } from "@/utils/basePath";
+
 export default function News() {
     return (
         <DefaultLayout>
@@ -58,7 +60,7 @@ export default function News() {
 
                     <figure className="relative min-h-80 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.10)] sm:min-h-[480px]">
                         <Image
-                            src="/images/workshops/cagis-2026.jpg"
+                            src={withBasePath("/images/workshops/cagis-2026.jpg")}
                             alt="CaGIS 2026 Conference in St. Louis"
                             fill
                             priority

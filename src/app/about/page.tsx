@@ -14,6 +14,8 @@ import PersonCard from "./components/PersonCard";
 import React from "react";
 import Image from "next/image";
 
+import { withBasePath } from "@/utils/basePath";
+
 export default async function About() {
   const supabase = await createClient();
   const { data: PI_List } = await supabase.from("people").select('name,email,role,affiliation,img_url').in('role', ['PI','Co-PI'])
@@ -95,7 +97,7 @@ export default async function About() {
 
           <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_18px_50px_rgba(15,23,42,0.10)]">
             <Image
-              src="/images/ctdm_about.png"
+              src={withBasePath("/images/ctdm_about.png")}
               alt="Cyber-DART GeoAI network diagram"
               width={800}
               height={600}

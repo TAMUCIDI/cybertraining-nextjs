@@ -3,6 +3,8 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { withBasePath } from '@/utils/basePath';
+
 // TODO: add thumbnail for all webinars
 export interface WebinarCardProps {
     id: string;
@@ -22,7 +24,7 @@ export default function WebinarCard({
             <Link href={`/webinars/${id}`} className="flex h-full flex-col">
                 <figure className="relative h-56 overflow-hidden bg-slate-100">
                     <Image
-                        src={img || "/images/WebinarCardDefaultImg.jpg"}
+                        src={withBasePath(img || "/images/WebinarCardDefaultImg.jpg")}
                         alt={`${title} webinar cover`}
                         fill
                         priority={priority}

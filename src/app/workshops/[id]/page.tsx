@@ -13,6 +13,7 @@ import {
     type WorkshopScheduleItem,
 } from "@/server/content/siteUpdates";
 import { createClient } from "@/utils/supabase/server";
+import { withBasePath } from "@/utils/basePath";
 
 type Params = Promise<{ id: string }>;
 
@@ -116,7 +117,7 @@ export default async function WorkshopDetail({ params }: { params: Params }) {
                                     {workshop.registration && (
                                         <a
                                             className="btn border-0 bg-amber-300 text-amber-950 hover:bg-amber-400"
-                                            href={workshop.registration.url}
+                                            href={withBasePath(workshop.registration.url)}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -127,7 +128,7 @@ export default async function WorkshopDetail({ params }: { params: Params }) {
                                         <a
                                             key={resource.url}
                                             className="btn bg-red-900 text-white hover:bg-red-800"
-                                            href={resource.url}
+                                            href={withBasePath(resource.url)}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
@@ -141,7 +142,7 @@ export default async function WorkshopDetail({ params }: { params: Params }) {
                         {workshop.photoUrl && (
                             <figure className="relative min-h-80 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.10)] sm:min-h-[430px]">
                                 <Image
-                                    src={workshop.photoUrl}
+                                    src={withBasePath(workshop.photoUrl)}
                                     alt={workshop.photoAlt}
                                     fill
                                     priority
@@ -195,7 +196,7 @@ export default async function WorkshopDetail({ params }: { params: Params }) {
                                 {workshop.gallery.map((image) => (
                                     <figure key={image.src} className="relative min-h-80 overflow-hidden rounded-2xl bg-slate-200 shadow-lg">
                                         <Image
-                                            src={image.src}
+                                            src={withBasePath(image.src)}
                                             alt={image.alt}
                                             fill
                                             sizes="(max-width: 768px) 100vw, 50vw"
