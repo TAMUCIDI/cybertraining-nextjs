@@ -5,12 +5,12 @@ export default function Footer() {
     <footer className="bg-slate-950 px-6 py-14 text-slate-300 lg:px-10">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.4fr_0.6fr_0.6fr]">
         <aside className="max-w-xl">
-          <Link href="/" className="text-2xl font-bold tracking-tight text-white">CyberTraining</Link>
+          <Link href="/" className="text-2xl font-bold tracking-tight text-white">Cyber-DART</Link>
           <p className="mt-4 max-w-md leading-7 text-slate-400">
             An international training network advancing cyberinfrastructure, geospatial science, and GeoAI for disaster management.
           </p>
           <p className="mt-8 text-sm text-slate-500">
-            Copyright © {new Date().getFullYear()} CyberTraining. All rights reserved.
+            Copyright © {new Date().getFullYear()} Cyber-DART. All rights reserved.
           </p>
         </aside>
         <nav className="flex flex-col gap-3">

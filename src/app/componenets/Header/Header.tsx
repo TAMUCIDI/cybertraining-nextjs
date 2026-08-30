@@ -28,7 +28,7 @@ export default function Header() {
     <div className={`fixed z-40 navbar border-b transition-all duration-300 ${isHome && !isScrolled ? 'border-transparent bg-transparent text-base-200' : 'border-slate-200/80 bg-white/95 text-slate-900 backdrop-blur-md'} ${isScrolled ? 'shadow-sm' : ''}`}>
       <div className="navbar-start">
         <Link href={`/`} className="btn btn-ghost text-xl">
-          CyberTraining
+          Cyber-DART
         </Link>
         
       </div>

@@ -88,7 +88,7 @@ export default async function About() {
                 Advanced cyberinfrastructure resources are increasingly available, yet awareness, access, and technical readiness remain real barriers. Researchers may not know which resources exist or how those capabilities can support work in their own fields.
               </p>
               <p>
-                The International CyberTraining for Disaster Management network brings together students, scientists, faculty, cyberinfrastructure contributors, and users. Through practical training in advanced computing, geospatial analytics, and GeoAI, the project helps participants develop the skills needed to observe, analyze, and manage disaster events.
+                Cyber-DART brings together students, scientists, faculty, cyberinfrastructure contributors, and users. Through practical training in advanced computing, geospatial analytics, and GeoAI, the project helps participants develop the skills needed to observe, analyze, and manage disaster events.
               </p>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default async function About() {
           <figure className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_18px_50px_rgba(15,23,42,0.10)]">
             <Image
               src="/images/ctdm_about.png"
-              alt="CyberTraining for Disaster Management network diagram"
+              alt="Cyber-DART GeoAI network diagram"
               width={800}
               height={600}
               priority

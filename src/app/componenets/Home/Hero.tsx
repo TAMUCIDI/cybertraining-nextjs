@@ -31,14 +31,11 @@ export default function TopHero() {
 
         <div className="relative mx-auto w-full max-w-7xl px-6 py-32 lg:px-10">
           <div className="max-w-5xl">
-            <h1 className="text-5xl font-bold leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl">
-              CyberTraining for Disaster Management Network
+            <h1 className="text-4xl font-bold leading-[1.04] tracking-tight sm:text-5xl lg:text-6xl">
+              Cyber-DART: A Cyberinfrastructure-Powered GeoAI Platform for Disaster Assessment, Reduction, and Training
             </h1>
-            <h2 className="mt-5 text-2xl font-semibold text-slate-200 sm:text-3xl">
-              (CTDM CyberTraining)
-            </h2>
             <p className="mt-8 text-lg font-semibold text-slate-200 sm:text-xl">
-              Funded by NSF award number:{" "}
+              Funded by NSF award numbers:{" "}
               <Link
                 className="text-amber-300 underline decoration-amber-300/50 underline-offset-4 hover:decoration-amber-300"
                 href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2321069&HistoricalAwards=false"
@@ -55,6 +52,24 @@ export default function TopHero() {
                 rel="noopener noreferrer"
               >
                 2519476
+              </Link>
+              {", "}
+              <Link
+                className="text-amber-300 underline decoration-amber-300/50 underline-offset-4 hover:decoration-amber-300"
+                href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2321070&HistoricalAwards=false"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                2321070
+              </Link>
+              {", "}
+              <Link
+                className="text-amber-300 underline decoration-amber-300/50 underline-offset-4 hover:decoration-amber-300"
+                href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2519477&HistoricalAwards=false"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                2519477
               </Link>
             </p>
           </div>
