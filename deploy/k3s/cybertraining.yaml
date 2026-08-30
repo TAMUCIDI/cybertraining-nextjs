@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: nextjs
-          image: zhjyu11/cybertraining:cyber-dart-20260818-9ca0904@sha256:28c5550e929a503eb55c58ee7326d9c9c253350b83081db26ff3d2dddc9680d0
+          image: docker.io/zhjyu11/cybertraining:cyber-dart-20260830-4278fd6@sha256:982309a6d6ab8e55cd945930c108d4f4be242cccf799d4514f8e3b2c14a5b6fb
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
