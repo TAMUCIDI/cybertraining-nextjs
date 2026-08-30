@@ -15,9 +15,9 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title:
-    "Cyber-DART: A Cyberinfrastructure-Powered GeoAI Platform for Disaster Assessment, Reduction, and Training",
+    "Cyber-DART: An International Cyberinfrastructure-Powered GeoAI Network for Disaster Assessment, Reduction, and Training",
   description:
-    "A cyberinfrastructure-powered GeoAI platform for disaster assessment, reduction, and training.",
+    "An international cyberinfrastructure-powered GeoAI network for disaster assessment, reduction, and training.",
 };
 
 export default function RootLayout({

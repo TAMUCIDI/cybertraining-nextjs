@@ -65,7 +65,7 @@ export default function TopHero() {
                 Cyber-DART:
               </span>
               <span className="mt-8 block max-w-3xl text-[clamp(1.45rem,3.2vw,2.8rem)] font-semibold leading-[1.08] text-slate-100">
-                A Cyberinfrastructure-Powered GeoAI Platform for Disaster Assessment, Reduction, and Training
+                An International Cyberinfrastructure-Powered GeoAI Network for Disaster Assessment, Reduction, and Training
               </span>
             </h1>
           </div>
