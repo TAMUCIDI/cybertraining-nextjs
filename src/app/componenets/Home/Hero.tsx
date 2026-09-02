@@ -61,10 +61,10 @@ export default function TopHero() {
         <div className="relative mx-auto w-full max-w-7xl px-5 pb-16 pt-28 sm:px-6 sm:pb-20 sm:pt-32 lg:px-10">
           <div className="max-w-5xl">
             <h1 className="tracking-tight">
-              <span className="block text-[clamp(3.75rem,10vw,8.5rem)] font-black leading-[0.8] tracking-[-0.075em]">
+              <span className="block text-[clamp(3.25rem,6.5vw,5.5rem)] font-black leading-[0.8] tracking-[-0.075em]">
                 Cyber-DART:
               </span>
-              <span className="mt-8 block max-w-3xl text-[clamp(1.45rem,3.2vw,2.8rem)] font-semibold leading-[1.08] text-slate-100">
+              <span className="mt-7 block max-w-3xl text-[clamp(1.45rem,3.2vw,2.8rem)] font-semibold leading-[1.08] text-slate-100">
                 An International Cyberinfrastructure-Powered GeoAI Network for Disaster Assessment, Reduction, and Training
               </span>
             </h1>
