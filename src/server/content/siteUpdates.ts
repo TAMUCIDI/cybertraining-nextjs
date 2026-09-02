@@ -301,12 +301,12 @@ export const localWorkshops: LocalWorkshop[] = [
   },
   {
     id: "cagis-2026-cybertraining-workshop",
-    title: "CaGIS 2026 CyberTraining Workshop",
+    title: "CaGIS-National AI Computing Research Resources Workshop",
     startDate: "2026-09-11",
     location:
       "Busch Student Center, Saint Louis University, St. Louis, Missouri",
     description:
-      "This all-day workshop will establish a cyberinfrastructure-powered GeoAI research network for disaster and coastal sustainability management. It will build foundational computational literacy for analyzing large-scale disaster and oceanography datasets and producing scientific outcomes.",
+      "This workshop aims to equip participants with Cyberinfrastructure (CI) and GeoAI skills to advance disaster management and sustainability. Through hands-on training, participants will develop computational skills using national AI computing resources for analyzing large-scale geospatial datasets and translating complex data into actionable scientific insights. Supported by National Science Foundation (NSF)-funded programs under award Nos. 2526748, 2519476, and 2519477.",
     photoUrl: "/images/workshops/cagis-2026.jpg",
     photoAlt: "CaGIS 2026 Conference in St. Louis",
     imageFit: "contain",

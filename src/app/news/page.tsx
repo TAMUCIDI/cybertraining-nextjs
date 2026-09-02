@@ -17,10 +17,10 @@ export default function News() {
                             Latest news
                         </p>
                         <h1 className="mt-3 text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-                            CaGIS 2026 CyberTraining Workshop
+                            CaGIS-National AI Computing Research Resources Workshop
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-slate-600">
-                            Join an all-day training program on cyberinfrastructure, high-performance computing, Python, disaster and coastal data, and geospatial analysis for disaster and coastal sustainability management.
+                            This workshop aims to equip participants with Cyberinfrastructure (CI) and GeoAI skills to advance disaster management and sustainability. Through hands-on training, participants will develop computational skills using national AI computing resources for analyzing large-scale geospatial datasets and translating complex data into actionable scientific insights. Supported by National Science Foundation (NSF)-funded programs under award Nos. 2526748, 2519476, and 2519477.
                         </p>
 
                         <dl className="mt-8 grid gap-5 border-l-4 border-red-900 pl-5 sm:grid-cols-2">
