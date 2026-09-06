@@ -4,6 +4,7 @@ import DefaultLayout from "@/app/layouts/DefaultLayout";
 
 import { createClient } from '@/utils/supabase/server';
 import {
+  getOfficialEmail,
   getOfficialProfileUrl,
   localAdvisoryMembers,
   localProjectLeadershipMembers,
@@ -30,7 +31,7 @@ export default async function About() {
   const leadershipMembers = [
     ...(PI_List || []).map((person) => ({
       name: person.name,
-      email: person.email,
+      email: getOfficialEmail(person.name, person.email),
       affiliation: person.affiliation,
       img: person.img_url,
       displayRole: person.role,
@@ -40,7 +41,7 @@ export default async function About() {
       .filter((person) => !existingLeadershipNames.has(person.name))
       .map((person) => ({
         name: person.name,
-        email: undefined,
+        email: getOfficialEmail(person.name, person.email),
         affiliation: person.affiliation,
         img: person.img,
         displayRole: person.displayRole,
@@ -52,7 +53,7 @@ export default async function About() {
       .filter((person) => !localLeadershipNames.has(person.name))
       .map((person) => ({
         name: person.name,
-        email: person.email,
+        email: getOfficialEmail(person.name, person.email),
         affiliation: person.affiliation,
         img: person.img_url,
         displayRole: undefined,
@@ -62,7 +63,7 @@ export default async function About() {
       .filter((person) => !existingMemberNames.has(person.name))
       .map((person) => ({
         name: person.name,
-        email: undefined,
+        email: getOfficialEmail(person.name, person.email),
         affiliation: person.affiliation,
         img: person.img,
         displayRole: person.displayRole,

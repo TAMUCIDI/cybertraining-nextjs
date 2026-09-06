@@ -528,6 +528,7 @@ export type LocalTeamMember = {
   name: string;
   affiliation: string;
   displayRole?: string;
+  email?: string;
   img: string;
   profileUrl: string;
 };
@@ -572,6 +573,39 @@ export function getOfficialProfileUrl(name: string, fallback?: string) {
   return officialProfileUrls[name] ?? fallback;
 }
 
+export const officialEmails: Record<string, string> = {
+  "Michael Goodchild": "good@geog.ucsb.edu",
+  "Zhe Zhang": "zhezhang@tamu.edu",
+  "Honggao Liu": "honggao@tamu.edu",
+  "Shaowen Wang": "shaowen@illinois.edu",
+  "Liqiu Meng": "liqiu.meng@tum.de",
+  "Xinyue Ye": "xye10@ua.edu",
+  "Chanam Lee": "chanam@tamu.edu",
+  "Nick Duffield": "duffieldng@tamu.edu",
+  "Yuqin Jiang": "yuqinj@hawaii.edu",
+  "Stephen Baker": "bak5@uchicago.edu",
+  "Zhuping Sheng": "zhuping.sheng@morgan.edu",
+  "Shelley Knuth": "shelley.knuth@colorado.edu",
+  "Lori Peek": "Lori.Peek@colorado.edu",
+  "Tim Cockerill": "cockerill@tacc.utexas.edu",
+  "Joseph Kerski": "jkerski@esri.com",
+  "Samantha Arundel": "sarundel@usgs.gov",
+  "Amy Rock": "arock@ucgis.org",
+  "Jorge Brenner": "jorge.brenner@gcoos.org",
+  "Tao Cheng": "tao.cheng@ucl.ac.uk",
+  "Xiao Li": "xiao.li@ouce.ox.ac.uk",
+  "Aron Larsson": "aron.larsson@miun.se",
+  "Huilin Gao": "hgao@civil.tamu.edu",
+  "Lingli Zhu": "lingli.zhu@nls.fi",
+  "Henrikki Tenkanen": "henrikki.tenkanen@aalto.fi",
+  "Jukka Krisp": "jukka.krisp@geo.uni-augsburg.de",
+  "Changjie Cai": "Changjie-Cai@ouhsc.edu",
+};
+
+export function getOfficialEmail(name: string, fallback?: string) {
+  return officialEmails[name] ?? fallback;
+}
+
 export const localProjectLeadershipMembers: LocalTeamMember[] = [
 ];
 
@@ -580,6 +614,7 @@ export const localAdvisoryMembers: LocalTeamMember[] = [
     name: "Michael Goodchild",
     affiliation:
       "Distinguished Professor Emeritus, Department of Geography, University of California, Santa Barbara",
+    email: "good@geog.ucsb.edu",
     img: "/images/team/michael-goodchild.jpg",
     profileUrl:
       "https://www.geog.ucsb.edu/people/faculty/michael-goodchild",
@@ -587,6 +622,7 @@ export const localAdvisoryMembers: LocalTeamMember[] = [
   {
     name: "Liqiu Meng",
     affiliation: "Professor of Cartography, Technical University of Munich",
+    email: "liqiu.meng@tum.de",
     img: "/images/team/liqiu-meng.jpg",
     profileUrl: "https://www.professoren.tum.de/en/meng-liqiu/",
   },
@@ -594,6 +630,7 @@ export const localAdvisoryMembers: LocalTeamMember[] = [
     name: "Xinyue Ye",
     affiliation:
       "Endowed Shelby Distinguished Professor of GeoAI, University of Alabama",
+    email: "xye10@ua.edu",
     img: "/images/team/xinyue-ye.jpg",
     profileUrl: "https://geography.ua.edu/people/xinyue-ye/",
   },
@@ -601,6 +638,7 @@ export const localAdvisoryMembers: LocalTeamMember[] = [
     name: "Chanam Lee",
     affiliation:
       "Professor and Executive Associate Dean, College of Architecture, Texas A&M University",
+    email: "chanam@tamu.edu",
     img: "/images/team/chanam-lee.jpg",
     profileUrl: "https://www.arch.tamu.edu/directory/chanam-lee/",
   },
@@ -608,6 +646,7 @@ export const localAdvisoryMembers: LocalTeamMember[] = [
     name: "Nick Duffield",
     affiliation:
       "Professor of Electrical and Computer Engineering and Director, Texas A&M Institute of Data Science",
+    email: "duffieldng@tamu.edu",
     img: "/images/team/nick-duffield.jpg",
     profileUrl:
       "https://engineering.tamu.edu/electrical/profiles/duffield-nick.html",
@@ -616,6 +655,7 @@ export const localAdvisoryMembers: LocalTeamMember[] = [
     name: "Yuqin Jiang",
     affiliation:
       "Assistant Professor, Department of Geography and Environment, University of Hawaiʻi at Mānoa",
+    email: "yuqinj@hawaii.edu",
     img: "/images/team/yuqin-jiang.jpg",
     profileUrl: "https://geography.manoa.hawaii.edu/yuqin-jiang/",
   },
@@ -623,6 +663,7 @@ export const localAdvisoryMembers: LocalTeamMember[] = [
     name: "Stephen Baker",
     affiliation:
       "Urban Doctoral Fellows Coordinator, Mansueto Institute for Urban Innovation; Senior Research & Evaluation Scientist, Outlier Research and Evaluation at UChicago STEM",
+    email: "bak5@uchicago.edu",
     img: "/images/team/stephen-baker.jpg",
     profileUrl: "https://miurban.uchicago.edu/bio_stephen-baker/",
   },
