@@ -4,6 +4,7 @@ import DefaultLayout from "@/app/layouts/DefaultLayout";
 
 import { createClient } from '@/utils/supabase/server';
 import {
+  getOfficialProfileUrl,
   localAdvisoryMembers,
   localProjectLeadershipMembers,
 } from '@/server/content/siteUpdates';
@@ -33,7 +34,7 @@ export default async function About() {
       affiliation: person.affiliation,
       img: person.img_url,
       displayRole: person.role,
-      profileUrl: undefined,
+      profileUrl: getOfficialProfileUrl(person.name),
     })),
     ...localProjectLeadershipMembers
       .filter((person) => !existingLeadershipNames.has(person.name))
@@ -43,10 +44,10 @@ export default async function About() {
         affiliation: person.affiliation,
         img: person.img,
         displayRole: person.displayRole,
-        profileUrl: person.profileUrl,
+        profileUrl: getOfficialProfileUrl(person.name, person.profileUrl),
       })),
   ];
-  const advisoryMembers = [
+  const mergedAdvisoryMembers = [
     ...(Member_List || [])
       .filter((person) => !localLeadershipNames.has(person.name))
       .map((person) => ({
@@ -55,7 +56,7 @@ export default async function About() {
         affiliation: person.affiliation,
         img: person.img_url,
         displayRole: undefined,
-        profileUrl: undefined,
+        profileUrl: getOfficialProfileUrl(person.name),
       })),
     ...localAdvisoryMembers
       .filter((person) => !existingMemberNames.has(person.name))
@@ -65,9 +66,14 @@ export default async function About() {
         affiliation: person.affiliation,
         img: person.img,
         displayRole: person.displayRole,
-        profileUrl: person.profileUrl,
+        profileUrl: getOfficialProfileUrl(person.name, person.profileUrl),
       })),
   ];
+  const leadAdvisoryName = "Michael Goodchild";
+  const leadAdvisoryMember = mergedAdvisoryMembers.find((person) => person.name === leadAdvisoryName);
+  const advisoryMembers = leadAdvisoryMember
+    ? [leadAdvisoryMember, ...mergedAdvisoryMembers.filter((person) => person.name !== leadAdvisoryName)]
+    : mergedAdvisoryMembers;
 
   return (
     <DefaultLayout>

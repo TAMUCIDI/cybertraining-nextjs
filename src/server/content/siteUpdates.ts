@@ -532,19 +532,58 @@ export type LocalTeamMember = {
   profileUrl: string;
 };
 
+export const officialProfileUrls: Record<string, string> = {
+  "Michael Goodchild":
+    "https://www.geog.ucsb.edu/people/faculty/michael-goodchild",
+  "Zhe Zhang":
+    "https://artsci.tamu.edu/geography/contact/profiles/zhesarina-zhang.html",
+  "Honggao Liu": "https://hprc.tamu.edu/about/staff/honggao-liu.html",
+  "Shaowen Wang": "https://ggis.illinois.edu/directory/profile/shaowen",
+  "Liqiu Meng": "https://www.professoren.tum.de/en/meng-liqiu/",
+  "Xinyue Ye": "https://geography.ua.edu/people/xinyue-ye/",
+  "Chanam Lee": "https://www.arch.tamu.edu/directory/chanam-lee/",
+  "Nick Duffield":
+    "https://engineering.tamu.edu/electrical/profiles/duffield-nick.html",
+  "Yuqin Jiang": "https://geography.manoa.hawaii.edu/yuqin-jiang/",
+  "Stephen Baker": "https://miurban.uchicago.edu/bio_stephen-baker/",
+  "Zhuping Sheng":
+    "https://www.morgan.edu/civil-and-environmental-engineering/faculty-and-staff/dr-zhuping-sheng",
+  "Shelley Knuth": "https://www.colorado.edu/rc/about/knuth",
+  "Lori Peek": "https://www.colorado.edu/sociology/our-people/lori-peek",
+  "Tim Cockerill": "https://tacc.utexas.edu/about/staff-directory/tim-cockerill/",
+  "Joseph Kerski": "https://www.josephkerski.com",
+  "Samantha Arundel": "https://www.usgs.gov/staff-profiles/samantha-t-arundel",
+  "Amy Rock": "https://www.humboldt.edu/geography/amy-rock",
+  "Jorge Brenner": "https://gcoos.org/team-showcase/jorge-brenner/",
+  "Tao Cheng": "https://profiles.ucl.ac.uk/10774-tao-cheng",
+  "Xiao Li": "https://www.tsu.ox.ac.uk/people/xli.html",
+  "Aron Larsson": "https://www.miun.se/en/personnel/l/aronlarsson/",
+  "Huilin Gao": "https://engineering.tamu.edu/civil/profiles/hgao.html",
+  "Lingli Zhu":
+    "https://www.maanmittauslaitos.fi/en/research/research/centre-excellence-laser-scanning-research/people",
+  "Henrikki Tenkanen": "https://www.aalto.fi/en/people/henrikki-tenkanen",
+  "Jukka Krisp":
+    "https://www.uni-augsburg.de/en/fakultaet/fai/geo/prof/geoagi/geoagi-team/j-krisp/",
+  "Changjie Cai":
+    "https://publichealth.ouhsc.edu/about/who-we-are/details/changjie-cai-phd",
+};
+
+export function getOfficialProfileUrl(name: string, fallback?: string) {
+  return officialProfileUrls[name] ?? fallback;
+}
+
 export const localProjectLeadershipMembers: LocalTeamMember[] = [
+];
+
+export const localAdvisoryMembers: LocalTeamMember[] = [
   {
     name: "Michael Goodchild",
-    displayRole: "Co-I and Evaluator",
     affiliation:
       "Distinguished Professor Emeritus, Department of Geography, University of California, Santa Barbara",
     img: "/images/team/michael-goodchild.jpg",
     profileUrl:
-      "https://www.thebritishacademy.ac.uk/fellows/profiles/michael-goodchild-FBA/",
+      "https://www.geog.ucsb.edu/people/faculty/michael-goodchild",
   },
-];
-
-export const localAdvisoryMembers: LocalTeamMember[] = [
   {
     name: "Liqiu Meng",
     affiliation: "Professor of Cartography, Technical University of Munich",
