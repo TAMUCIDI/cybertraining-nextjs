@@ -315,7 +315,7 @@ export const localWorkshops: LocalWorkshop[] = [
         time: "8:30 - 9:20 am",
         items: [
           "Breakfast and Welcome",
-          "Dr. Zhe Zhang - Associate Professor, Department of Geography, Texas A&M University",
+          "Zhe Zhang - Associate Professor, Department of Geography, Texas A&M University",
           "Kari Craun - Executive Director, Cartography and Geographic Information Society; Northwest Missouri State University",
         ],
       },
@@ -323,7 +323,7 @@ export const localWorkshops: LocalWorkshop[] = [
         time: "9:20 - 10:00 am",
         items: [
           "Keynote Presentation: Disaster Management as a Geospatial Problem",
-          "Dr. Michael Goodchild - Professor Emeritus, University of California, Santa Barbara",
+          "Michael Goodchild - Professor Emeritus, University of California, Santa Barbara",
         ],
       },
       {
@@ -334,14 +334,14 @@ export const localWorkshops: LocalWorkshop[] = [
         time: "10:10 am - 11:00 am",
         items: [
           "Introduction to the I-GUIDE Platform",
-          "Dr. Shaowen Wang - Professor, Department of Geography & Geographic Information Science and Siebel School of Computing and Data Science; Associate Dean for Natural and Mathematical Sciences, College of Liberal Arts & Sciences, University of Illinois Urbana-Champaign",
+          "Shaowen Wang - Professor, Department of Geography & Geographic Information Science and Siebel School of Computing and Data Science; Associate Dean for Natural and Mathematical Sciences, College of Liberal Arts & Sciences, University of Illinois Urbana-Champaign",
         ],
       },
       {
         time: "11:00 - 11:50 am",
         items: [
           "Texas A&M AI Supercomputing",
-          "Dr. Honggao Liu - Executive Director of High-Performance Research Computing at Texas A&M University",
+          "Honggao Liu - Executive Director of High-Performance Research Computing at Texas A&M University",
         ],
       },
       {
@@ -352,8 +352,8 @@ export const localWorkshops: LocalWorkshop[] = [
         time: "12:30 pm - 1:30 pm",
         items: [
           "Research Talks (30 min each)",
-          "Dr. Budhu Bhaduri - Chief Data Officer, Oak Ridge National Laboratory",
-          "Dr. Samantha Arundel - Research Director, Center of Excellence for Geospatial Information Science, U.S. Geological Survey",
+          "Budhu Bhaduri - Chief Data Officer, Oak Ridge National Laboratory",
+          "Samantha Arundel - Research Director, Center of Excellence for Geospatial Information Science, U.S. Geological Survey",
         ],
       },
       {
@@ -364,11 +364,11 @@ export const localWorkshops: LocalWorkshop[] = [
         time: "1:40 - 3:40 pm",
         items: [
           "CyberGeoAI for Disaster Management using NSF ACES and NAIRR",
-          "Dr. Zhe Zhang - Associate Professor, Department of Geography, Texas A&M University",
-          "Dr. Zhenhua He - Interim Director for Emerging Technologies and Research at Texas A&M High-Performance Research Computing",
-          "Ms. Shoibolina Kaushik - Graduate Research Assistant, Department of Geography, Texas A&M University",
-          "Mr. Yuan Niu - Graduate Research Assistant, Department of Geography, Texas A&M University",
-          "Mr. Yuhang Xie - Graduate Research Assistant, Department of Geography, Texas A&M University",
+          "Zhe Zhang - Associate Professor, Department of Geography, Texas A&M University",
+          "Zhenhua He - Interim Director for Emerging Technologies and Research at Texas A&M High-Performance Research Computing",
+          "Shoibolina Kaushik - Graduate Research Assistant, Department of Geography, Texas A&M University",
+          "Yuan Niu - Graduate Research Assistant, Department of Geography, Texas A&M University",
+          "Yuhang Xie - Graduate Research Assistant, Department of Geography, Texas A&M University",
         ],
       },
       {
@@ -379,11 +379,11 @@ export const localWorkshops: LocalWorkshop[] = [
         time: "3:50 - 4:50 pm",
         items: [
           "Discussion",
-          "Chair: Dr. Zhe Zhang, Associate Professor, Department of Geography, Texas A&M University",
-          "Dr. Yue Lin - Assistant Professor, Department of Geography & Geographic Information Science, University of Illinois Urbana-Champaign",
-          "Dr. Peng Luo - Assistant Professor, School of Earth, Environment, and Sustainability, University of Iowa",
-          "Dr. Caglar Koylu - Associate Professor, School of Earth, Environment, and Sustainability, University of Iowa",
-          "Dr. Stephen Baker - Senior Research & Evaluation Scientist, Mansueto Institute for Urban Innovation",
+          "Chair: Zhe Zhang, Associate Professor, Department of Geography, Texas A&M University",
+          "Yue Lin - Assistant Professor, Department of Geography & Geographic Information Science, University of Illinois Urbana-Champaign",
+          "Peng Luo - Assistant Professor, School of Earth, Environment, and Sustainability, University of Iowa",
+          "Caglar Koylu - Associate Professor, School of Earth, Environment, and Sustainability, University of Iowa",
+          "Stephen Baker - Senior Research & Evaluation Scientist, Mansueto Institute for Urban Innovation",
         ],
       },
       {
