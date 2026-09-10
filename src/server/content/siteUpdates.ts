@@ -13,6 +13,12 @@ export type WorkshopGalleryImage = {
   alt: string;
 };
 
+export type WorkshopBiography = {
+  name: string;
+  role?: string;
+  paragraphs: string[];
+};
+
 export type LocalWorkshop = {
   id: string;
   title: string;
@@ -24,6 +30,7 @@ export type LocalWorkshop = {
   photoAlt?: string;
   imageFit?: "cover" | "contain";
   schedule: WorkshopScheduleItem[];
+  biographies?: WorkshopBiography[];
   resources?: WorkshopResource[];
   gallery?: WorkshopGalleryImage[];
   registration?: WorkshopResource;
@@ -304,7 +311,7 @@ export const localWorkshops: LocalWorkshop[] = [
     title: "CaGIS-National AI Computing Research Resources Workshop",
     startDate: "2026-09-11",
     location:
-      "Busch Student Center, Saint Louis University, St. Louis, Missouri",
+      "St. Louis Room, Busch Student Center, Saint Louis University, St. Louis, Missouri",
     description:
       "This workshop aims to equip participants with Cyberinfrastructure (CI) and GeoAI skills to advance disaster management and sustainability. Through hands-on training, participants will develop computational skills using national AI computing resources for analyzing large-scale geospatial datasets and translating complex data into actionable scientific insights. Supported by National Science Foundation (NSF)-funded programs under award Nos. 2526748, 2519476, and 2519477.",
     photoUrl: "/images/workshops/cagis-2026.jpg",
@@ -394,6 +401,99 @@ export const localWorkshops: LocalWorkshop[] = [
         time: "5:00 pm",
         items: ["Dinner"],
       },
+    ],
+    biographies: [
+      {
+        "name": "Zhe Zhang",
+        "role": "Associate Professor, Department of Geography, Texas A&M University",
+        "paragraphs": [
+          "Dr. Zhe Zhang is an Associate Professor in the Department of Geography at Texas A&M University (TAMU), with joint appointments in the Department of Electrical and Computer Engineering and the Texas A&M Hazard Reduction and Recovery Center. She is also a member of the Gulf of America Coastal Ocean Observing System. Dr. Zhang has served as Chair of the Cyberinfrastructure Specialty Group of the American Association of Geographers and was elected to the Board of Directors of the Cartography and Geographic Information Society. She also serves as Chair of the Research Committee of the University Consortium for Geographic Information Science. Her research focuses on developing spatial decision support systems by integrating advanced cyberinfrastructure, geospatial artificial intelligence (GeoAI), and participatory design to address critical challenges in disaster management and sustainability. Her research has been funded by several federal agencies such as the National Science Foundation (NSF), National Aeronautics and Space Administration (NASA), U.S. Department of Transportation (USDOT), National Oceanic and Atmospheric Administration (NOAA), and the National Geographic Society. Dr. Zhang serves as the Co-Principal Investigator of the Texas A&M FASTER High-Performance Supercomputer and as a Co-Investigator of the Texas A&M ACES Supercomputer, both supported by the NSF. In addition, she serves as Principal Investigator on eight externally funded grants, totaling over $3 million. She has published peer reviewed articles in several leading GIS-related journals, including the International Journal of Geographical Information Science, Annals of the American Association of Geographers, Transactions in GIS, Cartography and Geographic Information Science, and the International Journal of Digital Earth. She currently serves as an Associate Editor for the journal Computational Urban Science. Dr. Zhang has been honored to receive both the Pathways Award from Texas A&M Faculty Affairs and the National Science Foundation CAREER Award in recognition of her impactful research."
+        ]
+      },
+      {
+        "name": "Honggao Liu",
+        "role": "Executive Director, High Performance Research Computing (HPRC), Texas A&M University",
+        "paragraphs": [
+          "Dr. Honggao Liu is the Executive Director of High-Performance Research Computing (HPRC) at Texas A&M University, with more than 28 years of experience in research computing, computational and data sciences, and cyberinfrastructure development. He has served as PI or co-PI on over $35 million in National Science Foundation funding, and is the PI of the NSF FASTER and ACES awards that delivered the composable FASTER and ACES supercomputers—resources made available to the national research community through the NSF ACCESS program, with ACES also serving as a National AI Research Resource (NAIRR) pilot compute resource. He earned his Ph.D. in Chemical Engineering from Louisiana State University and previously served as director of HPC at LSU before joining Texas A&M."
+        ]
+      },
+      {
+        "name": "Shaowen Wang",
+        "role": "Professor, Geography & Geographic Information Science / Siebel School of Computing and Data Science; Associate Dean, University of Illinois Urbana-Champaign",
+        "paragraphs": [
+          "Dr. Shaowen Wang is a Professor in the Department of Geography and Geographic Information Science and the Siebel School of Computing and Data Science at the University of Illinois Urbana-Champaign. He also holds affiliate faculty appointments in the Department of Urban and Regional Planning and the School of Information Sciences. He currently serves as Associate Dean for Natural and Mathematical Sciences in the College of Liberal Arts and Sciences and as a Senior Faculty Fellow in the Office of the Vice Chancellor for Research and Innovation. He is the founding director of the CyberGIS Center for Advanced Digital and Spatial Studies and leads the national Institute for Geospatial Understanding through an Integrative Discovery Environment (I-GUIDE) funded by the National Science Foundation. He previously served as Head of the Department of Geography and Geographic Information Science (2017-2023) and as Associate Director of the National Center for Supercomputing Applications for CyberGIS (2010-2017). He was a Visiting Scholar at Lund University (2006) and Harvard University (2023). His research focuses on advancing CyberGIS, geospatial data science, and spatial artificial intelligence (AI) to develop scalable solutions for complex geospatial problems and sustainability challenges. He served as President of the University Consortium for Geographic Information Science (UCGIS) from 2016 to 2017 and as a member of the National Academies’ Board on Earth Sciences and Resources from 2015 to 2020. He is a Fellow of the American Association for the Advancement of Science (AAAS), the American Association of Geographers (AAG), and UCGIS."
+        ]
+      },
+      {
+        "name": "Michael F. Goodchild",
+        "role": "Professor Emeritus of Geography at the University of California, Santa Barbara",
+        "paragraphs": [
+          "Michael F. Goodchild is Professor Emeritus of Geography at the University of California, Santa Barbara. He received his BA degree from Cambridge University in Physics in 1965 and his PhD in Geography from McMaster University in 1969. His research and teaching interests focus on geographic information science, including uncertainty in geographic information, discrete global grids, and volunteered geo-graphic information. He was elected member of the US National Academy of Sciences in 2002, and Foreign Member of the Royal Society and Corresponding Fellow of the British Academy in 2010. He has published over 600 books and articles."
+        ]
+      },
+      {
+        "name": "Zhenhua He",
+        "role": "Interim Director for Emerging Technologies and Research, Research Scientist, High Performance Research Computing (HPRC), Texas A&M University",
+        "paragraphs": [
+          "Dr. Zhenhua He is the Interim Director for Emerging Technologies and Research and a Research Scientist with Texas A&M High Performance Research Computing (HPRC), where he supports the training and research mission of the center and the NSF-funded ACES composable accelerator testbed. He earned his Ph.D. from Texas A&M University, and his expertise centers on machine learning and AI, deep-learning frameworks such as PyTorch and TensorFlow, and deploying AI/ML workloads on GPUs and emerging accelerators. He develops and teaches widely attended short courses on AI for high-performance computing that help researchers nationwide harness national cyberinfrastructure through the ACCESS and NAIRR programs. Recently named an NVIDIA Deep Learning Institute Certified Instructor and University Ambassador, he helps bridge domain researchers including those in GeoAI and coastal-resilience science with the AI technologies and computing resources needed to scale their analyses."
+        ]
+      },
+      {
+        "name": "Samantha Arundel",
+        "role": "Research Director, Center of Excellence for Geospatial Information Science (CEGIS), U.S. Geological Survey",
+        "paragraphs": [
+          "Dr. Samantha Arundel is the Director of the Center of Excellence for Geospatial Information Science (CEGIS) at the U.S. Geological Survey and serves as Senior Science Advisor to the Director of the USGS National Geospatial Program. Dr. Arundel received her Ph.D. in geography from Arizona State University in 2000 and was an assistant and then associate professor at Northern Arizona University where her research focused on spatial modeling and automation of plant/climate relationships. In 2009, when she joined the USGS, she first served as raster specialist in the Ortho & Elevation section and as elevation and hydrography specialist for the Applied Research and Technology Branch. During this time, she led the contour generation development team in developing algorithms for automating contour production from 10-meter elevation data for the USTopo product; and served as the program manager for the automation of the National Elevation Dataset production, in its transition from Earth Resource Observation System (EROS) to the National Geospatial Technical Operations Center (NGTOC). In 2015, Dr. Arundel moved to the Center of Excellence for Geospatial Information Science, the research section of the NGTOC, where she is a Research Geographer conducting research on automated terrain mapping and modeling using various techniques like traditional raster modeling, geographic object-based image analysis and machine learning."
+        ]
+      },
+      {
+        "name": "Kari Craun",
+        "role": "Executive Director for the Cartography and Geographic Information Society",
+        "paragraphs": [
+          "Kari Craun is the Executive Director for the Cartography and Geographic Information Society (CaGIS).  Ms. Craun retired from her position as Director of the National Geospatial Technical Operations Center (NGTOC), U.S. Geological Survey (USGS), in December, 2019 after 36 years of service to the Federal government as a geospatial professional.  In addition to serving as the Executive Director for CaGIS, Kari is the President of the Foundation Board for the American Society for Photogrammetry and Remote Sensing.  She also enjoys backpacking and traveling in her spare time.  Ms. Craun holds a B.S. degree in Geology from the University of Missouri-Kansas City; a M.S. degree in Civil Engineering from Purdue University and a M.S. degree in Geospatial Information Science from Northwest Missouri State University.  She and her husband Jeff reside in Rolla, Missouri."
+        ]
+      },
+      {
+        "name": "Dr. Budhu Bhaduri",
+        "role": "Chief Data Officer, Oak Ridge National Laboratory",
+        "paragraphs": [
+          "Dr. Budhendra “Budhu” Bhaduri is the Chief Data Officer at Oak Ridge National Laboratory, providing executive leadership for an enterprise-wide data and AI strategy that accelerates scientific discovery and operational excellence. His responsibilities include establishing policies for data stewardship, ethics, accessibility, and risk management, and collaborating with major laboratory initiatives and the Department of Energy’s Genesis AI efforts to scale AI-enabled and autonomous science. Previously, he has led interdisciplinary portfolio spanning geospatial science and technology initiatives supporting energy, environment, and national security missions. In that capacity he provided strategic guidance and leadership to scientific and programmatic endeavors spanning geospatial science, artificial intelligence and machine learning, and scalable and high-performance computing particularly focusing on defense space and intelligence programs. Additionally, he fosters strategic partnerships with leading universities, research institutions, private companies, and philanthropic organizations to expedite the development and implementation of innovative solutions.",
+          "Dr. Bhaduri is a Fellow of the American Association for the Advancement of Science (AAAS), the American Association of Geographers (AAG), and has served on the Geographical and Geospatial Sciences Committee of the National Academy of Sciences. He is a founding member of the U.S. Department of Energy’s Geospatial Sciences Steering Committee and is a recipient of the Department’s Outstanding Mentor Award for his dedicated service to the department for developing workforce for the nation."
+        ]
+      },
+      {
+        "name": "Dr. Caglar Koylu",
+        "paragraphs": [
+          "Caglar Koylu is an Associate Professor in the School of Earth, Environment, and Sustainability at the University of Iowa, and also a past president of the Cartography and Geographic Information Society (CaGIS). Caglar’s research in GIScience integrates spatial data science, network analysis, and geovisualization to understand how people, places, and the environment interact across space and time. He develops analytical, decision-support, and educational tools for exploring complex human mobility, network, environmental, and public health data. His work addresses societal challenges across demography, kinship networks, health, and the environment. Contributions include research on the largest population-scale kinship network in the United States, with 51 million individuals in its largest connected component, CAMSA, a small-area cancer mapping application used by multiple state cancer registries, and Roots & Migrants, an interactive mapping platform for teaching and learning U.S. history. Through research and teaching, Caglar aims to make spatial analysis accessible and useful for discovery and informed decision-making."
+        ]
+      },
+      {
+        "name": "Dr. Stephen Baker",
+        "paragraphs": [
+          "Stephen Baker is Senior Evaluation & Research Scientist at Mansueto Institute for Urban Innovation, where he is also facilitator of a cross-disciplinary doctoral fellows program, and a mixed-methods researcher who has conducted program and policy evaluations at the University of Chicago for over thirty years. He has served as panel reviewer for NSF and the Department of Education and principal investigator and project director on evaluations funded by local and national philanthropic foundations, the Department of Education and NSF. His portfolio has concentrated in recent years on STEM education and workforce development, informal learning, and community-based and collaborative policy approaches.",
+          "He holds masters’ and doctoral degrees in social policy from the University of Chicago and has taught graduate and undergraduate courses there in evaluation, research, data management, and U.S. social welfare, as well as served on the Institutional Review Board."
+        ]
+      },
+      {
+        "name": "Dr. Yue Lin",
+        "role": "Assistant Professor, Department of Geography & Geographic Information Science, University of Illinois Urbana-Champaign",
+        "paragraphs": [
+          "Dr. Lin’s research lies at the intersection of data, computation, and human values. I am interested in critically exploring how emerging technologies of geospatial computing and artificial intelligence, both in practice and theory, can be designed and used in ways that are ethical, socially responsible, and benefit humanity. More broadly, her interests span spatial data science, location privacy, and the societal implications of algorithmic systems."
+        ]
+      },
+      {
+        "name": "Dr. Peng Luo",
+        "role": "Assistant Professor, School of Earth, Environment, and Sustainability, University of Iowa",
+        "paragraphs": [
+          "Dr. Luo leads research at the intersection of GIScience, GeoAI, and spatial data science. Previously, he was a postdoctoral researcher at the MIT Senseable City Lab, and  he received his Ph.D. from the Chair of Cartography and Visual Analytics at the Technical University of Munich. His research focuses on Trustworthy GeoAI, with particular interests in spatial explicit modeling, geospatial explainable AI, uncertainty quantification for GeoAI models, and multi-agent GeoAI."
+        ]
+      },
+      {
+        "name": "Ms. Shoibolina Kaushik",
+        "role": "Information Analyst, Emory University",
+        "paragraphs": [
+          "Shoibolina Kaushik is an Information Analyst in the Department of Environmental Sciences at Emory University, where she works within an interdisciplinary team on a Gates Foundation-funded project in Ethiopia, where she has contributed to developing automated GeoAI pipelines for malaria vector-control using remote sensing imagery. She holds master’s degree in computer science from Emory University, during which she helped develop a novel GeoAI pipeline to reduce manual feature extraction effort from 300 hours to 9, enabling scalable road network extraction from more than centuries’ worth of Atlanta’s historical raster maps while preserving road-network topology for GIS workflows. Previously, she has also worked on building accessible low-cost clinical health analysis tools for the vulnerable population. Her background bridges machine learning, computer vision, and data engineering across geospatial and health applications, and her interests center on applying AI and computational methods to spatial and historical data."
+        ]
+      }
     ],
     registration: {
       label: "Workshop Information and Registration",

@@ -30,7 +30,7 @@ export default function News() {
                             </div>
                             <div>
                                 <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Location</dt>
-                                <dd className="mt-1 font-semibold text-slate-900">Busch Student Center, Saint Louis University, St. Louis</dd>
+                                <dd className="mt-1 font-semibold text-slate-900">St. Louis Room, Busch Student Center, Saint Louis University, St. Louis</dd>
                             </div>
                         </dl>
 

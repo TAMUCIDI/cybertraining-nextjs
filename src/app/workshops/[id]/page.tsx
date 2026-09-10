@@ -8,6 +8,7 @@ import {
     formatWorkshopDate,
     getLocalWorkshop,
     isUpcomingWorkshop,
+    type WorkshopBiography,
     type WorkshopGalleryImage,
     type WorkshopResource,
     type WorkshopScheduleItem,
@@ -26,6 +27,7 @@ type WorkshopDetailData = {
     photoAlt: string;
     imageFit: "cover" | "contain";
     schedule: WorkshopScheduleItem[];
+    biographies?: WorkshopBiography[];
     resources: WorkshopResource[];
     gallery: WorkshopGalleryImage[];
     registration?: WorkshopResource;
@@ -48,6 +50,7 @@ export default async function WorkshopDetail({ params }: { params: Params }) {
             photoAlt: localWorkshop.photoAlt || `${localWorkshop.title} workshop`,
             imageFit: localWorkshop.imageFit || "cover",
             schedule: localWorkshop.schedule,
+            biographies: localWorkshop.biographies,
             resources: localWorkshop.resources || [],
             gallery: localWorkshop.gallery || [],
             registration: localWorkshop.registration,
@@ -183,6 +186,27 @@ export default async function WorkshopDetail({ params }: { params: Params }) {
                                         ))}
                                     </tbody>
                                 </table>
+                            </div>
+                        </section>
+                    )}
+
+                    {workshop.biographies && workshop.biographies.length > 0 && (
+                        <section className="mt-10" aria-labelledby="presenter-biographies">
+                            <h2 id="presenter-biographies" className="text-3xl font-bold">Presenter biographies</h2>
+                            <div className="mt-6 space-y-6">
+                                {workshop.biographies.map((presenter) => (
+                                    <article key={presenter.name} className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-9">
+                                        <h3 className="text-xl font-bold text-slate-900">{presenter.name}</h3>
+                                        {presenter.role && (
+                                            <p className="mt-2 font-medium text-red-900">{presenter.role}</p>
+                                        )}
+                                        <div className="mt-4 space-y-4 text-base leading-7 text-slate-600">
+                                            {presenter.paragraphs.map((paragraph, index) => (
+                                                <p key={index}>{paragraph}</p>
+                                            ))}
+                                        </div>
+                                    </article>
+                                ))}
                             </div>
                         </section>
                     )}
