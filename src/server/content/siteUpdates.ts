@@ -410,17 +410,10 @@ export const localWorkshops: LocalWorkshop[] = [
         ]
       },
       {
-        "name": "Honggao Liu",
-        "role": "Executive Director, High Performance Research Computing (HPRC), Texas A&M University",
+        "name": "Kari Craun",
+        "role": "Executive Director for the Cartography and Geographic Information Society",
         "paragraphs": [
-          "Dr. Honggao Liu is Executive Director of Texas A&M High Performance Research Computing, with more than 28 years of experience in research computing, computational and data sciences, and cyberinfrastructure development. He has served as PI or Co-PI on over $35 million in NSF funding and is PI on the NSF FASTER and ACES awards that acquired Texas A&M's composable supercomputers, which are made available to the national research community through the NSF ACCESS program; ACES is also a compute resource of the National AI Research Resource (NAIRR) pilot. He is Co-PI on the NSF award for Broadening Adoption of Cyberinfrastructure and Research Workforce Development for Disaster Management, and previously served as Deputy Director of the Center for Computation and Technology and Director of HPC at Louisiana State University. He received his Ph.D. in Chemical Engineering from LSU in 2002."
-        ]
-      },
-      {
-        "name": "Shaowen Wang",
-        "role": "Professor, Geography & Geographic Information Science / Siebel School of Computing and Data Science; Associate Dean, University of Illinois Urbana-Champaign",
-        "paragraphs": [
-          "Dr. Shaowen Wang is a Professor in the Department of Geography and Geographic Information Science and the Siebel School of Computing and Data Science at the University of Illinois Urbana-Champaign, where he serves as Associate Dean for Natural and Mathematical Sciences in the College of Liberal Arts and Sciences and as a Senior Faculty Fellow in the Office of the Vice Chancellor for Research and Innovation. He is founding director of the CyberGIS Center for Advanced Digital and Spatial Studies and leads the NSF-funded Institute for Geospatial Understanding through an Integrative Discovery Environment (I-GUIDE). He previously served as Head of the Department of Geography and Geographic Information Science (2017-2023) and as Associate Director of the National Center for Supercomputing Applications for CyberGIS (2010-2017). His research advances cyberGIS, geospatial data science, and spatial AI to develop scalable solutions for complex geospatial problems and sustainability challenges. He served as President of UCGIS (2016-2017) and on the National Academies' Board on Earth Sciences and Resources (2015-2020), and is a Fellow of AAAS, AAG, and UCGIS."
+          "Ms. Kari Craun is Executive Director of the Cartography and Geographic Information Society. She retired in December 2019 as Director of the USGS National Geospatial Technical Operations Center (NGTOC) after 36 years of federal service as a geospatial professional. As NGTOC Director she was responsible for maintaining seamless, nationally consistent base geospatial data for the United States and led the establishment of the US Topo production program, which automated the generation of more than 55,000 1:24,000-scale topographic maps on a repeating three-year cycle. She is a Past President of both ASPRS and CaGIS, President of the ASPRS Foundation Board of Trustees, an ASPRS Fellow (2012), and the first recipient of the USGS Henry Gannett Award for outstanding contributions to the geospatial community; she has also received the CaGIS Distinguished Career Award and the Department of the Interior Meritorious Service Award. She holds a B.S. in Geology from the University of Missouri-Kansas City, an M.S. in Civil Engineering from Purdue University, and an M.S. in Geospatial Information Science from Northwest Missouri State University."
         ]
       },
       {
@@ -431,24 +424,17 @@ export const localWorkshops: LocalWorkshop[] = [
         ]
       },
       {
-        "name": "Zhenhua He",
-        "role": "Interim Director for Emerging Technologies and Research, Research Scientist, High Performance Research Computing (HPRC), Texas A&M University",
+        "name": "Shaowen Wang",
+        "role": "Professor, Geography & Geographic Information Science / Siebel School of Computing and Data Science; Associate Dean, University of Illinois Urbana-Champaign",
         "paragraphs": [
-          "Dr. Zhenhua He is Interim Director for Emerging Technologies and Research and a Research Scientist with Texas A&M High Performance Research Computing (HPRC), where he supports the training and research mission of the center and the NSF-funded ACES composable accelerator testbed. He earned his Ph.D. from Texas A&M University, and his expertise centers on machine learning and AI, deep learning frameworks such as PyTorch and TensorFlow, and deploying AI/ML workloads on GPUs and emerging accelerators. He develops and teaches widely attended short courses on AI for high-performance computing that help researchers nationwide harness national cyberinfrastructure through the ACCESS and NAIRR programs. Recently named an NVIDIA Deep Learning Institute Certified Instructor and University Ambassador, he helps bridge domain researchers, including those in GeoAI and coastal resilience science, with the AI technologies and computing resources needed to scale their analyses."
+          "Dr. Shaowen Wang is a Professor in the Department of Geography and Geographic Information Science and the Siebel School of Computing and Data Science at the University of Illinois Urbana-Champaign, where he serves as Associate Dean for Natural and Mathematical Sciences in the College of Liberal Arts and Sciences and as a Senior Faculty Fellow in the Office of the Vice Chancellor for Research and Innovation. He is founding director of the CyberGIS Center for Advanced Digital and Spatial Studies and leads the NSF-funded Institute for Geospatial Understanding through an Integrative Discovery Environment (I-GUIDE). He previously served as Head of the Department of Geography and Geographic Information Science (2017-2023) and as Associate Director of the National Center for Supercomputing Applications for CyberGIS (2010-2017). His research advances cyberGIS, geospatial data science, and spatial AI to develop scalable solutions for complex geospatial problems and sustainability challenges. He served as President of UCGIS (2016-2017) and on the National Academies' Board on Earth Sciences and Resources (2015-2020), and is a Fellow of AAAS, AAG, and UCGIS."
         ]
       },
       {
-        "name": "Samantha Arundel",
-        "role": "Research Director, Center of Excellence for Geospatial Information Science (CEGIS), U.S. Geological Survey",
+        "name": "Honggao Liu",
+        "role": "Executive Director, High Performance Research Computing (HPRC), Texas A&M University",
         "paragraphs": [
-          "Dr. Samantha T. Arundel is Director of the Center of Excellence for Geospatial Information Science and Senior Advisor for Research in the U.S. Geological Survey's National Geospatial Program. Her work focuses on advancing national geospatial infrastructure through artificial intelligence, automation, and large-scale data integration, including efforts to embed AI within The National Map. She chairs the International Cartographic Association Commission on GeoAI and leads the U.S. Federal GeoAI Community of Practice, helping coordinate research and collaboration across government, academia, and industry. Her research connects scientific innovation with operational mapping systems that support natural hazard response, environmental management, and infrastructure planning. She received her Ph.D. in Geography from Arizona State University and was previously an associate professor at Northern Arizona University before joining the USGS in 2009."
-        ]
-      },
-      {
-        "name": "Kari Craun",
-        "role": "Executive Director for the Cartography and Geographic Information Society",
-        "paragraphs": [
-          "Ms. Kari Craun is Executive Director of the Cartography and Geographic Information Society. She retired in December 2019 as Director of the USGS National Geospatial Technical Operations Center (NGTOC) after 36 years of federal service as a geospatial professional. As NGTOC Director she was responsible for maintaining seamless, nationally consistent base geospatial data for the United States and led the establishment of the US Topo production program, which automated the generation of more than 55,000 1:24,000-scale topographic maps on a repeating three-year cycle. She is a Past President of both ASPRS and CaGIS, President of the ASPRS Foundation Board of Trustees, an ASPRS Fellow (2012), and the first recipient of the USGS Henry Gannett Award for outstanding contributions to the geospatial community; she has also received the CaGIS Distinguished Career Award and the Department of the Interior Meritorious Service Award. She holds a B.S. in Geology from the University of Missouri-Kansas City, an M.S. in Civil Engineering from Purdue University, and an M.S. in Geospatial Information Science from Northwest Missouri State University."
+          "Dr. Honggao Liu is Executive Director of Texas A&M High Performance Research Computing, with more than 28 years of experience in research computing, computational and data sciences, and cyberinfrastructure development. He has served as PI or Co-PI on over $35 million in NSF funding and is PI on the NSF FASTER and ACES awards that acquired Texas A&M's composable supercomputers, which are made available to the national research community through the NSF ACCESS program; ACES is also a compute resource of the National AI Research Resource (NAIRR) pilot. He is Co-PI on the NSF award for Broadening Adoption of Cyberinfrastructure and Research Workforce Development for Disaster Management, and previously served as Deputy Director of the Center for Computation and Technology and Director of HPC at Louisiana State University. He received his Ph.D. in Chemical Engineering from LSU in 2002."
         ]
       },
       {
@@ -459,15 +445,24 @@ export const localWorkshops: LocalWorkshop[] = [
         ]
       },
       {
-        "name": "Dr. Caglar Koylu",
+        "name": "Samantha Arundel",
+        "role": "Research Director, Center of Excellence for Geospatial Information Science (CEGIS), U.S. Geological Survey",
         "paragraphs": [
-          "Dr. Caglar Koylu is an Associate Professor in the School of Earth, Environment, and Sustainability at the University of Iowa and a past president of the Cartography and Geographic Information Society. His research in GIScience integrates spatial data science, network analysis, and geovisualization to understand how people, places, and the environment interact across space and time, addressing societal challenges in demography, kinship networks, public health, hazards and social vulnerability, and the environment. His contributions include research on the largest population-scale kinship network in the United States, with 51 million individuals in its largest connected component; CAMSA, a small-area cancer mapping application used by multiple state cancer registries; and Roots & Migrants, an interactive mapping platform for teaching U.S. history. He received his Ph.D. from the University of South Carolina."
+          "Dr. Samantha T. Arundel is Director of the Center of Excellence for Geospatial Information Science and Senior Advisor for Research in the U.S. Geological Survey's National Geospatial Program. Her work focuses on advancing national geospatial infrastructure through artificial intelligence, automation, and large-scale data integration, including efforts to embed AI within The National Map. She chairs the International Cartographic Association Commission on GeoAI and leads the U.S. Federal GeoAI Community of Practice, helping coordinate research and collaboration across government, academia, and industry. Her research connects scientific innovation with operational mapping systems that support natural hazard response, environmental management, and infrastructure planning. She received her Ph.D. in Geography from Arizona State University and was previously an associate professor at Northern Arizona University before joining the USGS in 2009."
         ]
       },
       {
-        "name": "Dr. Stephen Baker",
+        "name": "Zhenhua He",
+        "role": "Interim Director for Emerging Technologies and Research, Research Scientist, High Performance Research Computing (HPRC), Texas A&M University",
         "paragraphs": [
-          "Dr. Stephen Baker is Senior Research & Evaluation Scientist at the Mansueto Institute for Urban Innovation, where he also facilitates the Urban Doctoral Fellowship, a cross-disciplinary doctoral fellows program. A mixed-methods researcher, he has conducted program and policy evaluations at the University of Chicago for over thirty years and has served as principal investigator and project director on evaluations funded by NSF, the Department of Education, and local and national philanthropic foundations, as well as a panel reviewer for NSF and the Department of Education. His recent portfolio has concentrated on STEM education and workforce development, informal learning, and community-based and collaborative policy approaches. He holds master's and doctoral degrees in social policy from the University of Chicago, where he has taught graduate and undergraduate courses in evaluation, research, data management, and U.S. social welfare."
+          "Dr. Zhenhua He is Interim Director for Emerging Technologies and Research and a Research Scientist with Texas A&M High Performance Research Computing (HPRC), where he supports the training and research mission of the center and the NSF-funded ACES composable accelerator testbed. He earned his Ph.D. from Texas A&M University, and his expertise centers on machine learning and AI, deep learning frameworks such as PyTorch and TensorFlow, and deploying AI/ML workloads on GPUs and emerging accelerators. He develops and teaches widely attended short courses on AI for high-performance computing that help researchers nationwide harness national cyberinfrastructure through the ACCESS and NAIRR programs. Recently named an NVIDIA Deep Learning Institute Certified Instructor and University Ambassador, he helps bridge domain researchers, including those in GeoAI and coastal resilience science, with the AI technologies and computing resources needed to scale their analyses."
+        ]
+      },
+      {
+        "name": "Ms. Shoibolina Kaushik",
+        "role": "Graduate Research Assistant, Department of Geography, Texas A&M University",
+        "paragraphs": [
+          "Ms. Shoibolina Kaushik is a Ph.D. student in Geographic Information Science and Graduate Research Assistant in the Department of Geography at Texas A&M University, and holds a Master's degree in Computer Science from Emory University. Her research focuses on GeoAI, CyberGIS, explainable geospatial AI, and spatial decision support for environmental and public health applications. She previously worked at Emory as an Information Analyst in the Department of Environmental Sciences, contributing to a Gates Foundation-funded project in Ethiopia that developed automated GeoAI pipelines for malaria vector control using remote sensing imagery. During her master's she helped develop a novel GeoAI pipeline that reduced manual feature extraction effort from 300 hours to 9, enabling scalable road network extraction from more than a century of Atlanta's historical maps while preserving road network topology for GIS workflows. Her work emphasizes the use of AI to reduce human effort and enable faster decision support."
         ]
       },
       {
@@ -485,10 +480,17 @@ export const localWorkshops: LocalWorkshop[] = [
         ]
       },
       {
-        "name": "Ms. Shoibolina Kaushik",
-        "role": "Graduate Research Assistant, Department of Geography, Texas A&M University",
+        "name": "Dr. Caglar Koylu",
+        "role": "Associate Professor, School of Earth, Environment, and Sustainability, University of Iowa",
         "paragraphs": [
-          "Ms. Shoibolina Kaushik is a Ph.D. student in Geographic Information Science and Graduate Research Assistant in the Department of Geography at Texas A&M University, and holds a Master's degree in Computer Science from Emory University. Her research focuses on GeoAI, CyberGIS, explainable geospatial AI, and spatial decision support for environmental and public health applications. She previously worked at Emory as an Information Analyst in the Department of Environmental Sciences, contributing to a Gates Foundation-funded project in Ethiopia that developed automated GeoAI pipelines for malaria vector control using remote sensing imagery. During her master's she helped develop a novel GeoAI pipeline that reduced manual feature extraction effort from 300 hours to 9, enabling scalable road network extraction from more than a century of Atlanta's historical maps while preserving road network topology for GIS workflows. Her work emphasizes the use of AI to reduce human effort and enable faster decision support."
+          "Dr. Caglar Koylu is an Associate Professor in the School of Earth, Environment, and Sustainability at the University of Iowa and a past president of the Cartography and Geographic Information Society. His research in GIScience integrates spatial data science, network analysis, and geovisualization to understand how people, places, and the environment interact across space and time, addressing societal challenges in demography, kinship networks, public health, hazards and social vulnerability, and the environment. His contributions include research on the largest population-scale kinship network in the United States, with 51 million individuals in its largest connected component; CAMSA, a small-area cancer mapping application used by multiple state cancer registries; and Roots & Migrants, an interactive mapping platform for teaching U.S. history. He received his Ph.D. from the University of South Carolina."
+        ]
+      },
+      {
+        "name": "Dr. Stephen Baker",
+        "role": "Senior Research & Evaluation Scientist, Mansueto Institute for Urban Innovation",
+        "paragraphs": [
+          "Dr. Stephen Baker is Senior Research & Evaluation Scientist at the Mansueto Institute for Urban Innovation, where he also facilitates the Urban Doctoral Fellowship, a cross-disciplinary doctoral fellows program. A mixed-methods researcher, he has conducted program and policy evaluations at the University of Chicago for over thirty years and has served as principal investigator and project director on evaluations funded by NSF, the Department of Education, and local and national philanthropic foundations, as well as a panel reviewer for NSF and the Department of Education. His recent portfolio has concentrated on STEM education and workforce development, informal learning, and community-based and collaborative policy approaches. He holds master's and doctoral degrees in social policy from the University of Chicago, where he has taught graduate and undergraduate courses in evaluation, research, data management, and U.S. social welfare."
         ]
       }
     ],
