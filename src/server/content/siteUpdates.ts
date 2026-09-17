@@ -316,7 +316,7 @@ export const localWorkshops: LocalWorkshop[] = [
       "This workshop aims to equip participants with Cyberinfrastructure (CI) and GeoAI skills to advance disaster management and sustainability. Through hands-on training, participants will develop computational skills using national AI computing resources for analyzing large-scale geospatial datasets and translating complex data into actionable scientific insights. Supported by National Science Foundation (NSF)-funded programs under award Nos. 2526748, 2519476, and 2519477.",
     photoUrl: "/images/workshops/cagis-2026-group.png",
     photoAlt: "Participants at the September 11, 2026 CaGIS workshop in St. Louis",
-    imageFit: "contain",
+    imageFit: "cover",
     schedule: [
       {
         time: "8:30 - 9:20 am",
