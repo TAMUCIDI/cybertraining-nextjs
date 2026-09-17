@@ -27,7 +27,10 @@ export default async function Notebooks() {
             author: notebook.author,
             img: notebook.thumbnailUrl,
         })),
-    ];
+    ].sort((a, b) =>
+        Number(b.id === "port-infrastructure-resilience-coastal-hazards") -
+        Number(a.id === "port-infrastructure-resilience-coastal-hazards")
+    );
 
     return (
         <DefaultLayout>
