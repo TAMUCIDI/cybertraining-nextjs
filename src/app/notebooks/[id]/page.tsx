@@ -13,6 +13,7 @@ type NotebookDetailData = {
     category?: string;
     author?: string;
     fileUrl: string;
+    sourceUrl?: string;
 };
 
 export default async function NotebookDetail({ params }: { params: Params }) {
@@ -25,6 +26,7 @@ export default async function NotebookDetail({ params }: { params: Params }) {
             category: localNotebook.category,
             author: localNotebook.author,
             fileUrl: localNotebook.fileUrl,
+            sourceUrl: localNotebook.sourceUrl,
         }
         : null;
 
@@ -66,6 +68,14 @@ export default async function NotebookDetail({ params }: { params: Params }) {
                         {notebook.author && (
                             <p className="mt-3 text-base text-slate-600">{notebook.author}</p>
                         )}
+                        {notebook.sourceUrl && (
+                            <p className="mt-4 text-sm text-slate-600">
+                                Read-only notebook from{" "}
+                                <a href={notebook.sourceUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-red-900 underline underline-offset-4">
+                                    I-GUIDE Platform
+                                </a>. Visit the source for data, dependencies, and execution options.
+                            </p>
+                        )}
                     </header>
 
                     <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.10)]">
@@ -73,6 +83,7 @@ export default async function NotebookDetail({ params }: { params: Params }) {
                             src={notebook.fileUrl}
                             className="h-[78vh] min-h-[720px] w-full"
                             title={`${notebook.title} content`}
+                            sandbox={notebook.sourceUrl ? "allow-scripts allow-popups" : undefined}
                         />
                     </div>
                     <div className="mt-5 flex justify-end">

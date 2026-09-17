@@ -1,0 +1,105 @@
+{
+  "retrieved": "2026-09-17",
+  "notebooks": [
+    {
+      "id": "california-wildfire-warning",
+      "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1785423357722-01_wildfire_model_training.ipynb.html",
+      "sha256": "71bd90ef9fd4724f39fa51d89268537ec2074d42d6c82c728c1f85bc7b254c84",
+      "bytes": 617476
+    },
+    {
+      "id": "prime-disaster-resilience",
+      "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1774037473467-CRIM.ipynb.html",
+      "sha256": "3fa964e8c403550b64ad705f34431ce6e42ee1e1b66e58e07ab20d64c1f3a6aa",
+      "bytes": 23797945
+    },
+    {
+      "id": "wildfire-transportation-unet",
+      "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1744738101035-main.html",
+      "sha256": "67615a884b805ff06fa013f93dce2d92622a3ee22f330810f4acb028ce7b8986",
+      "bytes": 18654664
+    },
+    {
+      "id": "hydraulic-graph-neural-networks",
+      "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1789053140756-test_pretrained_EN_fast.ipynb.html",
+      "sha256": "bc73449d7c44fd6707c7e00fd2c9325f3d23f04fb439d87c0ace11b7265b9b17",
+      "bytes": 29322164,
+      "localTransformation": "Large embedded PNG figures extracted losslessly into sibling assets for Cloudflare Pages file size limit.",
+      "localSha256": "84f301d3636f6b6f8c5c9c3a97ba190dfd70ba9ca8278274671b6a2a0211ecdd",
+      "localBytes": 6652419,
+      "assets": [
+        {
+          "path": "hydraulic-graph-neural-networks-assets/figure-1.png",
+          "sha256": "600f27d5b39ea349050e1cd76dc74ad1fdeeeec35da69298e6113d64e8fa23ab",
+          "bytes": 2855933
+        },
+        {
+          "path": "hydraulic-graph-neural-networks-assets/figure-2.png",
+          "sha256": "d45a121cbc4a4c09886f49757b0845143b0a2aeed3b43c9eb3e03fc364e0ba00",
+          "bytes": 2664420
+        },
+        {
+          "path": "hydraulic-graph-neural-networks-assets/figure-3.png",
+          "sha256": "769f75b0dd6ae130fae25e690098dd8e349eaaeca79fcb7317a66506d4ad4755",
+          "bytes": 3059361
+        },
+        {
+          "path": "hydraulic-graph-neural-networks-assets/figure-4.png",
+          "sha256": "2cb823763d25045263225590078eac0ef8c7e4f08cc87edeeb8448f36f585428",
+          "bytes": 2953715
+        },
+        {
+          "path": "hydraulic-graph-neural-networks-assets/figure-5.png",
+          "sha256": "1396683412363c938bcfe99591b1e447eeaed74610e585d5f94f834f9c625115",
+          "bytes": 1216648
+        },
+        {
+          "path": "hydraulic-graph-neural-networks-assets/figure-6.png",
+          "sha256": "2f9637457f1593f4d6bf2cae15aaa27b82dcfff87c4dbfeb186549a0cd28b954",
+          "bytes": 2251653
+        },
+        {
+          "path": "hydraulic-graph-neural-networks-assets/figure-7.png",
+          "sha256": "9b9bbbc3049defb7644f23365dc48a3d3e39eb9e043e5fe1a369220dd7cba602",
+          "bytes": 2000727
+        }
+      ]
+    },
+    {
+      "id": "dam-risk-interactive-maps",
+      "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1785770064572-01_request_lifecycle.ipynb.html",
+      "sha256": "9f78d271c16bcc1e5a1a039247127a6c36dd07c8a4c230b89872a68ba3655065",
+      "bytes": 588859
+    },
+    {
+      "id": "cdc-social-vulnerability",
+      "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1723840884843-cdcsvi.html",
+      "sha256": "458507e540082b4850cd3e6d7b5fd1288326ff6b8027291daf63ebdc89eebe31",
+      "bytes": 1191226
+    },
+    {
+      "id": "physics-informed-irrigation",
+      "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1773628621812-PINN_GEO-AI_Irrigation.ipynb.html",
+      "sha256": "42db96a06ccf229e4e3ad50a8aa83ea2a2358266c01cbf40a77ca6156ee69000",
+      "bytes": 1583876
+    },
+    {
+      "id": "flood-depth-machine-learning",
+      "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1757099740405-modelling.ipynb.html",
+      "sha256": "7c4c387aa54a0a9f1c7b520265afa5753a4b036a0208b7973e715b6d0098acde",
+      "bytes": 1023687
+    },
+    {
+      "id": "flood-depth-data-fusion",
+      "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1757099753800-data_exploration.ipynb.html",
+      "sha256": "bf228e24a480bcfa526924fad9db9c04d2b5fc94fb82924dff58164cce5fdc46",
+      "bytes": 1162023
+    },
+    {
+      "id": "disaster-message-locations",
+      "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1739563823499-geo-knowledge-guided_LLM.html",
+      "sha256": "8b5c290cbe867685780370cdc86e608780b48d76300f020b990fc3cc604574a4",
+      "bytes": 699903
+    }
+  ]
+}

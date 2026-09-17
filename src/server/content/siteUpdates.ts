@@ -579,9 +579,102 @@ export type LocalNotebook = {
   author?: string;
   fileUrl: string;
   thumbnailUrl: string;
+  sourceUrl?: string;
 };
 
 export const localNotebooks: LocalNotebook[] = [
+  {
+    "id": "physics-informed-irrigation",
+    "title": "Physics-Informed Geo-AI for Irrigation Quantification",
+    "category": "Sustainable water management",
+    "author": "Esmaeel Adrah, Daniel Dominguez",
+    "fileUrl": "/content/notebooks/physics-informed-irrigation.html",
+    "thumbnailUrl": "/images/modules/physics-informed-irrigation.png",
+    "sourceUrl": "https://platform.i-guide.io/notebooks/5d89ce8d-1948-494c-8ed5-41d4cb09e39d"
+  },
+  {
+    "id": "flood-depth-machine-learning",
+    "title": "Flood Depth Prediction with Geospatial Data Fusion and Machine Learning",
+    "category": "Flood hazard assessment",
+    "author": "Rufai Omowunmi Balogun, Aleksander Berg, Parnian Ghaneei, Jikun Liu, Temitope Akinboyewa, Xiao Chen, Wen Zhou",
+    "fileUrl": "/content/notebooks/flood-depth-machine-learning.html",
+    "thumbnailUrl": "/images/modules/flood-depth-machine-learning.jpg",
+    "sourceUrl": "https://platform.i-guide.io/notebooks/803168c4-efdd-44c1-8338-1445f16d95e2"
+  },
+  {
+    "id": "flood-depth-data-fusion",
+    "title": "Multimodal Geospatial Data Fusion for Flood Depth Prediction",
+    "category": "Flood data preparation",
+    "author": "Temitope Akinboyewa, Aleksander Berg, Parnian Ghaneei, Rufai Omowunmi Balogun, Jikun Liu, Xiao Chen, Wen Zhou",
+    "fileUrl": "/content/notebooks/flood-depth-data-fusion.html",
+    "thumbnailUrl": "/images/modules/flood-depth-data-fusion.png",
+    "sourceUrl": "https://platform.i-guide.io/notebooks/e8eb5345-2a17-4f2c-9f1c-e1510f995b30"
+  },
+  {
+    "id": "disaster-message-locations",
+    "title": "Location Descriptions in Disaster-related Text Messages",
+    "category": "Disaster response and GeoAI",
+    "author": "Yingjie Hu",
+    "fileUrl": "/content/notebooks/disaster-message-locations.html",
+    "thumbnailUrl": "/images/modules/disaster-message-locations.png",
+    "sourceUrl": "https://platform.i-guide.io/notebooks/f571442f-b7a9-4e75-909f-bb5ff285be6c"
+  },
+
+  {
+    "id": "california-wildfire-warning",
+    "title": "California Wildfire 5-Day Warning Modeling with Random Forest and XGBoost",
+    "category": "Wildfire prediction",
+    "author": "Ali Khosravi Kazazi, Eric Twum Barima, Yunfan Kang, Simran Koul, Samrin Sauda, Hashir Tanveer, Yuhan Xu",
+    "fileUrl": "/content/notebooks/california-wildfire-warning.html",
+    "thumbnailUrl": "/images/modules/california-wildfire-warning.png",
+    "sourceUrl": "https://platform.i-guide.io/notebooks/e15730fc-085f-4cb6-b1b8-548adda38854"
+  },
+  {
+    "id": "prime-disaster-resilience",
+    "title": "PRIME: A CyberGIS Platform for Resilience Inference Measurement and Enhancement",
+    "category": "Community disaster resilience",
+    "author": "Debayan Mandal, Lei Zou, Rohan Singh Wilkho, Furqan Baig, Joynal Abedin, Bing Zhou, Heng Cai, Nasir Gharaibeh, Nina Lam",
+    "fileUrl": "/content/notebooks/prime-disaster-resilience.html",
+    "thumbnailUrl": "/images/modules/prime-disaster-resilience.jpg",
+    "sourceUrl": "https://platform.i-guide.io/notebooks/23422705-aad7-4e00-b3d5-1df64125c429"
+  },
+  {
+    "id": "wildfire-transportation-unet",
+    "title": "Wildfire Threat Detection for Transportation Infrastructure using U-Net for Semantic Segmentation",
+    "category": "Wildfire and infrastructure resilience",
+    "author": "Carey Whitehair-Conde, Jeremiah Huggins, Matthew Prebble, Joel Diaz, John Crissman, Lars Hanson, Shaun Williams, Steven Habicht",
+    "fileUrl": "/content/notebooks/wildfire-transportation-unet.html",
+    "thumbnailUrl": "/images/modules/wildfire-transportation-unet.jpeg",
+    "sourceUrl": "https://platform.i-guide.io/notebooks/ae64d94a-99ce-473b-9df9-224dc13c240b"
+  },
+  {
+    "id": "hydraulic-graph-neural-networks",
+    "title": "Multi-scale hydraulic graph neural networks for flood modelling",
+    "category": "Flood modeling and GeoAI",
+    "author": "Roberto Bentivoglio, Elvin Isufi, Sebastiaan Nicolas Jonkman, Riccardo Taormina",
+    "fileUrl": "/content/notebooks/hydraulic-graph-neural-networks.html",
+    "thumbnailUrl": "/images/modules/hydraulic-graph-neural-networks.png",
+    "sourceUrl": "https://platform.i-guide.io/notebooks/d15bf2db-e427-4fd0-9961-996b72f0f537"
+  },
+  {
+    "id": "dam-risk-interactive-maps",
+    "title": "From Dam Risk Metrics to Interactive Maps: A Hands-on Jupyter Tutorial for Open Geospatial REST APIs",
+    "category": "Dam risk and geospatial analysis",
+    "author": "Jungha Woo, Xiao Liu, Erick Li, Michael Englert",
+    "fileUrl": "/content/notebooks/dam-risk-interactive-maps.html",
+    "thumbnailUrl": "/images/modules/dam-risk-interactive-maps.jpg",
+    "sourceUrl": "https://platform.i-guide.io/notebooks/f711f98c-105c-41ef-bfc3-c6532a5a5b86"
+  },
+  {
+    "id": "cdc-social-vulnerability",
+    "title": "An exploration of the Centers for Disease Control (CDC) Social Vulnerability Index (SVI) dataset",
+    "category": "Social vulnerability and preparedness",
+    "author": "Daniel Kiv",
+    "fileUrl": "/content/notebooks/cdc-social-vulnerability.html",
+    "thumbnailUrl": "/images/modules/cdc-social-vulnerability.png",
+    "sourceUrl": "https://platform.i-guide.io/notebooks/791fa878-e227-4953-b07d-1fbb5176ace5"
+  },
+
   {
     id: "cybertraining-nairr-tutorial-2026",
     title: "CyberTraining & NAIRR Tutorial",
