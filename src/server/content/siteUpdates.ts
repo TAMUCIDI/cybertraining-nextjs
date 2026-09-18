@@ -685,12 +685,13 @@ export const localNotebooks: LocalNotebook[] = [
   },
   {
     id: "port-infrastructure-resilience-coastal-hazards",
-    title: "Port Infrastructure Resilience under Coastal Hazards",
+    title: "Using ACES for Port Operation Resilience under Coastal Hazards",
+    author: "Shoibolina Kaushik and Zhe Zhang",
     category: "Coastal hazards and port resilience",
     fileUrl:
       "/content/notebooks/port-infrastructure-resilience-coastal-hazards.html",
     thumbnailUrl:
-      "/images/modules/port-infrastructure-resilience-coastal-hazards-cover.png",
+      "/images/modules/port-operation-resilience-aces-cover.jpg",
   },
   {
     id: "maritime-traffic-disruption-hurricane-harvey",
