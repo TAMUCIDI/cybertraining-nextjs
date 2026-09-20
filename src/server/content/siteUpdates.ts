@@ -729,6 +729,7 @@ export type LocalTeamMember = {
 export const officialProfileUrls: Record<string, string> = {
   "Michael Goodchild":
     "https://www.geog.ucsb.edu/people/faculty/michael-goodchild",
+  "Angela Yao": "https://geography.uga.edu/directory/people/angela-yao",
   "Zhe Zhang":
     "https://artsci.tamu.edu/geography/contact/profiles/zhesarina-zhang.html",
   "Honggao Liu": "https://hprc.tamu.edu/about/staff/honggao-liu.html",
@@ -768,6 +769,7 @@ export function getOfficialProfileUrl(name: string, fallback?: string) {
 
 export const officialEmails: Record<string, string> = {
   "Michael Goodchild": "good@geog.ucsb.edu",
+  "Angela Yao": "xyao@uga.edu",
   "Zhe Zhang": "zhezhang@tamu.edu",
   "Honggao Liu": "honggao@tamu.edu",
   "Shaowen Wang": "shaowen@illinois.edu",
@@ -811,6 +813,13 @@ export const localAdvisoryMembers: LocalTeamMember[] = [
     img: "/images/team/michael-goodchild.jpg",
     profileUrl:
       "https://www.geog.ucsb.edu/people/faculty/michael-goodchild",
+  },
+  {
+    name: "Angela Yao",
+    affiliation: "Professor of Geography, University of Georgia",
+    email: "xyao@uga.edu",
+    img: "/images/team/angela-yao.jpg",
+    profileUrl: "https://geography.uga.edu/directory/people/angela-yao",
   },
   {
     name: "Liqiu Meng",
