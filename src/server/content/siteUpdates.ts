@@ -84,7 +84,7 @@ export const localWorkshops: LocalWorkshop[] = [
   },
   {
     id: "morgan-state-workshop-2026",
-    title: "Morgan State University CyberTraining Workshop",
+    title: "Morgan State University CyberTraining & NAIRR workshop",
     startDate: "2026-03-02",
     endDate: "2026-03-03",
     location: "Morgan State University, Baltimore, Maryland",
