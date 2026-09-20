@@ -239,7 +239,7 @@ export const localWorkshops: LocalWorkshop[] = [
   },
   {
     id: "nvidia-deep-learning-training-2026",
-    title: "NVIDIA Deep Learning Institute Training Workshop",
+    title: "Texas A&M University CyberTraining & NAIRR NVIDIA Deep Learning Institute Training Workshop",
     startDate: "2026-08-20",
     location:
       "O&M Building, Room 112, Texas A&M University, College Station, Texas",
