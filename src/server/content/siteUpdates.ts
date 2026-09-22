@@ -751,7 +751,6 @@ export const officialProfileUrls: Record<string, string> = {
   "Amy Rock": "https://www.humboldt.edu/geography/amy-rock",
   "Jorge Brenner": "https://gcoos.org/team-showcase/jorge-brenner/",
   "Tao Cheng": "https://profiles.ucl.ac.uk/10774-tao-cheng",
-  "Xiao Li": "https://www.tsu.ox.ac.uk/people/xli.html",
   "Aron Larsson": "https://www.miun.se/en/personnel/l/aronlarsson/",
   "Huilin Gao": "https://engineering.tamu.edu/civil/profiles/hgao.html",
   "Lingli Zhu":
@@ -788,7 +787,6 @@ export const officialEmails: Record<string, string> = {
   "Amy Rock": "arock@ucgis.org",
   "Jorge Brenner": "jorge.brenner@gcoos.org",
   "Tao Cheng": "tao.cheng@ucl.ac.uk",
-  "Xiao Li": "xiao.li@ouce.ox.ac.uk",
   "Aron Larsson": "aron.larsson@miun.se",
   "Huilin Gao": "hgao@civil.tamu.edu",
   "Lingli Zhu": "lingli.zhu@nls.fi",

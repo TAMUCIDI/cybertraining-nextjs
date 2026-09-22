@@ -20,16 +20,19 @@ export default async function About() {
   const supabase = await createClient();
   const { data: PI_List } = await supabase.from("people").select('name,email,role,affiliation,img_url').in('role', ['PI','Co-PI'])
   const { data: Member_List } = await supabase.from("people").select('name,email,affiliation,img_url').in('role', ['Member'])
+  const excludedTeamMemberNames = new Set(["Xiao Li"]);
+  const visiblePIList = (PI_List || []).filter((person) => !excludedTeamMemberNames.has(person.name));
+  const visibleMemberList = (Member_List || []).filter((person) => !excludedTeamMemberNames.has(person.name));
 
-  const existingLeadershipNames = new Set((PI_List || []).map((person) => person.name));
+  const existingLeadershipNames = new Set(visiblePIList.map((person) => person.name));
   const localLeadershipNames = new Set(localProjectLeadershipMembers.map((person) => person.name));
   const existingMemberNames = new Set(
-    (Member_List || [])
+    visibleMemberList
       .filter((person) => !localLeadershipNames.has(person.name))
       .map((person) => person.name),
   );
   const leadershipMembers = [
-    ...(PI_List || []).map((person) => ({
+    ...visiblePIList.map((person) => ({
       name: person.name,
       email: getOfficialEmail(person.name, person.email),
       affiliation: person.affiliation,
@@ -49,7 +52,7 @@ export default async function About() {
       })),
   ];
   const mergedAdvisoryMembers = [
-    ...(Member_List || [])
+    ...visibleMemberList
       .filter((person) => !localLeadershipNames.has(person.name))
       .map((person) => ({
         name: person.name,
