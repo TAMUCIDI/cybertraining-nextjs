@@ -2,6 +2,28 @@
   "retrieved": "2026-09-17",
   "notebooks": [
     {
+      "id": "ipums-nhgis-census-msas",
+      "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1790130515284-1_IPUMS_NHGIS_API.ipynb.html",
+      "retrieved": "2026-09-24",
+      "sha256": "2930675ad0d00cfdae24664905fd923ca31c2452ebe3a0b577808642c06959ed",
+      "bytes": 5040046,
+      "localTransformation": "Replaced a credential exposed in the source with YOUR_IPUMS_API_KEY.",
+      "localSha256": "0be38767193c33ceadc26c02609496759272e9245d0ec81d7caee44089788076",
+      "localBytes": 5040008,
+      "thumbnailUrl": "https://backend.i-guide.io/user-uploads/thumbnails/1790051247780-1_ipums_nhgis_api.png"
+    },
+    {
+      "id": "visitor-census-us-cities",
+      "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1790182252749-Visitor_Census_Demo.ipynb.html",
+      "retrieved": "2026-09-24",
+      "sha256": "beee6dd2ac821a80c3633e77ee6d2c151d25475a5368fb55c7e36e1c926c13b1",
+      "bytes": 3021506,
+      "thumbnailUrl": "https://backend.i-guide.io/user-uploads/thumbnails/1790181418177-visitor_census_demo.png",
+      "localTransformation": "Removed trailing spaces from generated HTML lines.",
+      "localSha256": "9d98676439bc47ea43ece75077302781e2c3bd0b13c89502763661e49c78259f",
+      "localBytes": 3021474
+    },
+    {
       "id": "california-wildfire-warning",
       "sourceHtmlUrl": "https://backend.i-guide.io/user-uploads/notebook_html/1785423357722-01_wildfire_model_training.ipynb.html",
       "sha256": "71bd90ef9fd4724f39fa51d89268537ec2074d42d6c82c728c1f85bc7b254c84",

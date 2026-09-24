@@ -584,6 +584,24 @@ export type LocalNotebook = {
 
 export const localNotebooks: LocalNotebook[] = [
   {
+    id: "ipums-nhgis-census-msas",
+    title: "Exploring U.S. Census Data Across Seven MSAs with the IPUMS NHGIS API",
+    category: "Census data and geospatial analysis",
+    author: "Meicheng Xiong",
+    fileUrl: "/content/notebooks/ipums-nhgis-census-msas.html",
+    thumbnailUrl: "/images/modules/ipums-nhgis-census-msas.png",
+    sourceUrl: "https://platform.i-guide.io/notebooks/9911c5ed-4e19-4f57-ad06-9db27b391395",
+  },
+  {
+    id: "visitor-census-us-cities",
+    title: "Exploring Visitor Census Data in U.S. Cities: Insights from Large-Scale Mobile Positioning Data",
+    category: "Urban mobility and geospatial analysis",
+    author: "Meicheng Xiong, Di Zhu, David Van Riper",
+    fileUrl: "/content/notebooks/visitor-census-us-cities.html",
+    thumbnailUrl: "/images/modules/visitor-census-us-cities.png",
+    sourceUrl: "https://platform.i-guide.io/notebooks/0a6181b5-74dd-48c1-ae22-b9ff23219b63",
+  },
+  {
     "id": "physics-informed-irrigation",
     "title": "Physics-Informed Geo-AI for Irrigation Quantification",
     "category": "Sustainable water management",
