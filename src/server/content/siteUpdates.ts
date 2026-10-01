@@ -543,7 +543,7 @@ export const localWorkshops: LocalWorkshop[] = [
           "Discussion",
           "Chair: Dr. Zhe Zhang, Texas A&M University",
           "May Yuan, Ashbel Smith Professor, University of Texas at Dallas",
-          "Lauren Bennett, Product Engineering Director, Esri",
+          "Dr. Lauren Bennett, Product Engineering Director, Esri",
           "Jason Wu, Texas A&M Transportation Institute",
           "Angela Yao, Professor, Department of Geography, University of Georgia; CaGIS Journal Editor-in-Chief",
           "Anthony Howell, Associate Professor & Director, Center on Technology, Data, and Society, Arizona State University; Annals of AAG journal editor",
@@ -594,10 +594,10 @@ export const localWorkshops: LocalWorkshop[] = [
         ],
       },
       {
-        name: "Lauren Bennett",
+        name: "Dr. Lauren Bennett",
         role: "Product Engineering Director for Spatial Analysis and Data Science, Esri",
         paragraphs: [
-          "Lauren Bennett is the Product Engineering Director for Spatial Analysis and Data Science at Esri, where she leads R&D across a broad range of areas, including spatial statistics, machine learning, big data analytics, and web-based spatial analysis. She is passionate about the power of spatial data science to address global challenges such as racial equity, public health, and climate change. Lauren holds a BA in Geography from McGill University, an MS in Geographic and Cartographic Science from George Mason University, and a PhD in Information Systems and Technology from Claremont Graduate University. She is also the coauthor of Spatial Statistics Illustrated, an engaging and accessible introduction to spatial statistics.",
+          "Dr. Lauren Bennett is the Product Engineering Director for Spatial Analysis and Data Science at Esri, where she leads R&D across a broad range of areas, including spatial statistics, machine learning, big data analytics, and web-based spatial analysis. She is passionate about the power of spatial data science to address global challenges such as racial equity, public health, and climate change. Lauren holds a BA in Geography from McGill University, an MS in Geographic and Cartographic Science from George Mason University, and a PhD in Information Systems and Technology from Claremont Graduate University. She is also the coauthor of Spatial Statistics Illustrated, an engaging and accessible introduction to spatial statistics.",
         ],
       },
       {
