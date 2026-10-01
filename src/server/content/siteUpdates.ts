@@ -503,13 +503,127 @@ export const localWorkshops: LocalWorkshop[] = [
     id: "harvard-cga-nairr-workshop-2026",
     title: "National AI Computing Research Resources Workshop at Harvard CGA",
     startDate: "2026-10-02",
-    location: "David Rubenstein Treehouse, Harvard University",
+    location: "CGIS South, Harvard University",
     description:
-      "This upcoming workshop will introduce National AI Computing Research Resources in connection with the 2026 Harvard University Center for Geographic Analysis Conference. Travel-grant details and the application are available through the linked form.",
+      "This workshop aims to equip participants with Cyberinfrastructure (CI) and GeoAI skills to advance disaster management and sustainability. Through hands-on training, participants will develop computational skills using national AI computing resources for analyzing large-scale geospatial datasets and translating complex data into actionable scientific insights. Supported by National Science Foundation (NSF)-funded programs under award Nos. 2526748, 2519476, and 2519477. The workshop takes place from 9:00 am to 12:00 pm on October 2, 2026, in conjunction with the Harvard Center for Geographic Analysis Annual Conference on October 2–3, 2026.",
     photoUrl: "/images/workshops/harvard-cga-logo.svg",
     photoAlt: "Harvard University Center for Geographic Analysis logo",
     imageFit: "contain",
-    schedule: [],
+    schedule: [
+      {
+        time: "9:00 - 9:40 am",
+        items: [
+          "Welcome and Introduction to the Project",
+          "Dr. Zhe Zhang, Associate Professor, Department of Geography, Texas A&M University",
+        ],
+      },
+      {
+        time: "9:40 - 10:20 am",
+        items: [
+          "Introduction to the I-GUIDE Platform",
+          "Shaowen Wang, Professor, Department of Geography and Geographic Information Science; Associate Dean for Natural and Mathematical Sciences, College of Liberal Arts & Sciences, University of Illinois Urbana-Champaign",
+          "Anand Padmanabhan, Research Associate Professor, Department of Geography and Geographic Information Science, University of Illinois Urbana-Champaign",
+        ],
+      },
+      {
+        time: "10:20 - 10:30 am",
+        items: ["Break"],
+      },
+      {
+        time: "10:30 - 11:10 am",
+        items: [
+          "Introduction to ACES AI Computing",
+          "Honggao Liu, Executive Director, Texas A&M High-Performance Research Computing",
+          "Zhenhua He, Interim Director for Emerging Technologies, Texas A&M High-Performance Research Computing",
+        ],
+      },
+      {
+        time: "11:10 am - 12:00 pm",
+        items: [
+          "Discussion",
+          "Chair: Dr. Zhe Zhang, Texas A&M University",
+          "May Yuan, Ashbel Smith Professor, University of Texas at Dallas",
+          "Lauren Bennett, Product Engineering Director, Esri",
+          "Jason Wu, Texas A&M Transportation Institute",
+          "Angela Yao, Professor, Department of Geography, University of Georgia; CaGIS Journal Editor-in-Chief",
+          "Anthony Howell, Associate Professor & Director, Center on Technology, Data, and Society, Arizona State University; Annals of AAG journal editor",
+        ],
+      },
+    ],
+    biographies: [
+      {
+        name: "Zhe Zhang",
+        role: "Associate Professor, Department of Geography, Texas A&M University",
+        paragraphs: [
+          "Dr. Zhe Zhang is Associate Professor in the Department of Geography at Texas A&M University, with joint appointments in the Department of Electrical and Computer Engineering and the Texas A&M Hazard Reduction and Recovery Center. Her research develops spatial decision support systems that integrate advanced cyberinfrastructure, geospatial artificial intelligence (GeoAI), and participatory design to address critical challenges in disaster management and sustainability, with funding from NSF, NASA, USDOT, NOAA, and the National Geographic Society. She has served as Chair of the AAG Cyberinfrastructure Specialty Group, was elected to the Board of Directors of the Cartography and Geographic Information Society, and chairs the Research Committee of the University Consortium for Geographic Information Science. She is Co-Principal Investigator of the NSF-funded FASTER supercomputer and Co-Investigator of the ACES supercomputer at Texas A&M, and serves as Principal Investigator on eight externally funded grants totaling over $3 million, including the NSF CyberTraining project supporting today's workshop. Her work appears in leading GIScience journals including the International Journal of Geographical Information Science, Annals of the American Association of Geographers, and Cartography and Geographic Information Science, and she serves as Associate Editor for Computational Urban Science. She has received the Texas A&M Pathways Award, the NSF CAREER Award, and the 2026 Distinguished Contribution Award from Women in GIS and Esri.",
+        ],
+      },
+      {
+        name: "Shaowen Wang",
+        role: "Professor, Geography & Geographic Information Science / Siebel School of Computing and Data Science; Associate Dean, University of Illinois Urbana-Champaign",
+        paragraphs: [
+          "Dr. Shaowen Wang is a Professor in the Department of Geography and Geographic Information Science and the Siebel School of Computing and Data Science at the University of Illinois Urbana-Champaign, where he serves as Associate Dean for Natural and Mathematical Sciences in the College of Liberal Arts and Sciences and as a Senior Faculty Fellow in the Office of the Vice Chancellor for Research and Innovation. He is founding director of the CyberGIS Center for Advanced Digital and Spatial Studies and leads the NSF-funded Institute for Geospatial Understanding through an Integrative Discovery Environment (I-GUIDE). He previously served as Head of the Department of Geography and Geographic Information Science (2017-2023) and as Associate Director of the National Center for Supercomputing Applications for CyberGIS (2010-2017). His research advances cyberGIS, geospatial data science, and spatial AI to develop scalable solutions for complex geospatial problems and sustainability challenges. He served as President of UCGIS (2016-2017) and on the National Academies' Board on Earth Sciences and Resources (2015-2020), and is a Fellow of AAAS, AAG, and UCGIS.",
+        ],
+      },
+      {
+        name: "Anand Padmanabhan",
+        role: "Research Associate Professor, Department of Geography and Geographic Information Science, University of Illinois Urbana-Champaign",
+        paragraphs: [
+          "Dr. Anand Padmanabhan is a Research Associate Professor in the Department of Geography and Geographic Information Science at the University of Illinois at Urbana-Champaign (UIUC). He holds a Ph.D. degree in computer science from the University of Iowa and has research interests in advanced cyberinfrastructure, geographic information science and systems (GIS), CyberGIS, distributed and high-performance computing, and geospatial data science. He has served as an investigator for several projects funded by the U.S. National Science Foundation and Environmental Protection Agency. He has published many peer-reviewed papers and is an author of a number of CyberGIS software tools.",
+        ],
+      },
+      {
+        name: "Honggao Liu",
+        role: "Executive Director, High Performance Research Computing (HPRC), Texas A&M University",
+        paragraphs: [
+          "Dr. Honggao Liu is Executive Director of Texas A&M High Performance Research Computing, with more than 28 years of experience in research computing, computational and data sciences, and cyberinfrastructure development. He has served as PI or Co-PI on over $35 million in NSF funding and is PI on the NSF FASTER and ACES awards that acquired Texas A&M's composable supercomputers, which are made available to the national research community through the NSF ACCESS program; ACES is also a compute resource of the National AI Research Resource (NAIRR) pilot. He is Co-PI on the NSF award for Broadening Adoption of Cyberinfrastructure and Research Workforce Development for Disaster Management, and previously served as Deputy Director of the Center for Computation and Technology and Director of HPC at Louisiana State University. He received his Ph.D. in Chemical Engineering from LSU in 2002.",
+        ],
+      },
+      {
+        name: "Zhenhua He",
+        role: "Interim Director for Emerging Technologies and Research, Research Scientist, High Performance Research Computing (HPRC), Texas A&M University",
+        paragraphs: [
+          "Dr. Zhenhua He is Interim Director for Emerging Technologies and Research and a Research Scientist with Texas A&M High Performance Research Computing (HPRC), where he supports the training and research mission of the center and the NSF-funded ACES composable accelerator testbed. He earned his Ph.D. from Texas A&M University, and his expertise centers on machine learning and AI, deep learning frameworks such as PyTorch and TensorFlow, and deploying AI/ML workloads on GPUs and emerging accelerators. He develops and teaches widely attended short courses on AI for high-performance computing that help researchers nationwide harness national cyberinfrastructure through the ACCESS and NAIRR programs. Recently named an NVIDIA Deep Learning Institute Certified Instructor and University Ambassador, he helps bridge domain researchers, including those in GeoAI and coastal resilience science, with the AI technologies and computing resources needed to scale their analyses.",
+        ],
+      },
+      {
+        name: "May Yuan",
+        role: "Ashbel Smith Professor of Geospatial Information Sciences, University of Texas at Dallas",
+        paragraphs: [
+          "Dr. May Yuan is the Ashbel Smith Professor of Geospatial Information Sciences in the School of Economic, Political, and Policy Sciences at the University of Texas at Dallas, with all her degrees in Geography: B.S. 1987 from National Taiwan University, and M.S. 1992, and Ph.D. 1994 from the State University of New York at Buffalo. She is an elected fellow of the American Association for the Advancement of Science (AAAS), the American Association of Geographers (AAG), and the University Consortium of Geographic Information Science (UCGIS). She currently serves as the Editor-in-Chief of the International Journal of Geographical Information Science.  Previously, she served as a program director for Human-Environment and Geographic Science at the U.S. National Science Foundation (2022-2025), on Scientific Advisory Committee of the Geospatial Science and Human Security Division at Oak Ridge National Laboratory (2020-2025), NOAA’s Environmental Information Working Group (2016-2022), Landsat Advisory Group (2019-2022), National Geospatial Advisory Committee (2016-2021), and Editorial Board of Annals of American Association of Geographers (2005-2017) and as President of the Cartography and Geographic Information Society (2019-2020) and of the University Consortium for Geographic Information Science (2011-2012). Her research has been supported by NSF, NASA, DoD, DHS, DOJ, DOE, NOAA, USGS, NIST, and NIH. She and her students at the Geospatial Analytics and Innovative Applications (GAIA) Lab explore ways to understand the dynamics of people, events, and places, and how interactions between spatial behaviors and the environment affect brain health and cognitive development.",
+        ],
+      },
+      {
+        name: "Lauren Bennett",
+        role: "Product Engineering Director for Spatial Analysis and Data Science, Esri",
+        paragraphs: [
+          "Lauren Bennett is the Product Engineering Director for Spatial Analysis and Data Science at Esri, where she leads R&D across a broad range of areas, including spatial statistics, machine learning, big data analytics, and web-based spatial analysis. She is passionate about the power of spatial data science to address global challenges such as racial equity, public health, and climate change. Lauren holds a BA in Geography from McGill University, an MS in Geographic and Cartographic Science from George Mason University, and a PhD in Information Systems and Technology from Claremont Graduate University. She is also the coauthor of Spatial Statistics Illustrated, an engaging and accessible introduction to spatial statistics.",
+        ],
+      },
+      {
+        name: "Jason Wu",
+        role: "Associate Research Scientist, Texas A&M Transportation Institute",
+        paragraphs: [
+          "Dr. Jason Wu is an Associate Research Scientist at the Texas A&M Transportation Institute (TTI), with more than 11 years of experience in intelligent transportation systems, artificial intelligence (AI), connected vehicle and telematics data, LiDAR sensing, GIS, traffic safety, and transportation asset management. His research focuses on applying AI, GeoAI, and emerging large-scale data sources to transportation safety and mobility challenges. He has led and contributed to federally and state-funded projects involving large-scale connected vehicle data analytics, AI-assisted safety analysis, LiDAR-based traffic perception, and GIS-based transportation decision-support systems. Dr. Wu received his Ph.D. in Transportation Engineering from Texas Tech University and his M.S. in Structural Engineering from Utah State University. He has authored or co-authored more than 50 peer-reviewed journal papers and conference proceedings in transportation engineering, safety, emerging data analytics, and intelligent transportation systems.",
+        ],
+      },
+      {
+        name: "Angela Yao",
+        role: "Professor, Department of Geography, University of Georgia; Editor-in-Chief, Cartography and Geographic Information Science",
+        paragraphs: [
+          "Dr. X. Angela Yao is a Professor in the Department of Geography at the University of Georgia (UGA), where she has served on the faculty since 2002. She received her Ph.D. in Geography from the University at Buffalo, State University of New York, an M.S. in GIS and Urban Analysis from the ITC in the Netherlands, and a B.S. in GIS from Wuhan University in China.",
+          "Her research and teaching focuses on geospatial data science, network analysis, and spatial statistics, and GeoAI, with applications in human dynamics and public health research. Her work advances geospatial methods for analyzing complex spatial and temporal phenomena, particularly through the integration of emerging data sources, computational approaches, and geographic knowledge. She has published extensively in leading journals and conference proceedings, and led and contributed to research projects supported by the National Science Foundation, National Institutes of Health, and other funding agencies.",
+          "She currently serves as Editor-in-Chief of Cartography and Geographic Information Science and President of University Consortium of Geographic Information Science. Her past professional leadership includes serving as President of the Cartography and Geographic Information Society and Chair of the International Cartographic Association’s Commission on Geospatial Analysis and Modeling.",
+        ],
+      },
+      {
+        name: "Anthony Howell",
+        role: "Associate Professor of Public Policy and Management; Director, Center on Technology, Data, and Society, Arizona State University",
+        paragraphs: [
+          "Dr. Anthony Howell is the Director of the Center on Technology, Data, and Society, an Associate Professor of Public Policy and Management in the School of Public Affairs at ASU, and Editor for Geographic Methods at the Annals of the American Association of Geographers. He is an affiliate faculty member in the School of Geographical Sciences and Urban Planning and a senior sustainability scientist in the School of Global Futures. Prior to ASU, Dr. Howell served as an Associate Professor in the School of Economics at Peking University, China's flagship university. He previously held several visiting positions as a Fulbright scholar at the Lincoln Institute of Urban Development and Land Policy in Beijing, a Science & Technology policy fellow at the National Academies of Sciences in Washington D.C., and a research fellow at the Asian Development Bank in Manila.",
+        ],
+      },
+    ],
     registration: {
       label: "Travel Grant Details and Application",
       url: "https://forms.gle/1YF6PBDmLERShi8Z7",
