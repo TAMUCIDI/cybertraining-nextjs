@@ -506,8 +506,8 @@ export const localWorkshops: LocalWorkshop[] = [
     location: "CGIS South, Harvard University",
     description:
       "This workshop aims to equip participants with Cyberinfrastructure (CI) and GeoAI skills to advance disaster management and sustainability. Through hands-on training, participants will develop computational skills using national AI computing resources for analyzing large-scale geospatial datasets and translating complex data into actionable scientific insights. Supported by National Science Foundation (NSF)-funded programs under award Nos. 2526748, 2519476, and 2519477. The workshop takes place from 9:00 am to 12:00 pm on October 2, 2026, in conjunction with the Harvard Center for Geographic Analysis Annual Conference on October 2–3, 2026.",
-    photoUrl: "/images/workshops/harvard-cga-logo.svg",
-    photoAlt: "Harvard University Center for Geographic Analysis logo",
+    photoUrl: "/images/workshops/harvard-cga-2026-flyer.png",
+    photoAlt: "Flyer for the October 2, 2026 National AI Computing Research Resources Workshop at Harvard CGA",
     imageFit: "contain",
     schedule: [
       {
@@ -622,6 +622,12 @@ export const localWorkshops: LocalWorkshop[] = [
         paragraphs: [
           "Dr. Anthony Howell is the Director of the Center on Technology, Data, and Society, an Associate Professor of Public Policy and Management in the School of Public Affairs at ASU, and Editor for Geographic Methods at the Annals of the American Association of Geographers. He is an affiliate faculty member in the School of Geographical Sciences and Urban Planning and a senior sustainability scientist in the School of Global Futures. Prior to ASU, Dr. Howell served as an Associate Professor in the School of Economics at Peking University, China's flagship university. He previously held several visiting positions as a Fulbright scholar at the Lincoln Institute of Urban Development and Land Policy in Beijing, a Science & Technology policy fellow at the National Academies of Sciences in Washington D.C., and a research fellow at the Asian Development Bank in Manila.",
         ],
+      },
+    ],
+    resources: [
+      {
+        label: "View / Download Workshop Flyer",
+        url: "/images/workshops/harvard-cga-2026-flyer.png",
       },
     ],
     registration: {
