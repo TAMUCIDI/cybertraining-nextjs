@@ -7,6 +7,7 @@ import {
     isUpcomingWorkshop,
     localWorkshops,
 } from '@/server/content/siteUpdates';
+import { getManagedPage, hasImportedRepositoryContent } from '@/server/content/managedContent';
 import WorkshopCard from './components/WorkshopCard';
 
 type WorkshopListItem = {
@@ -18,22 +19,39 @@ type WorkshopListItem = {
     photo?: string;
     photoAlt?: string;
     imageFit?: "cover" | "contain";
+    featured?: boolean;
+    displayOrder?: number;
 };
 
 export default async function Workshops() {
     
     const supabase = await createClient();
-    const { data: workshopList } = await supabase.from("workshops").select('id,title,date,location,photo_url')
+    const [{ data: workshopList }, managedPage, repositoryContentImported] = await Promise.all([
+        supabase.from("workshops").select("*"),
+        getManagedPage("workshops"),
+        hasImportedRepositoryContent(),
+    ]);
+
+    const databaseSlugs = new Set(
+        (workshopList || []).map((workshop) => workshop.slug).filter(Boolean),
+    );
 
     const remoteWorkshops: WorkshopListItem[] = (workshopList || []).map((workshop) => ({
-        id: String(workshop.id),
+        id: String(workshop.slug || workshop.id),
         title: workshop.title,
         startDate: workshop.date,
+        endDate: workshop.end_date || undefined,
         location: workshop.location,
         photo: workshop.photo_url,
+        photoAlt: workshop.photo_alt || undefined,
+        imageFit: workshop.image_fit || undefined,
+        featured: workshop.featured || false,
+        displayOrder: workshop.display_order || 0,
     }));
 
-    const localWorkshopList: WorkshopListItem[] = localWorkshops.map((workshop) => ({
+    const localWorkshopList: WorkshopListItem[] = (repositoryContentImported ? [] : localWorkshops)
+      .filter((workshop) => !databaseSlugs.has(workshop.id))
+      .map((workshop) => ({
         id: workshop.id,
         title: workshop.title,
         startDate: workshop.startDate,
@@ -42,15 +60,17 @@ export default async function Workshops() {
         photo: workshop.photoUrl,
         photoAlt: workshop.photoAlt,
         imageFit: workshop.imageFit,
+        featured: false,
+        displayOrder: 0,
     }));
 
     const allWorkshops = [...remoteWorkshops, ...localWorkshopList];
     const completedWorkshops = allWorkshops
         .filter((workshop) => !isUpcomingWorkshop(workshop.startDate, workshop.endDate))
-        .sort((a, b) => b.startDate.localeCompare(a.startDate));
+        .sort((a, b) => Number(b.featured) - Number(a.featured) || (a.displayOrder || 0) - (b.displayOrder || 0) || b.startDate.localeCompare(a.startDate));
     const upcomingWorkshops = allWorkshops
         .filter((workshop) => isUpcomingWorkshop(workshop.startDate, workshop.endDate))
-        .sort((a, b) => a.startDate.localeCompare(b.startDate));
+        .sort((a, b) => Number(b.featured) - Number(a.featured) || (a.displayOrder || 0) - (b.displayOrder || 0) || a.startDate.localeCompare(b.startDate));
 
     const renderWorkshopGrid = (
         workshops: WorkshopListItem[],
@@ -80,13 +100,13 @@ export default async function Workshops() {
                 <section className="mx-auto max-w-7xl px-6 lg:px-10">
                     <div className="max-w-3xl border-b border-slate-200 pb-10">
                         <p className="text-sm font-semibold uppercase tracking-[0.22em] text-red-900">
-                            Training in action
+                            {managedPage?.eyebrow || "Training in action"}
                         </p>
                         <h1 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
-                            Workshops and activities
+                            {managedPage?.heading || "Workshops and activities"}
                         </h1>
                         <p className="mt-5 text-lg leading-8 text-slate-600">
-                            Explore completed CyberTraining programs, event materials, and upcoming opportunities to learn with the project team.
+                            {managedPage?.summary || "Explore completed CyberTraining programs, event materials, and upcoming opportunities to learn with the project team."}
                         </p>
                     </div>
                 </section>

@@ -1,15 +1,20 @@
 
-import Header from "../componenets/Header/Header";
-import Footer from "../componenets/Footer/Footer";
+import Header, { type NavigationItem } from "../componenets/Header/Header";
+import Footer, { type FooterContent } from "../componenets/Footer/Footer";
+import { getSiteSetting } from "@/server/content/managedContent";
 
 //import "../global.css";
 import React from "react";
 
-export default function HomeLayout({
+export default async function HomeLayout({
     children
 }:{
     children: React.ReactNode;
 }) {
+    const [navigation, footer] = await Promise.all([
+        getSiteSetting<{ items?: NavigationItem[] }>("navigation"),
+        getSiteSetting<FooterContent>("footer"),
+    ]);
     return (
         <div>
             <a
@@ -18,9 +23,9 @@ export default function HomeLayout({
             >
                 Skip to content
             </a>
-            <Header/>
+            <Header navigation={navigation?.items}/>
             {children}
-            <Footer/>
+            <Footer content={footer}/>
         </div>
     );
 }

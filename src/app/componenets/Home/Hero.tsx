@@ -4,7 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 
-export default function TopHero() {
+type TopHeroProps = {
+  heading?: string;
+  awardIntro?: string;
+  awardNumbers?: string[];
+};
+
+const defaultAwards = ["2321069", "2519476", "2321070", "2519477"];
+
+export default function TopHero({
+  heading = "An International Cyberinfrastructure-Powered GeoAI Network for Disaster Assessment, Reduction, and Training",
+  awardIntro = "Funded by NSF award numbers",
+  awardNumbers = defaultAwards,
+}: TopHeroProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
 
@@ -65,17 +77,17 @@ export default function TopHero() {
                 Cyber-DART:
               </span>
               <span className="mt-7 block max-w-3xl text-[clamp(1.45rem,3.2vw,2.8rem)] font-semibold leading-[1.08] text-slate-100">
-                An International Cyberinfrastructure-Powered GeoAI Network for Disaster Assessment, Reduction, and Training
+                {heading}
               </span>
             </h1>
           </div>
 
           <div className="mt-12 max-w-3xl border-l-2 border-amber-300/70 pl-4 sm:pl-5">
             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-slate-300 sm:text-base">
-              Funded by NSF award numbers
+              {awardIntro}
             </p>
             <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-lg font-semibold leading-7 sm:text-xl">
-              {["2321069", "2519476", "2321070", "2519477"].map((award) => (
+              {awardNumbers.map((award) => (
                 <li key={award}>
                   <Link
                     className="inline-flex min-h-11 items-center text-amber-300 underline decoration-amber-300/50 underline-offset-4 hover:decoration-amber-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"

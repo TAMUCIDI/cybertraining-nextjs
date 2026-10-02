@@ -2,6 +2,7 @@ import React from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { isSafeImageUrl } from '@/utils/content/urls';
 
 // TODO: add thumbnail for all webinars
 export interface WebinarCardProps {
@@ -22,7 +23,7 @@ export default function WebinarCard({
             <Link href={`/webinars/${id}`} className="flex h-full flex-col">
                 <figure className="relative h-56 overflow-hidden bg-slate-100">
                     <Image
-                        src={img || "/images/WebinarCardDefaultImg.jpg"}
+                        src={isSafeImageUrl(img) ? img : "/images/WebinarCardDefaultImg.jpg"}
                         alt={`${title} webinar cover`}
                         fill
                         priority={priority}

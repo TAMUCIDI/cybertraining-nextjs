@@ -2,6 +2,7 @@ import React from "react";
 
 import Link from "next/link";
 import Image from "next/image";
+import { isSafeImageUrl } from "@/utils/content/urls";
 // TODO: change category id to a list.
 export interface NotebookCardProps {
     id: string;
@@ -20,7 +21,7 @@ export default function NotebookCard({
             <Link href={`/notebooks/${id}`} className="flex h-full flex-col">
                 <figure className="relative h-56 overflow-hidden bg-slate-100">
                     <Image
-                        src={img || "/images/NotebookCardDefaultImg.jpg"}
+                        src={isSafeImageUrl(img) ? img : "/images/NotebookCardDefaultImg.jpg"}
                         alt={`${title} module cover`}
                         fill
                         priority={priority}

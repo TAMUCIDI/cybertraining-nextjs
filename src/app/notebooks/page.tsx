@@ -3,6 +3,7 @@ import DefaultLayout from "../layouts/DefaultLayout";
 
 import { createClient } from "@/utils/supabase/server";
 import { localNotebooks } from "@/server/content/siteUpdates";
+import { getManagedPage, hasImportedRepositoryContent } from "@/server/content/managedContent";
 
 import NotebookCard from "./components/NotebookCard";
 
@@ -10,27 +11,38 @@ import React from "react";
 
 export default async function Notebooks() {
     const supabase = await createClient();
-    const { data: notebookList } = await supabase.from("notebooks").select('id,title,category,author,file_url,thumbnail_r2_url')
+    const [{ data: notebookList }, managedPage, repositoryContentImported] = await Promise.all([
+        supabase.from("notebooks").select("*"),
+        getManagedPage("modules"),
+        hasImportedRepositoryContent(),
+    ]);
+
+    const databaseSlugs = new Set(
+        (notebookList || []).map((notebook) => notebook.slug).filter(Boolean),
+    );
 
     const notebooks = [
         ...(notebookList || []).map((notebook) => ({
-            id: String(notebook.id),
+            id: String(notebook.slug || notebook.id),
             title: notebook.title,
             category: notebook.category,
             author: notebook.author,
             img: notebook.thumbnail_r2_url,
+            featured: notebook.featured || false,
+            displayOrder: notebook.display_order || 0,
         })),
-        ...localNotebooks.map((notebook) => ({
+        ...(repositoryContentImported ? [] : localNotebooks.filter((notebook) => !databaseSlugs.has(notebook.id))).map((notebook) => ({
             id: notebook.id,
             title: notebook.title,
             category: notebook.category,
             author: notebook.author,
             img: notebook.thumbnailUrl,
+            featured: false,
+            displayOrder: 0,
         })),
-    ].sort((a, b) =>
-        Number(b.id === "port-infrastructure-resilience-coastal-hazards") -
-        Number(a.id === "port-infrastructure-resilience-coastal-hazards")
-    );
+    ].sort((a, b) => {
+        return Number(b.featured) - Number(a.featured) || a.displayOrder - b.displayOrder;
+    });
 
     return (
         <DefaultLayout>
@@ -39,13 +51,13 @@ export default async function Notebooks() {
                     <div className="grid gap-8 border-b border-slate-200 pb-10 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-center lg:gap-16">
                         <div className="max-w-3xl">
                             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-red-900">
-                                Learn by doing
+                                {managedPage?.eyebrow || "Learn by doing"}
                             </p>
                             <h1 className="mt-3 max-w-xl text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-                                CyberTraining modules
+                                {managedPage?.heading || "CyberTraining modules"}
                             </h1>
                             <p className="mt-5 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-                                Open practical tutorials for cyberinfrastructure, geospatial analytics, disaster data, and GeoAI.
+                                {managedPage?.summary || "Open practical tutorials for cyberinfrastructure, geospatial analytics, disaster data, and GeoAI."}
                             </p>
                         </div>
                         <aside className="rounded-2xl border border-red-100 bg-[#faf7f5] p-6" aria-labelledby="platform-heading">

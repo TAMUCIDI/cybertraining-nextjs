@@ -3,6 +3,7 @@ export const runtime = "edge";
 import { notFound } from "next/navigation";
 
 import DefaultLayout from "@/app/layouts/DefaultLayout";
+import { hasImportedRepositoryContent, looksLikeUuid } from "@/server/content/managedContent";
 import { getLocalNotebook } from "@/server/content/siteUpdates";
 import { createClient } from "@/utils/supabase/server";
 
@@ -18,35 +19,46 @@ type NotebookDetailData = {
 
 export default async function NotebookDetail({ params }: { params: Params }) {
     const { id } = await params;
-    const localNotebook = getLocalNotebook(id);
+    const supabase = await createClient();
+    let databaseNotebook = null;
 
-    let notebook: NotebookDetailData | null = localNotebook
-        ? {
-            title: localNotebook.title,
-            category: localNotebook.category,
-            author: localNotebook.author,
-            fileUrl: localNotebook.fileUrl,
-            sourceUrl: localNotebook.sourceUrl,
-        }
-        : null;
-
-    if (!notebook) {
-        const supabase = await createClient();
-        const { data, error } = await supabase
+    const [{ data: slugMatch, error: slugError }, repositoryContentImported] = await Promise.all([
+        supabase
             .from("notebooks")
-            .select("title,category,author,file_url")
+            .select("*")
+            .eq("slug", id)
+            .maybeSingle(),
+        hasImportedRepositoryContent(),
+    ]);
+    if (!slugError && slugMatch) databaseNotebook = slugMatch;
+
+    if (!databaseNotebook && looksLikeUuid(id)) {
+        const { data: idMatch, error: idError } = await supabase
+            .from("notebooks")
+            .select("*")
             .eq("id", id)
             .maybeSingle();
-
-        if (!error && data) {
-            notebook = {
-                title: data.title,
-                category: data.category,
-                author: data.author,
-                fileUrl: data.file_url,
-            };
-        }
+        if (!idError && idMatch) databaseNotebook = idMatch;
     }
+
+    const localNotebook = repositoryContentImported ? undefined : getLocalNotebook(id);
+    const notebook: NotebookDetailData | null = databaseNotebook
+        ? {
+            title: databaseNotebook.title,
+            category: databaseNotebook.category,
+            author: databaseNotebook.author,
+            fileUrl: databaseNotebook.file_url,
+            sourceUrl: databaseNotebook.source_url || undefined,
+        }
+        : localNotebook
+            ? {
+                title: localNotebook.title,
+                category: localNotebook.category,
+                author: localNotebook.author,
+                fileUrl: localNotebook.fileUrl,
+                sourceUrl: localNotebook.sourceUrl,
+            }
+            : null;
 
     if (!notebook) {
         notFound();

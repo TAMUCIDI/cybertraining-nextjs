@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { isSafeImageUrl, isSafeLinkUrl } from '@/utils/content/urls';
 
 export interface PersonCardProps {
     name: string;
@@ -28,7 +29,7 @@ export default function PersonCard({
     return (
         <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white text-slate-900 shadow-[0_8px_30px_rgba(15,23,42,0.06)] transition duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-[0_16px_40px_rgba(15,23,42,0.11)]">
             <figure className="relative flex h-72 items-center justify-center overflow-hidden bg-slate-100">
-                {img ? (
+                {isSafeImageUrl(img) ? (
                     <Image
                         src={img}
                         alt={`${name} portrait`}
@@ -53,7 +54,7 @@ export default function PersonCard({
                 </h2>
                 {email && <a className="mt-3 break-words text-sm text-red-900 hover:underline" href={`mailto:${email}`}>{email}</a>}
                 <p className="mt-3 text-sm leading-6 text-slate-600">{affiliation}</p>
-                {profileUrl && (
+                {isSafeLinkUrl(profileUrl) && (
                     <a
                         className="mt-auto pt-5 text-sm font-semibold text-red-900 hover:underline"
                         href={profileUrl}

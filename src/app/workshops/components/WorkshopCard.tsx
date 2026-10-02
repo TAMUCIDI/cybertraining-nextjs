@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { isSafeImageUrl } from "@/utils/content/urls";
 
 export interface WorkshopCardProps {
     id: string;
@@ -30,7 +31,7 @@ export default function WorkshopCard({
             <Link href={`/workshops/${id}`} className="flex h-full flex-col">
                 <figure className="relative h-56 overflow-hidden bg-slate-100">
                     <Image
-                        src={photo || "/images/WorkshopCardDefaultImg.jpg"}
+                        src={isSafeImageUrl(photo) ? photo : "/images/WorkshopCardDefaultImg.jpg"}
                         alt={photoAlt || `${title} workshop`}
                         fill
                         priority={priority}

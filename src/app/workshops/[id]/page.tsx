@@ -4,6 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 import DefaultLayout from "@/app/layouts/DefaultLayout";
+import { hasImportedRepositoryContent, looksLikeUuid } from "@/server/content/managedContent";
 import {
     formatWorkshopDate,
     getLocalWorkshop,
@@ -14,6 +15,14 @@ import {
     type WorkshopScheduleItem,
 } from "@/server/content/siteUpdates";
 import { createClient } from "@/utils/supabase/server";
+import {
+    isWorkshopBiographyList,
+    isWorkshopGallery,
+    isWorkshopResource,
+    isWorkshopResourceList,
+    isWorkshopScheduleJson,
+} from "@/utils/content/workshopJson";
+import { isSafeImageUrl } from "@/utils/content/urls";
 
 type Params = Promise<{ id: string }>;
 
@@ -35,49 +44,62 @@ type WorkshopDetailData = {
 
 export default async function WorkshopDetail({ params }: { params: Params }) {
     const { id } = await params;
-    const localWorkshop = getLocalWorkshop(id);
-
-    let workshop: WorkshopDetailData | null = null;
-
-    if (localWorkshop) {
-        workshop = {
-            title: localWorkshop.title,
-            startDate: localWorkshop.startDate,
-            endDate: localWorkshop.endDate,
-            location: localWorkshop.location,
-            description: localWorkshop.description,
-            photoUrl: localWorkshop.photoUrl,
-            photoAlt: localWorkshop.photoAlt || `${localWorkshop.title} workshop`,
-            imageFit: localWorkshop.imageFit || "cover",
-            schedule: localWorkshop.schedule,
-            biographies: localWorkshop.biographies,
-            resources: localWorkshop.resources || [],
-            gallery: localWorkshop.gallery || [],
-            registration: localWorkshop.registration,
-        };
-    } else {
-        const supabase = await createClient();
-        const { data, error } = await supabase
+    const supabase = await createClient();
+    let databaseWorkshop: Record<string, unknown> | null = null;
+    const [{ data: slugMatch, error: slugError }, repositoryContentImported] = await Promise.all([
+        supabase
             .from("workshops")
-            .select("title,date,location,description,photo_url,schedule_json")
+            .select("*")
+            .eq("slug", id)
+            .maybeSingle(),
+        hasImportedRepositoryContent(),
+    ]);
+    if (!slugError && slugMatch) databaseWorkshop = slugMatch;
+
+    if (!databaseWorkshop && looksLikeUuid(id)) {
+        const { data: idMatch, error: idError } = await supabase
+            .from("workshops")
+            .select("*")
             .eq("id", id)
             .maybeSingle();
-
-        if (!error && data) {
-            workshop = {
-                title: data.title,
-                startDate: data.date,
-                location: data.location,
-                description: data.description,
-                photoUrl: data.photo_url,
-                photoAlt: `${data.title} workshop`,
-                imageFit: "cover",
-                schedule: data.schedule_json?.schedule || [],
-                resources: [],
-                gallery: [],
-            };
-        }
+        if (!idError && idMatch) databaseWorkshop = idMatch;
     }
+
+    const localWorkshop = repositoryContentImported ? undefined : getLocalWorkshop(id);
+    const scheduleJson = databaseWorkshop?.schedule_json;
+    const workshop: WorkshopDetailData | null = databaseWorkshop
+        ? {
+            title: String(databaseWorkshop.title),
+            startDate: String(databaseWorkshop.date),
+            endDate: databaseWorkshop.end_date ? String(databaseWorkshop.end_date) : undefined,
+            location: String(databaseWorkshop.location || ""),
+            description: String(databaseWorkshop.description || ""),
+            photoUrl: isSafeImageUrl(databaseWorkshop.photo_url) ? databaseWorkshop.photo_url : undefined,
+            photoAlt: String(databaseWorkshop.photo_alt || `${databaseWorkshop.title} workshop`),
+            imageFit: databaseWorkshop.image_fit === "contain" ? "contain" : "cover",
+            schedule: isWorkshopScheduleJson(scheduleJson) ? scheduleJson.schedule : [],
+            biographies: isWorkshopBiographyList(databaseWorkshop.biographies_json) ? databaseWorkshop.biographies_json : undefined,
+            resources: isWorkshopResourceList(databaseWorkshop.resources_json) ? databaseWorkshop.resources_json : [],
+            gallery: isWorkshopGallery(databaseWorkshop.gallery_json) ? databaseWorkshop.gallery_json : [],
+            registration: isWorkshopResource(databaseWorkshop.registration_json) ? databaseWorkshop.registration_json : undefined,
+        }
+        : localWorkshop
+            ? {
+                title: localWorkshop.title,
+                startDate: localWorkshop.startDate,
+                endDate: localWorkshop.endDate,
+                location: localWorkshop.location,
+                description: localWorkshop.description,
+                photoUrl: isSafeImageUrl(localWorkshop.photoUrl) ? localWorkshop.photoUrl : undefined,
+                photoAlt: localWorkshop.photoAlt || `${localWorkshop.title} workshop`,
+                imageFit: localWorkshop.imageFit || "cover",
+                schedule: localWorkshop.schedule,
+                biographies: localWorkshop.biographies,
+                resources: localWorkshop.resources || [],
+                gallery: localWorkshop.gallery || [],
+                registration: localWorkshop.registration,
+            }
+            : null;
 
     if (!workshop) {
         notFound();

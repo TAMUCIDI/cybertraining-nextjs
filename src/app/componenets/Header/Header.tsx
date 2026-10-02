@@ -6,7 +6,9 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const navigation = [
+export type NavigationItem = { href: string; label: string };
+
+const defaultNavigation: NavigationItem[] = [
   { href: "/about", label: "About" },
   { href: "/notebooks", label: "Modules" },
   { href: "/workshops", label: "Workshops" },
@@ -14,9 +16,20 @@ const navigation = [
   { href: "/news", label: "News" },
 ];
 
-export default function Header() {
+function isSafeNavigationItem(item: unknown): item is NavigationItem {
+  if (!item || typeof item !== "object") return false;
+  const candidate = item as Record<string, unknown>;
+  if (typeof candidate.href !== "string" || typeof candidate.label !== "string") return false;
+  return (candidate.href.startsWith("/") && !candidate.href.startsWith("//"))
+    || candidate.href.startsWith("https://")
+    || candidate.href.startsWith("http://");
+}
+
+export default function Header({ navigation: navigationItems }: { navigation?: NavigationItem[] }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const managedNavigation = Array.isArray(navigationItems) ? navigationItems.filter(isSafeNavigationItem) : [];
+  const navigation = managedNavigation.length ? managedNavigation : defaultNavigation;
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
   const isHome = pathname === "/";
